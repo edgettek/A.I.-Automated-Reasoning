@@ -1,10 +1,11 @@
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
 
-import propositionalLogic.KB;
-import propositionalLogic.Model;
-import propositionalLogic.Sentence;
-import propositionalLogic.Symbol;
+import propositionalLogic.*;
+import cnf.*;
 
 
 
@@ -12,45 +13,195 @@ import propositionalLogic.Symbol;
 public class Test {
 
 	public static void main(String[] args) {
+	
 		
-//		Model model = new Model();
-//		
-//		Symbol p = new Symbol("p");
-//		Symbol q = new Symbol("q");
-//		
-//		model.set(p, false);
-//		model.set(q, false);
-//		
-//		model.dump();
-//		
-//		UnaryCompoundSentence s2 = new UnaryCompoundSentence(propositionalLogic.UnaryConnective.NOT, p);
-//		
-//		BinaryCompoundSentence sentence = new BinaryCompoundSentence(propositionalLogic.BinaryConnective.IFF, s2, q);
-//		
-//		System.out.println(model.satisfies(sentence));
-		
-		System.out.println("Solving Modus Ponens");
+		System.out.println("Solving Modus Ponens (Model Checking)");
 		
 		ModusPonens mp = new ModusPonens();
 		
-		System.out.println(mp.solveModusPonens());
+		System.out.println(mp.solveModusPonensTT());
 		
 		System.out.println("\n**********\n");
 
-		System.out.println("Solving Wumpus World");
+		System.out.println("Solving Wumpus World (Model Checking)");
 		
 		WumpusWorld ww = new WumpusWorld();
 		
-		System.out.println(ww.solveWumpusWorld());
+		System.out.println(ww.solveWumpusWorldTT());
 		
 		System.out.println("\n**********\n");
 
-		System.out.println("Solving Horn Clauses");
+		System.out.println("Solving Horn Clauses (Model Checking)");
 		
 		HornClauses hc = new HornClauses();
 		
 		hc.solveHornClauses();
+		
+		System.out.println("\n**********\n");
+		
+		System.out.println("Solving Modus Ponens (Resolution)");
+		
+		 mp = new ModusPonens();
+		
+		System.out.println(mp.solveModusPonensResolution());
+		
+		System.out.println("\n**********\n");
+		
+		System.out.println("Solving Wumpus World (Resolution)");
+		
+		 ww = new WumpusWorld();
+		
+		System.out.println(ww.solveWumpusWorldResolution());
 
+	}
+	
+	public static boolean PLResolution(KB kb, Sentence alpha) {
+		
+		kb.add(new Negation(alpha));
+		
+		Set<Clause> clauses = CNFConverter.convert(kb);
+		
+		
+		
+		Iterator<Clause> start = clauses.iterator();
+		
+		Clause check;
+		
+		while(start.hasNext()) {
+			check = start.next();
+			
+			System.out.println(check);
+			
+			if(check.isEmpty()) {
+				start.remove();
+			}
+			
+		}
+		System.out.println("\n\n\n\n");
+		
+		Set<Clause> newSet = new HashSet<Clause>();
+			
+		Clause c, c2;
+		
+		Iterator<Clause> iterator2;
+		
+		while(true) {
+			
+			Iterator<Clause> iterator = clauses.iterator();
+			
+			while(iterator.hasNext()) {
+				
+				c = iterator.next();
+				
+				//iterator.remove();
+				
+				Set<Clause> clauses2 = new HashSet<Clause>(clauses);
+				
+				System.out.println(clauses2);
+				
+				//GET RID OF EMPTY CLAUSE
+				Iterator<Clause> start2 = clauses.iterator();
+				
+				Clause check2;
+				
+				while(start2.hasNext()) {
+					check2 = start2.next();
+					
+					System.out.println(check2);
+					
+					if(check2.isEmpty()) {
+						start2.remove();
+					}
+					
+				}
+				
+				iterator2 = clauses2.iterator();
+				
+				while(iterator2.hasNext()) {
+					
+					c2 = iterator2.next();
+					
+					if(c.equals(c2) == false) {
+						//iterator.remove();
+						System.out.println("Clause: "+ c + "\t" + c2);
+						HashSet<Clause> resolvents = PLResolve(c, c2);
+	
+						System.out.println("Resolvents: "+resolvents);
+						
+						Iterator<Clause> itClause = resolvents.iterator();
+						
+						while(itClause.hasNext()) {
+							System.out.println("\tInside Resolvents Loop");
+							if(itClause.next().isEmpty()) {
+								return true;
+							}
+							
+						}
+						newSet.addAll(resolvents);
+						System.out.println("\tInside Loop 3");
+					}
+				}
+				System.out.println("\tInside Loop 2");
+							
+			}
+			System.out.println("\tInside Loop 1");
+			if(clauses.containsAll(newSet)) {
+				System.out.println("\tInside If Loop 1");
+				return false;
+			}
+			
+			clauses.addAll(newSet);
+			System.out.println("\tBottom of Loop 1");
+		}
+
+		
+	}
+	
+	public static HashSet<Clause> PLResolve(Clause c, Clause d) {
+		
+		Iterator<Literal> it = c.iterator();
+		
+		Iterator<Literal> it2 = d.iterator();
+		
+		Literal l1, l2;
+		
+		HashSet<Clause> set = new HashSet<Clause>();
+		
+		int counter = 0;
+		
+		while(it.hasNext()) {
+			System.out.println("\t\tInside Loop 1 - Resolve " + counter);
+			l1 = it.next();
+			it2 = d.iterator();
+			while(it2.hasNext()) {
+				
+				counter++;
+				System.out.println("\t\tInside Loop 2 - Resolve");
+				
+				
+				
+				l2 = it2.next();
+				
+				if(l1.getContent().equals(l2.getContent()) && l1.getPolarity() != l2.getPolarity()) {
+					System.out.println("\t\t\tInside Resolution Part - Resolve");
+					c.remove(l1);
+					d.remove(l2);
+					
+					c.addAll(d);
+
+					set.add(c);
+					
+					return set;	
+				}				
+			}	
+		}
+		
+		set.add(c);
+		set.add(d);
+		
+		return set;
+		
+		
 	}
 	
 	
@@ -72,7 +223,7 @@ public class Test {
 		
 		Model model = new Model();
 		
-		model.dump();
+		//model.dump();
 		
 		//System.out.println(list.size());
 		
@@ -114,11 +265,7 @@ public class Test {
 			return TTCheckAll(kb, alpha, symbols, m) && TTCheckAll(kb, alpha, symbols2, m2);
 
 			
-		}
-		
-		
-		
-		
+		}		
 	}
 	
 	

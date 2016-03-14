@@ -17,11 +17,17 @@ public class ModusPonens extends KB{
 			
 	}
 	
-	public boolean solveModusPonens() {
+	public boolean solveModusPonensTT() {
 		
 		Sentence q = new Symbol("Q");
 		
 		return Test.TTEntails(this, q);
+	}
+	
+	public boolean solveModusPonensResolution() {
+		Sentence q = new Symbol("Q");
+		
+		return Test.PLResolution(this, q);
 	}
 
 }
