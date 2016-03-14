@@ -60,23 +60,7 @@ public class Test {
 		kb.add(new Negation(alpha));
 		
 		Set<Clause> clauses = CNFConverter.convert(kb);
-		
-		
-		
-		Iterator<Clause> start = clauses.iterator();
-		
-		Clause check;
-		
-		while(start.hasNext()) {
-			check = start.next();
-			
-			System.out.println(check);
-			
-			if(check.isEmpty()) {
-				start.remove();
-			}
-			
-		}
+
 		System.out.println("\n\n\n\n");
 		
 		Set<Clause> newSet = new HashSet<Clause>();
@@ -93,36 +77,21 @@ public class Test {
 				
 				c = iterator.next();
 				
-				//iterator.remove();
+				System.out.println("Clause Orig: " + clauses);
 				
-				Set<Clause> clauses2 = new HashSet<Clause>(clauses);
+				//Set<Clause> clauses2 = new HashSet<Clause>(clauses);
 				
-				System.out.println(clauses2);
+				//System.out.println("Clause 2: " + clauses2);
+
 				
-				//GET RID OF EMPTY CLAUSE
-				Iterator<Clause> start2 = clauses.iterator();
-				
-				Clause check2;
-				
-				while(start2.hasNext()) {
-					check2 = start2.next();
-					
-					System.out.println(check2);
-					
-					if(check2.isEmpty()) {
-						start2.remove();
-					}
-					
-				}
-				
-				iterator2 = clauses2.iterator();
+				iterator2 = clauses.iterator();
 				
 				while(iterator2.hasNext()) {
 					
 					c2 = iterator2.next();
 					
 					if(c.equals(c2) == false) {
-						//iterator.remove();
+
 						System.out.println("Clause: "+ c + "\t" + c2);
 						HashSet<Clause> resolvents = PLResolve(c, c2);
 	
