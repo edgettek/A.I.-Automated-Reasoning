@@ -86,6 +86,9 @@ public class Test {
 			}
 		}
 		else {
+			
+			ArrayList<Symbol> symbols2 = new ArrayList<Symbol>(symbols);
+			
 			Symbol p = symbols.remove(0);
 			System.out.println(symbols.size());
 			Model m = model.clone();
@@ -94,9 +97,13 @@ public class Test {
 			
 			Model m2 = model.clone();
 			
+			
+			
+			p = symbols2.remove(0);
+			
 			m2.set(p, false);
 			
-			return TTCheckAll(kb, alpha, symbols, m) && TTCheckAll(kb, alpha, symbols, m2);
+			return TTCheckAll(kb, alpha, symbols, m) && TTCheckAll(kb, alpha, symbols2, m2);
 
 			
 		}
