@@ -42,6 +42,14 @@ public class Test {
 		WumpusWorld ww = new WumpusWorld();
 		
 		System.out.println(ww.solveWumpusWorld());
+		
+		System.out.println("\n**********\n");
+
+		System.out.println("Solving Horn Clauses");
+		
+		HornClauses hc = new HornClauses();
+		
+		hc.solveHornClauses();
 
 	}
 	
@@ -60,25 +68,25 @@ public class Test {
 			}
 		}
 		
-		System.out.println(list);
+		//System.out.println(list);
 		
 		Model model = new Model();
 		
 		model.dump();
 		
-		System.out.println(list.size());
+		//System.out.println(list.size());
 		
 		return TTCheckAll(kb, alpha, list, model);
 	}
 	
 	public static boolean TTCheckAll(KB kb, Sentence alpha, ArrayList<Symbol> symbols, Model model) {
-		System.out.println("*****");
-		model.dump();
+		//System.out.println("*****");
+		//model.dump();
 		
 		if(symbols.isEmpty() == true) {
-			System.out.println("SYMBOLS IS EMPTY");
+			//System.out.println("SYMBOLS IS EMPTY");
 			if(model.satisfies(kb) == true) {
-				System.out.println("KNOWLEDGE BASE SATISFIED");
+				//System.out.println("KNOWLEDGE BASE SATISFIED");
 				return model.satisfies(alpha);
 			}
 			else {
@@ -90,7 +98,7 @@ public class Test {
 			ArrayList<Symbol> symbols2 = new ArrayList<Symbol>(symbols);
 			
 			Symbol p = symbols.remove(0);
-			System.out.println(symbols.size());
+			//System.out.println(symbols.size());
 			Model m = model.clone();
 			
 			m.set(p, true);
