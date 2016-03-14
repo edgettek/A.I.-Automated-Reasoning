@@ -97,21 +97,35 @@ public class Test {
 		}
 	}
 
-	public static HashSet<Clause> PLResolve(Clause c, Clause d) {
+	public static Set<Clause> PLResolve(Clause c, Clause d) {
 
 			Iterator<Literal> c_iterator = c.iterator();
 			Iterator<Literal> d_iterator = d.iterator();
+
+			Set<Clause> resolvents = new HashSet<>();
 
 			while(c_iterator.hasNext()) {
 				Literal c_literal = c_iterator.next();
 				while(d_iterator.hasNext()) {
 					Literal d_literal = d_iterator.next();
 
-					// if(c_literal.g)
+					//Connecting clauses
+					if(c_literal.getContent().equals(d_literal.getContent()) && c_literal.getPolarity() != d_literal.getPolarity()) {
+						c.remove(c_literal);
+						d.remove(d_literal);
+
+						c.addAll(d);
+
+						resolvents.add(c);
+						return resolvents;
+					}
 				}
 			}
 
+			resolvents.add(c);
+			resolvents.add(d);
 
+			return resolvents;
 	}
 
 
