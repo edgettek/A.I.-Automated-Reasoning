@@ -1,8 +1,13 @@
-/*
- * File: Literal.java
- * Creator: George Ferguson
- * Created: Tue Mar 15 16:06:28 2011
- * Time-stamp: <Fri Mar 23 14:40:03 EDT 2012 ferguson>
+/**
+ * 
+ *  Author: George Ferguson
+ * 
+ *  Modified By: Nina Bose
+ * 
+ * 	Modification: Added copyLiteral()
+ * 
+ * Assignment: CSC 242 Project 02
+ * 
  */
 
 package cnf;

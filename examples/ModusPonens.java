@@ -39,4 +39,8 @@ public class ModusPonens extends KB implements ExampleProblem {
 
 	}
 
+
+			public String getName() {
+				return "Modus Ponens";
+			}
 }

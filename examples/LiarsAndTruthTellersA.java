@@ -59,4 +59,9 @@ public class LiarsAndTruthTellersA extends KB implements ExampleProblem {
 
   }
 
+
+  		public String getName() {
+  			return "Liars and Truth Tellers (a)";
+  		}
+
 }

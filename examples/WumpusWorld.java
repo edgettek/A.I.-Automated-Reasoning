@@ -1,4 +1,14 @@
+/**
+ *
+ *  Author: Kyle Edgette
+ *
+ * 	Purpose: Create knowledge base for Wumpus World Problem, helper methods to solve by model checking and resolution
+ *
+ * Assignment: CSC 242 Project 02
+ *
+ */
 
+import java.io.IOException;
 
 import propositionalLogic.*;
 
@@ -6,6 +16,12 @@ import propositionalLogic.*;
 
 public class WumpusWorld extends KB implements ExampleProblem{
 
+
+
+	/**
+	 * Constructor sets up Knowledge Base for Wumpus World Problem
+	 *
+	 */
 	public WumpusWorld() {
 
 		super();
@@ -37,6 +53,11 @@ public class WumpusWorld extends KB implements ExampleProblem{
 
 	}
 
+
+	/**
+	 * Solves Wumpus World Problem using Model Checking
+	 *
+	 */
 	public void solveByModelChecking() {
 		System.out.println("Solving Wumpus World (Model Checking)");
 
@@ -46,7 +67,12 @@ public class WumpusWorld extends KB implements ExampleProblem{
 		System.out.println("\n**********\n");
 	}
 
-	public void solveByResolution() {
+	/**
+	 * Solves Wumpus World Problem using Model Checking
+	 * @throws IOException
+	 *
+	 */
+	public void solveByResolution() throws IOException {
 
 		System.out.println("Solving Wumpus World (Resolution)");
 
@@ -57,4 +83,7 @@ public class WumpusWorld extends KB implements ExampleProblem{
 	}
 
 
+			public String getName() {
+				return "Wumpus World";
+			}
 }

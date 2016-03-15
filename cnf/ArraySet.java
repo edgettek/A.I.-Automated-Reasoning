@@ -1,8 +1,10 @@
-/*
- * File: ArraySet.java
- * Creator: George Ferguson
- * Created: Tue Mar 15 16:33:49 2011
- * Time-stamp: <Thu Mar 15 12:20:55 EDT 2012 ferguson>
+/**
+ * 
+ *  Author: George Ferguson
+ * 
+ * 
+ * Assignment: CSC 242 Project 02
+ * 
  */
 
 package cnf;

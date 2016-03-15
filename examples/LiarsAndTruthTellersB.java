@@ -58,4 +58,9 @@ public class LiarsAndTruthTellersB extends KB implements ExampleProblem {
     System.out.println("\n**********\n");
   }
 
+
+  		public String getName() {
+  			return "Liars and Truth Tellers (b)";
+  		}
+
 }

@@ -1,3 +1,15 @@
+/**
+ * 
+ * Author: George Ferguson
+ * 
+ * Modified by: Kyle Edgette
+ * 
+ * Modification: Implemented the isSatisfiedBy(Model model), therefore the class is no longer abstract
+ * 
+ * Assignment: CSC 242 Project 02
+ * 
+ */
+
 package propositionalLogic;
 
 import java.util.ArrayList;
