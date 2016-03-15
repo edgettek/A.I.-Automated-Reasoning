@@ -1,3 +1,13 @@
+/**
+ *
+ *  Author: Kyle Edgette
+ *
+ * 	Purpose: Create knowledge base for Modus Ponens Problem, helper methods to solve by model checking and resolution
+ *
+ * Assignment: CSC 242 Project 02
+ *
+ */
+
 package examples;
 
 import propositionalLogic.Implication;
@@ -41,7 +51,7 @@ public class ModusPonens extends KB implements ExampleProblem {
 	}
 
 
-			public String getName() {
-				return "Modus Ponens";
-			}
+	public String getName() {
+		return "Modus Ponens";
+	}
 }

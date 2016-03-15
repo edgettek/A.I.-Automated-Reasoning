@@ -1,3 +1,13 @@
+/**
+ *
+ *  Author: Nina Bose
+ *
+ * 	Purpose: Create knowledge base for Liars and Truth Tellers (Part B) Problem, helper methods to solve by model checking and resolution
+ *
+ * Assignment: CSC 242 Project 02
+ *
+ */
+
 package examples;
 
 import propositionalLogic.*;
@@ -60,8 +70,8 @@ public class LiarsAndTruthTellersB extends KB implements ExampleProblem {
   }
 
 
-  		public String getName() {
-  			return "Liars and Truth Tellers (b)";
-  		}
+	public String getName() {
+		return "Liars and Truth Tellers (b)";
+	}
 
 }
