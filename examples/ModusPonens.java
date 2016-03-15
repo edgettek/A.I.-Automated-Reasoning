@@ -4,6 +4,7 @@ import propositionalLogic.Implication;
 import propositionalLogic.KB;
 import propositionalLogic.Sentence;
 import propositionalLogic.Symbol;
+import java.io.IOException;
 
 
 public class ModusPonens extends KB implements ExampleProblem {
@@ -28,7 +29,7 @@ public class ModusPonens extends KB implements ExampleProblem {
 		System.out.println("\n**********\n");
 	}
 
-	public void solveByResolution() {
+	public void solveByResolution() throws IOException {
 
 		System.out.println("Solving Modus Ponens (Resolution)");
 

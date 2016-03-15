@@ -1,6 +1,7 @@
 
 
 import propositionalLogic.*;
+import java.io.IOException;
 
 public class LiarsAndTruthTellersA extends KB implements ExampleProblem {
 
@@ -39,7 +40,7 @@ public class LiarsAndTruthTellersA extends KB implements ExampleProblem {
 
   }
 
-  public void solveByResolution() {
+  public void solveByResolution() throws IOException {
 
     System.out.println("Solving LiarsAndTruthTellers Part (a) (Model Checking)");
 
