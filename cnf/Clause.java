@@ -23,6 +23,8 @@ import propositionalLogic.*;
  */
 public class Clause extends ArraySet<Literal> {
 
+	private String sentence;
+
 	/**
 	 * Return a new Clause constructed from the given Sentence, which
 	 * must be a disjunction of literals (i.e., an AtomicSentence, the
@@ -34,7 +36,10 @@ public class Clause extends ArraySet<Literal> {
 		super();
 		toClauses(s, this);
 	}
-	
+
+	private Clause() {
+		super();
+	}
 
 	protected static void toClauses(Sentence s, Clause c) throws IllegalArgumentException {
 		if (s instanceof BinaryCompoundSentence) {
@@ -82,6 +87,16 @@ public class Clause extends ArraySet<Literal> {
 			}
 		}
 		return true;
+	}
+
+	public Clause copyClause() {
+		Clause c_copy = new Clause();
+
+		for( Literal l : elements) {
+			c_copy.add(l.copyLiteral());
+		}
+
+		return c_copy;
 	}
 
 }

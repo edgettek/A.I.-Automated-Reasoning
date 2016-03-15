@@ -76,23 +76,52 @@ public class Test {
 		Set<Clause> resolvents;
 		//Overall while-loop
 		while(true) {
+			System.out.println("C: " + clauses);
+			System.out.println("N: " + newSet);
+			System.out.println();
 			// For each set of pairs
 			iterator1 = clauses.iterator();
 			while(iterator1.hasNext()) {
 				Clause clause_i = iterator1.next();
+
+				System.out.println("clause_i : " + clause_i);
+
 				iterator2 = clauses.iterator();
 				while(iterator2.hasNext()) {
 					Clause clause_j = iterator2.next();
 
+					System.out.println("clause_j : " + clause_j);
+
+					System.out.println("\t1C: " + clauses);
+					System.out.println("\t1N: " + newSet);
+					System.out.println();
+
 					if(clause_i.equals(clause_j) == false) {
+
+						System.out.println("\t2C: " + clauses);
+						System.out.println("\t2N: " + newSet);
+						System.out.println();
+
 						resolvents = PLResolve(clause_i, clause_j);
+
+						System.out.println("\t3C: " + clauses);
+						System.out.println("\t3N: " + newSet);
+						System.out.println();
 
 						//If resolvents contains empty clause
 						if(resolvents.contains(new Clause(new Symbol("")))) {
 							return true;
 						}
 
+						System.out.println("\t4C: " + clauses);
+						System.out.println("\t4N: " + newSet);
+						System.out.println();
+
 						newSet.addAll(resolvents);
+
+						System.out.println("\t5C: " + clauses);
+						System.out.println("\t5N: " + newSet);
+						System.out.println();
 					}	// End if
 				} // End While-Loop 3
 			} // End While-Loop 2
@@ -105,7 +134,10 @@ public class Test {
 		}
 	}
 
-	public static Set<Clause> PLResolve(Clause c, Clause d) {
+	public static Set<Clause> PLResolve(Clause c_original, Clause d_original) {
+
+			Clause c = c_original.copyClause();
+			Clause d = d_original.copyClause();
 
 			Iterator<Literal> c_iterator = c.iterator();
 			Iterator<Literal> d_iterator = d.iterator();
@@ -199,8 +231,5 @@ public class Test {
 
 		}
 	}
-
-
-
 
 }

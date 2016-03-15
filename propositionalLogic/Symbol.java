@@ -3,14 +3,14 @@ package propositionalLogic;
 import java.util.ArrayList;
 
 public class Symbol implements Sentence {
-	
+
 	protected String name;
 
 	public Symbol(String name) {
 		super();
 		this.name = name;
 	}
-	
+
 	public String toString() {
 		return name;
 	}
@@ -22,11 +22,11 @@ public class Symbol implements Sentence {
 	public boolean isSatisfiedBy(ModelInterface model) {
 		return model.get(this);
 	}
-	
+
 	//
     // equals() and hashCode(), for use in hashtables
 	//
-	
+
 	/**
 	 * Two PropositionSymbols are equals iff they have the same name.
 	 * Note that this is expensive to test. You are much better off using
@@ -64,12 +64,17 @@ public class Symbol implements Sentence {
 		return name.hashCode();
 	}
 
-	
+
 	public ArrayList<Symbol> getSymbols() {
 		ArrayList<Symbol> list = new ArrayList<Symbol>();
 		list.add(this);
-		
+
 		return list;
+	}
+
+	public Symbol copySymbol() {
+		Symbol s_copy = new Symbol(name);
+		return s_copy;
 	}
 
 }

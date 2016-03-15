@@ -67,7 +67,20 @@ public class Literal {
     	// Otherwise
     	throw new IllegalArgumentException(s.toString());
     }
-    
+
+    private Literal() {
+      content = null;
+      polarity = Polarity.POSITIVE;
+    }
+
+    private void setContent(Symbol content) {
+      this.content = content;
+    }
+
+    private void setPolarity(Polarity polarity) {
+      this.polarity = polarity;
+    }
+
     /**
      * Return the string representation of this Literal.
      */
@@ -78,7 +91,7 @@ public class Literal {
     	}
     	return sign + content.toString();
     }
-    
+
     /**
      * Return true if this Literal is satisfied by the given Model.
      * That is, if this is a positive Literal, its content must be assigned
@@ -99,7 +112,7 @@ public class Literal {
     //
     // equals() and hashCode() for use in hashtables
     //
-    
+
     /**
      * Indicates whether some other object is "equal to" this one.
      * Two Literals are equal iff they have the same polarity and content.
@@ -136,6 +149,13 @@ public class Literal {
     	int prime = 17;
     	return polarity.hashCode() * prime +
     			content.hashCode() * prime * prime;
+    }
+
+    public Literal copyLiteral() {
+      Literal l_copy = new Literal();
+      l_copy.setContent(content.copySymbol());
+      l_copy.setPolarity(polarity);
+      return l_copy;
     }
 
 }

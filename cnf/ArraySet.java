@@ -75,7 +75,7 @@ public class ArraySet<E> extends AbstractSet<E> {
 			return elements.add(e);
 		}
 	}
-	
+
 	/**
 	 * Returns the element at the given index in this ArraySet.
 	 * I know Sets aren't necessarily ordered, but these ones are.
@@ -83,7 +83,7 @@ public class ArraySet<E> extends AbstractSet<E> {
 	public E get(int index) {
 		return elements.get(index);
 	}
-	
+
 	public boolean isEmpty() {
 		if(size() == 0) {
 			return true;
