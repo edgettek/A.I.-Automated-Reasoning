@@ -1,0 +1,5893 @@
+SolvingModus Ponens (Resolution)
+Clauses: {~P,Q}	{P}
+Resolvents: [{Q}]
+
+Clauses: {P}	{~P,Q}
+Resolvents: [{Q}]
+
+Clauses: {~Q}	{~P,Q}
+Resolvents: [{~P}]
+
+Clauses: {~P,Q}	{P}
+Resolvents: [{Q}]
+
+Clauses: {Q}	{~Q}
+Resolvents: [{}]
+
+**********
+SolvingWumpus World (Resolution)
+Clauses: {~P2,2,B2,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{B2,1,~B2,1,P3,1,P1,1}]
+
+Clauses: {~P1,2}	{~B1,1,P1,2,P2,1}
+Resolvents: [{~B1,1,P2,1}]
+
+Clauses: {~P1,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{~B2,1,P3,1,P2,2}]
+
+Clauses: {~P3,1,B2,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{B2,1,~B2,1,P2,2,P1,1}]
+
+Clauses: {~P1,2,B1,1}	{~B1,1,P1,2,P2,1}
+Resolvents: [{B1,1,~B1,1,P2,1}]
+
+Clauses: {~B1,1}	{~P1,2,B1,1}
+Resolvents: [{~P1,2}]
+
+Clauses: {~B1,1}	{~P2,1,B1,1}
+Resolvents: [{~P2,1}]
+
+Clauses: {B2,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2,P1,1}]
+
+Clauses: {~B1,1,P1,2,P2,1}	{~P1,2,B1,1}
+Resolvents: [{P1,2,P2,1,~P1,2}]
+
+Clauses: {~B1,1,P1,2,P2,1}	{~P2,1,B1,1}
+Resolvents: [{P1,2,P2,1,~P2,1}]
+
+Clauses: {~P2,1,B1,1}	{~B1,1,P1,2,P2,1}
+Resolvents: [{B1,1,~B1,1,P1,2}]
+
+Clauses: {~P1,1,B2,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{B2,1,~B2,1,P3,1,P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{~P2,2,B2,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{~P3,1,B2,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1}
+Resolvents: [{P3,1,P2,2,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{~P1,1,B2,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P1,1}]
+
+Clauses: {B2,1,~B2,1,P3,1,P2,2}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{~B2,1,P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {B2,1,~B2,1,P3,1,P2,2}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{~B2,1,P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {B2,1,~B2,1,P3,1,P2,2}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{~B2,1,P3,1,P2,2,P1,1}]
+
+Clauses: {B2,1,~B2,1,P3,1,P2,2}	{~B2,1,P3,1,P2,2}
+Resolvents: [{~B2,1,P3,1,P2,2}]
+
+Clauses: {B2,1,~B2,1,P2,2,P1,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{~B2,1,P2,2,P1,1,B2,1,P3,1}]
+
+Clauses: {B2,1,~B2,1,P2,2,P1,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{~B2,1,P2,2,P1,1,B2,1,P3,1}]
+
+Clauses: {B2,1,~B2,1,P2,2,P1,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{~B2,1,P2,2,P1,1,P3,1}]
+
+Clauses: {B2,1,~B2,1,P2,2,P1,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{~B2,1,P2,2,P1,1,P3,1}]
+
+Clauses: {B2,1,~B2,1,P3,1,P1,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{~B2,1,P3,1,P1,1,B2,1,P2,2}]
+
+Clauses: {B2,1,~B2,1,P3,1,P1,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{~B2,1,P3,1,P1,1,B2,1,P2,2}]
+
+Clauses: {B2,1,~B2,1,P3,1,P1,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{~B2,1,P3,1,P1,1,P2,2}]
+
+Clauses: {B2,1,~B2,1,P3,1,P1,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{~B2,1,P3,1,P1,1,P2,2}]
+
+Clauses: {P3,1,P2,2,P1,1,~P1,1}	{~P3,1,B2,1}
+Resolvents: [{P2,2,P1,1,~P1,1,B2,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P1,1}	{P3,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P2,2,P1,1,~P1,1,P3,1}]
+
+Clauses: {~P2,2,B2,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{B2,1,~B2,1,P3,1}]
+
+Clauses: {~P2,2,B2,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{B2,1,~B2,1,P1,1}]
+
+Clauses: {~P2,2,B2,1}	{P3,1,P2,2,P1,1,~P1,1}
+Resolvents: [{B2,1,P3,1,P1,1,~P1,1}]
+
+Clauses: {~P2,2,B2,1}	{P3,1,P2,2,P1,1}
+Resolvents: [{B2,1,P3,1,P1,1}]
+
+Clauses: {~P2,2,B2,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{B2,1,~B2,1,P3,1,P1,1}]
+
+Clauses: {~P2,2,B2,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{B2,1,~B2,1,P3,1}]
+
+Clauses: {~P2,2,B2,1}	{P3,1,P2,2,P1,1,~P2,2}
+Resolvents: [{B2,1,P3,1,P1,1,~P2,2}]
+
+Clauses: {~P2,2,B2,1}	{P3,1,P2,2,P1,1,~P3,1}
+Resolvents: [{B2,1,P3,1,P1,1,~P3,1}]
+
+Clauses: {~P1,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{B2,1,~B2,1,P2,2}]
+
+Clauses: {~P1,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{B2,1,~B2,1,P3,1}]
+
+Clauses: {~P1,1}	{P3,1,P2,2,P1,1,~P1,1}
+Resolvents: [{P3,1,P2,2,~P1,1}]
+
+Clauses: {~P1,1}	{P3,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2}]
+
+Clauses: {~P1,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{~B2,1,P3,1,P2,2}]
+
+Clauses: {~P1,1}	{P3,1,P2,2,P1,1,~P2,2}
+Resolvents: [{P3,1,P2,2,~P2,2}]
+
+Clauses: {~P1,1}	{P3,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P3,1,P2,2,~P3,1}]
+
+Clauses: {~P3,1,B2,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{B2,1,~B2,1,P2,2}]
+
+Clauses: {~P3,1,B2,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{B2,1,~B2,1,P1,1}]
+
+Clauses: {~P3,1,B2,1}	{P3,1,P2,2,P1,1,~P1,1}
+Resolvents: [{B2,1,P2,2,P1,1,~P1,1}]
+
+Clauses: {~P3,1,B2,1}	{P3,1,P2,2,P1,1}
+Resolvents: [{B2,1,P2,2,P1,1}]
+
+Clauses: {~P3,1,B2,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{B2,1,~B2,1,P2,2,P1,1}]
+
+Clauses: {~P3,1,B2,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{B2,1,~B2,1,P2,2}]
+
+Clauses: {~P3,1,B2,1}	{P3,1,P2,2,P1,1,~P2,2}
+Resolvents: [{B2,1,P2,2,P1,1,~P2,2}]
+
+Clauses: {~P3,1,B2,1}	{P3,1,P2,2,P1,1,~P3,1}
+Resolvents: [{B2,1,P2,2,P1,1,~P3,1}]
+
+Clauses: {~P1,2,B1,1}	{P1,2,P2,1,~P2,1}
+Resolvents: [{B1,1,P2,1,~P2,1}]
+
+Clauses: {~P1,2,B1,1}	{B1,1,~B1,1,P1,2}
+Resolvents: [{B1,1,~B1,1}]
+
+Clauses: {~P1,2,B1,1}	{P1,2,P2,1,~P1,2}
+Resolvents: [{B1,1,P2,1,~P1,2}]
+
+Clauses: {~P1,2,B1,1}	{~B1,1,P1,2,P2,1}
+Resolvents: [{B1,1,~B1,1,P2,1}]
+
+Clauses: {~P2,1,B1,1}	{~B1,1,P2,1}
+Resolvents: [{B1,1,~B1,1}]
+
+Clauses: {~P2,1,B1,1}	{B1,1,~B1,1,P2,1}
+Resolvents: [{B1,1,~B1,1}]
+
+Clauses: {~P2,1,B1,1}	{P1,2,P2,1,~P2,1}
+Resolvents: [{B1,1,P1,2,~P2,1}]
+
+Clauses: {~P2,1,B1,1}	{P1,2,P2,1,~P1,2}
+Resolvents: [{B1,1,P1,2,~P1,2}]
+
+Clauses: {~P2,1,B1,1}	{~B1,1,P1,2,P2,1}
+Resolvents: [{B1,1,~B1,1,P1,2}]
+
+Clauses: {~P1,1,B2,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{B2,1,~B2,1,P2,2}]
+
+Clauses: {~P1,1,B2,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{B2,1,~B2,1,P3,1}]
+
+Clauses: {~P1,1,B2,1}	{P3,1,P2,2,P1,1,~P1,1}
+Resolvents: [{B2,1,P3,1,P2,2,~P1,1}]
+
+Clauses: {~P1,1,B2,1}	{P3,1,P2,2,P1,1}
+Resolvents: [{B2,1,P3,1,P2,2}]
+
+Clauses: {~P1,1,B2,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{B2,1,~B2,1,P3,1,P2,2}]
+
+Clauses: {~P1,1,B2,1}	{P3,1,P2,2,P1,1,~P2,2}
+Resolvents: [{B2,1,P3,1,P2,2,~P2,2}]
+
+Clauses: {~P1,1,B2,1}	{P3,1,P2,2,P1,1,~P3,1}
+Resolvents: [{B2,1,P3,1,P2,2,~P3,1}]
+
+Clauses: {~B1,1,P2,1}	{~P1,2,B1,1}
+Resolvents: [{P2,1,~P1,2}]
+
+Clauses: {~B1,1,P2,1}	{~P2,1,B1,1}
+Resolvents: [{P2,1,~P2,1}]
+
+Clauses: {~B1,1,P2,1}	{B1,1,~B1,1,P2,1}
+Resolvents: [{P2,1,~B1,1}]
+
+Clauses: {~B1,1,P2,1}	{B1,1,~B1,1,P1,2}
+Resolvents: [{P2,1,~B1,1,P1,2}]
+
+Clauses: {B1,1,~B1,1,P2,1}	{~B1,1,P2,1}
+Resolvents: [{~B1,1,P2,1}]
+
+Clauses: {B1,1,~B1,1,P2,1}	{B1,1,~B1,1,P1,2}
+Resolvents: [{~B1,1,P2,1,B1,1,P1,2}]
+
+Clauses: {B1,1,~B1,1,P2,1}	{~B1,1}
+Resolvents: [{~B1,1,P2,1}]
+
+Clauses: {B1,1,~B1,1,P2,1}	{~B1,1,P1,2,P2,1}
+Resolvents: [{~B1,1,P2,1,P1,2}]
+
+Clauses: {P1,2,P2,1,~P2,1}	{~P1,2,B1,1}
+Resolvents: [{P2,1,~P2,1,B1,1}]
+
+Clauses: {P1,2,P2,1,~P2,1}	{~P1,2}
+Resolvents: [{P2,1,~P2,1}]
+
+Clauses: {P1,2,P2,1,~P2,1}	{P1,2,P2,1,~P1,2}
+Resolvents: [{P2,1,~P2,1,P1,2}]
+
+Clauses: {B1,1,~B1,1,P1,2}	{~B1,1,P2,1}
+Resolvents: [{~B1,1,P1,2,P2,1}]
+
+Clauses: {B1,1,~B1,1,P1,2}	{B1,1,~B1,1,P2,1}
+Resolvents: [{~B1,1,P1,2,B1,1,P2,1}]
+
+Clauses: {B1,1,~B1,1,P1,2}	{~B1,1}
+Resolvents: [{~B1,1,P1,2}]
+
+Clauses: {B1,1,~B1,1,P1,2}	{~B1,1,P1,2,P2,1}
+Resolvents: [{~B1,1,P1,2,P2,1}]
+
+Clauses: {P3,1,P2,2,P1,1}	{~P3,1,B2,1}
+Resolvents: [{P2,2,P1,1,B2,1}]
+
+Clauses: {P3,1,P2,2,P1,1}	{P3,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P2,2,P1,1,P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P2,2,P1,1,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2,P1,1,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,P2,2,P1,1,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{~P2,2,B2,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{~P3,1,B2,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{~P1,1,B2,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1}
+Resolvents: [{P3,1,P2,2,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P2,2,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2,~B2,1,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,P2,2,~B2,1,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{~P2,2,B2,1}
+Resolvents: [{P3,1,P2,2,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{~P3,1,B2,1}
+Resolvents: [{P3,1,P2,2,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{~P1,1,B2,1}
+Resolvents: [{P3,1,P2,2,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1}
+Resolvents: [{P3,1,P2,2}]
+
+Clauses: {P3,1,P2,2,P1,1,~P2,2}	{~P3,1,B2,1}
+Resolvents: [{P2,2,P1,1,~P2,2,B2,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P2,2}	{P3,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P2,2,P1,1,~P2,2,P3,1}]
+
+Clauses: {~P1,2}	{P1,2,P2,1,~P2,1}
+Resolvents: [{P2,1,~P2,1}]
+
+Clauses: {~P1,2}	{B1,1,~B1,1,P1,2}
+Resolvents: [{B1,1,~B1,1}]
+
+Clauses: {~P1,2}	{P1,2,P2,1,~P1,2}
+Resolvents: [{P2,1,~P1,2}]
+
+Clauses: {~P1,2}	{~B1,1,P1,2,P2,1}
+Resolvents: [{~B1,1,P2,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P3,1}	{~P3,1,B2,1}
+Resolvents: [{P2,2,P1,1,~P3,1,B2,1}]
+
+Clauses: {~B1,1}	{~P1,2,B1,1}
+Resolvents: [{~P1,2}]
+
+Clauses: {~B1,1}	{~P2,1,B1,1}
+Resolvents: [{~P2,1}]
+
+Clauses: {~B1,1}	{B1,1,~B1,1,P2,1}
+Resolvents: [{~B1,1,P2,1}]
+
+Clauses: {~B1,1}	{B1,1,~B1,1,P1,2}
+Resolvents: [{~B1,1,P1,2}]
+
+Clauses: {P1,2,P2,1,~P1,2}	{~P1,2,B1,1}
+Resolvents: [{P2,1,~P1,2,B1,1}]
+
+Clauses: {P1,2,P2,1,~P1,2}	{~P1,2}
+Resolvents: [{P2,1,~P1,2}]
+
+Clauses: {B2,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{B2,1,P3,1,P2,2}]
+
+Clauses: {B2,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{B2,1,P2,2,P1,1}]
+
+Clauses: {B2,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{B2,1,P3,1,P1,1}]
+
+Clauses: {B2,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2,P1,1}]
+
+Clauses: {B2,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P2,2}]
+
+Clauses: {~B1,1,P1,2,P2,1}	{~P1,2,B1,1}
+Resolvents: [{P1,2,P2,1,~P1,2}]
+
+Clauses: {~B1,1,P1,2,P2,1}	{~P2,1,B1,1}
+Resolvents: [{P1,2,P2,1,~P2,1}]
+
+Clauses: {~B1,1,P1,2,P2,1}	{B1,1,~B1,1,P2,1}
+Resolvents: [{P1,2,P2,1,~B1,1}]
+
+Clauses: {~B1,1,P1,2,P2,1}	{B1,1,~B1,1,P1,2}
+Resolvents: [{P1,2,P2,1,~B1,1}]
+
+Clauses: {~P2,1}	{~B1,1,P2,1}
+Resolvents: [{~B1,1}]
+
+Clauses: {~P2,1}	{B1,1,~B1,1,P2,1}
+Resolvents: [{B1,1,~B1,1}]
+
+Clauses: {~P2,1}	{P1,2,P2,1,~P2,1}
+Resolvents: [{P1,2,~P2,1}]
+
+Clauses: {~P2,1}	{P1,2,P2,1,~P1,2}
+Resolvents: [{P1,2,~P1,2}]
+
+Clauses: {~P2,1}	{~B1,1,P1,2,P2,1}
+Resolvents: [{~B1,1,P1,2}]
+
+Clauses: {B1,1,P2,1,~P2,1}	{~B1,1,P1,2}
+Resolvents: [{P2,1,~P2,1,P1,2}]
+
+Clauses: {B1,1,P2,1,~P2,1}	{B1,1,~B1,1,P2,1}
+Resolvents: [{P2,1,~P2,1,B1,1}]
+
+Clauses: {B1,1,P2,1,~P2,1}	{B1,1,~B1,1}
+Resolvents: [{P2,1,~P2,1,B1,1}]
+
+Clauses: {B1,1,P2,1,~P2,1}	{~B1,1,P2,1}
+Resolvents: [{P2,1,~P2,1}]
+
+Clauses: {B1,1,P2,1,~P2,1}	{~B1,1,P2,1,B1,1,P1,2}
+Resolvents: [{P2,1,~P2,1,B1,1,P1,2}]
+
+Clauses: {B1,1,P2,1,~P2,1}	{B1,1,~B1,1,P1,2}
+Resolvents: [{P2,1,~P2,1,B1,1,P1,2}]
+
+Clauses: {B1,1,P2,1,~P2,1}	{~B1,1}
+Resolvents: [{P2,1,~P2,1}]
+
+Clauses: {B1,1,P2,1,~P2,1}	{~B1,1,P1,2,P2,1}
+Resolvents: [{P2,1,~P2,1,P1,2}]
+
+Clauses: {P3,1,P2,2,~P3,1}	{~P3,1,B2,1}
+Resolvents: [{P2,2,~P3,1,B2,1}]
+
+Clauses: {P3,1,P2,2,~P3,1}	{B2,1,P3,1,P2,2,~P3,1}
+Resolvents: [{P2,2,~P3,1,B2,1,P3,1}]
+
+Clauses: {P3,1,P2,2,~P3,1}	{B2,1,P3,1,P1,1,~P3,1}
+Resolvents: [{P2,2,~P3,1,B2,1,P3,1,P1,1}]
+
+Clauses: {P3,1,P2,2,~P3,1}	{B2,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P2,2,~P3,1,B2,1,P1,1}]
+
+Clauses: {P3,1,P2,2,~P3,1}	{P3,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P2,2,~P3,1,P3,1,P1,1}]
+
+Clauses: {B2,1,~B2,1,P3,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{~B2,1,P3,1,B2,1,P2,2,P1,1}]
+
+Clauses: {B2,1,~B2,1,P3,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{~B2,1,P3,1,P2,2}]
+
+Clauses: {B2,1,~B2,1,P3,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{~B2,1,P3,1,B2,1,P1,1}]
+
+Clauses: {B2,1,~B2,1,P3,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{~B2,1,P3,1,B2,1,P2,2}]
+
+Clauses: {B2,1,~B2,1,P3,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{~B2,1,P3,1,B2,1,P2,2}]
+
+Clauses: {B2,1,~B2,1,P3,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{~B2,1,P3,1,B2,1,P1,1}]
+
+Clauses: {B2,1,~B2,1,P3,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{~B2,1,P3,1,P2,2,P1,1}]
+
+Clauses: {B2,1,~B2,1,P3,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{~B2,1,P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {B2,1,~B2,1,P2,2,P1,1}	{B2,1,~B2,1,P3,1}
+Resolvents: [{~B2,1,P2,2,P1,1,B2,1,P3,1}]
+
+Clauses: {B2,1,~B2,1,P2,2,P1,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{~B2,1,P2,2,P1,1,P3,1}]
+
+Clauses: {B2,1,~B2,1,P2,2,P1,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{~B2,1,P2,2,P1,1,B2,1}]
+
+Clauses: {B2,1,~B2,1,P2,2,P1,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{~B2,1,P2,2,P1,1,B2,1,P3,1}]
+
+Clauses: {B2,1,~B2,1,P2,2,P1,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{~B2,1,P2,2,P1,1,B2,1}]
+
+Clauses: {B2,1,~B2,1,P2,2,P1,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{~B2,1,P2,2,P1,1,B2,1,P3,1}]
+
+Clauses: {B2,1,~B2,1,P2,2,P1,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{~B2,1,P2,2,P1,1,P3,1}]
+
+Clauses: {B2,1,~B2,1,P2,2,P1,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{~B2,1,P2,2,P1,1,P3,1,B2,1}]
+
+Clauses: {B2,1,P2,2,P1,1}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P2,2,P1,1,B2,1,P3,1}]
+
+Clauses: {B2,1,P2,2,P1,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P2,2,P1,1,B2,1}]
+
+Clauses: {B2,1,P2,2,P1,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{P2,2,P1,1,P3,1}]
+
+Clauses: {B2,1,P2,2,P1,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P2,2,P1,1,B2,1}]
+
+Clauses: {B2,1,P2,2,P1,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P2,2,P1,1,B2,1,P3,1}]
+
+Clauses: {B2,1,P2,2,P1,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P2,2,P1,1,B2,1}]
+
+Clauses: {B2,1,P2,2,P1,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P2,2,P1,1,B2,1,P3,1}]
+
+Clauses: {B2,1,P2,2,P1,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{P2,2,P1,1,P3,1}]
+
+Clauses: {B2,1,P2,2,P1,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P2,2,P1,1,P3,1,B2,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P1,1}	{P3,1,P2,2,~P3,1}
+Resolvents: [{P2,2,P1,1,~P1,1,P3,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P1,1}	{~P3,1,B2,1}
+Resolvents: [{P2,2,P1,1,~P1,1,B2,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P1,1}	{B2,1,P3,1,P2,2,~P3,1}
+Resolvents: [{P2,2,P1,1,~P1,1,B2,1,P3,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P1,1}	{B2,1,P3,1,P1,1,~P3,1}
+Resolvents: [{P2,2,P1,1,~P1,1,B2,1,P3,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P1,1}	{B2,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P2,2,P1,1,~P1,1,B2,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P1,1}	{P3,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P2,2,P1,1,~P1,1,P3,1}]
+
+Clauses: {P2,2,P1,1,~P1,1,B2,1}	{B2,1,P2,2,P1,1,~P2,2}
+Resolvents: [{P1,1,~P1,1,B2,1,P2,2}]
+
+Clauses: {P2,2,P1,1,~P1,1,B2,1}	{P3,1,P2,2,P1,1,~P2,2}
+Resolvents: [{P1,1,~P1,1,B2,1,P3,1,P2,2}]
+
+Clauses: {P2,2,P1,1,~P1,1,B2,1}	{P3,1,P2,2,~P2,2}
+Resolvents: [{P1,1,~P1,1,B2,1,P3,1,P2,2}]
+
+Clauses: {P2,2,P1,1,~P1,1,B2,1}	{~P2,2,B2,1}
+Resolvents: [{P1,1,~P1,1,B2,1}]
+
+Clauses: {P2,2,P1,1,~P1,1,B2,1}	{B2,1,P3,1,P2,2,~P2,2}
+Resolvents: [{P1,1,~P1,1,B2,1,P3,1,P2,2}]
+
+Clauses: {P2,2,P1,1,~P1,1,B2,1}	{B2,1,P3,1,P1,1,~P2,2}
+Resolvents: [{P1,1,~P1,1,B2,1,P3,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P2,2}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P2,2,P1,1,~P2,2,B2,1,P3,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P2,2}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P2,2,P1,1,~P2,2,B2,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P2,2}	{~B2,1,P3,1,P2,2}
+Resolvents: [{P2,2,P1,1,~P2,2,P3,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P2,2}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P2,2,P1,1,~P2,2,B2,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P2,2}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P2,2,P1,1,~P2,2,B2,1,P3,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P2,2}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P2,2,P1,1,~P2,2,B2,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P2,2}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P2,2,P1,1,~P2,2,B2,1,P3,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P2,2}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{P2,2,P1,1,~P2,2,P3,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P2,2}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P2,2,P1,1,~P2,2,P3,1,B2,1}]
+
+Clauses: {~P1,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{B2,1,~B2,1,P2,2}]
+
+Clauses: {~P1,1}	{B2,1,P2,2,P1,1}
+Resolvents: [{B2,1,P2,2}]
+
+Clauses: {~P1,1}	{P3,1,P2,2,P1,1,~P1,1}
+Resolvents: [{P3,1,P2,2,~P1,1}]
+
+Clauses: {~P1,1}	{P2,2,P1,1,~P1,1,B2,1}
+Resolvents: [{P2,2,~P1,1,B2,1}]
+
+Clauses: {~P1,1}	{B2,1,P2,2,P1,1,~P2,2}
+Resolvents: [{B2,1,P2,2,~P2,2}]
+
+Clauses: {~P1,1}	{B2,1,P3,1,P1,1,~P3,1}
+Resolvents: [{B2,1,P3,1,~P3,1}]
+
+Clauses: {~P1,1}	{P3,1,P2,2,P1,1,~P2,2}
+Resolvents: [{P3,1,P2,2,~P2,2}]
+
+Clauses: {~P1,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{B2,1,~B2,1}]
+
+Clauses: {~P1,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{B2,1,~B2,1,P3,1}]
+
+Clauses: {~P1,1}	{B2,1,P3,1,P1,1}
+Resolvents: [{B2,1,P3,1}]
+
+Clauses: {~P1,1}	{B2,1,P3,1,P1,1,~P1,1}
+Resolvents: [{B2,1,P3,1,~P1,1}]
+
+Clauses: {~P1,1}	{P3,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2}]
+
+Clauses: {~P1,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{~B2,1,P3,1,P2,2}]
+
+Clauses: {~P1,1}	{B2,1,P3,1,P1,1,~P2,2}
+Resolvents: [{B2,1,P3,1,~P2,2}]
+
+Clauses: {~P1,1}	{B2,1,P2,2,P1,1,~P3,1}
+Resolvents: [{B2,1,P2,2,~P3,1}]
+
+Clauses: {~P1,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{~B2,1,P3,1,P2,2,B2,1}]
+
+Clauses: {~P1,1}	{P3,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P3,1,P2,2,~P3,1}]
+
+Clauses: {~P3,1,B2,1}	{P3,1,P2,2,~P3,1}
+Resolvents: [{B2,1,P2,2,~P3,1}]
+
+Clauses: {~P3,1,B2,1}	{B2,1,~B2,1,P3,1}
+Resolvents: [{B2,1,~B2,1}]
+
+Clauses: {~P3,1,B2,1}	{P3,1,P2,2,P1,1,~P1,1}
+Resolvents: [{B2,1,P2,2,P1,1,~P1,1}]
+
+Clauses: {~P3,1,B2,1}	{B2,1,P3,1,P2,2,~P3,1}
+Resolvents: [{B2,1,P2,2,~P3,1}]
+
+Clauses: {~P3,1,B2,1}	{B2,1,P3,1,P1,1,~P3,1}
+Resolvents: [{B2,1,P1,1,~P3,1}]
+
+Clauses: {~P3,1,B2,1}	{P3,1,P2,2}
+Resolvents: [{B2,1,P2,2}]
+
+Clauses: {~P3,1,B2,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{B2,1,~B2,1,P2,2}]
+
+Clauses: {~P3,1,B2,1}	{P3,1,P2,2,P1,1,~P2,2}
+Resolvents: [{B2,1,P2,2,P1,1,~P2,2}]
+
+Clauses: {~P3,1,B2,1}	{P3,1,P2,2,~P1,1}
+Resolvents: [{B2,1,P2,2,~P1,1}]
+
+Clauses: {~P3,1,B2,1}	{B2,1,P3,1,P2,2}
+Resolvents: [{B2,1,P2,2}]
+
+Clauses: {~P3,1,B2,1}	{P3,1,P2,2,~P2,2}
+Resolvents: [{B2,1,P2,2,~P2,2}]
+
+Clauses: {~P3,1,B2,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{B2,1,~B2,1,P2,2}]
+
+Clauses: {~P3,1,B2,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{B2,1,~B2,1,P1,1}]
+
+Clauses: {~P3,1,B2,1}	{B2,1,P3,1,P1,1}
+Resolvents: [{B2,1,P1,1}]
+
+Clauses: {~P3,1,B2,1}	{B2,1,P3,1,P1,1,~P1,1}
+Resolvents: [{B2,1,P1,1,~P1,1}]
+
+Clauses: {~P3,1,B2,1}	{B2,1,P3,1,P2,2,~P2,2}
+Resolvents: [{B2,1,P2,2,~P2,2}]
+
+Clauses: {~P3,1,B2,1}	{P3,1,P2,2,P1,1}
+Resolvents: [{B2,1,P2,2,P1,1}]
+
+Clauses: {~P3,1,B2,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{B2,1,~B2,1,P2,2,P1,1}]
+
+Clauses: {~P3,1,B2,1}	{B2,1,P3,1,P1,1,~P2,2}
+Resolvents: [{B2,1,P1,1,~P2,2}]
+
+Clauses: {~P3,1,B2,1}	{B2,1,P3,1,P2,2,~P1,1}
+Resolvents: [{B2,1,P2,2,~P1,1}]
+
+Clauses: {~P3,1,B2,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{B2,1,~B2,1,P2,2,P1,1}]
+
+Clauses: {~P3,1,B2,1}	{P3,1,P2,2,P1,1,~P3,1}
+Resolvents: [{B2,1,P2,2,P1,1,~P3,1}]
+
+Clauses: {P2,1,~P2,1}	{B1,1,P2,1,~P2,1}
+Resolvents: [{~P2,1,B1,1,P2,1}]
+
+Clauses: {P2,1,~P2,1}	{P1,2,~P2,1}
+Resolvents: [{~P2,1,P1,2}]
+
+Clauses: {P2,1,~P2,1}	{~P2,1,B1,1}
+Resolvents: [{~P2,1,B1,1}]
+
+Clauses: {P2,1,~P2,1}	{P1,2,P2,1,~P2,1}
+Resolvents: [{~P2,1,P1,2,P2,1}]
+
+Clauses: {P2,1,~P2,1}	{B1,1,P1,2,~P2,1}
+Resolvents: [{~P2,1,B1,1,P1,2}]
+
+Clauses: {P2,1,~P2,1}	{~P2,1}
+Resolvents: [{~P2,1}]
+
+Clauses: {~P1,2,B1,1}	{~B1,1,P1,2}
+Resolvents: [{B1,1,~B1,1}]
+
+Clauses: {~P1,2,B1,1}	{P1,2,~P1,2}
+Resolvents: [{B1,1,~P1,2}]
+
+Clauses: {~P1,2,B1,1}	{P1,2,P2,1,~P1,2}
+Resolvents: [{B1,1,P2,1,~P1,2}]
+
+Clauses: {~P1,2,B1,1}	{B1,1,P1,2,~P1,2}
+Resolvents: [{B1,1,~P1,2}]
+
+Clauses: {~P1,2,B1,1}	{P1,2,~P2,1}
+Resolvents: [{B1,1,~P2,1}]
+
+Clauses: {~P1,2,B1,1}	{~B1,1,P2,1,B1,1,P1,2}
+Resolvents: [{B1,1,~B1,1,P2,1}]
+
+Clauses: {~P1,2,B1,1}	{P1,2,P2,1,~P2,1}
+Resolvents: [{B1,1,P2,1,~P2,1}]
+
+Clauses: {~P1,2,B1,1}	{B1,1,~B1,1,P1,2}
+Resolvents: [{B1,1,~B1,1}]
+
+Clauses: {~P1,2,B1,1}	{~B1,1,P1,2,P2,1}
+Resolvents: [{B1,1,~B1,1,P2,1}]
+
+Clauses: {~P1,2,B1,1}	{B1,1,P1,2,~P2,1}
+Resolvents: [{B1,1,~P2,1}]
+
+Clauses: {~B1,1,P1,2}	{B1,1,P2,1,~P2,1}
+Resolvents: [{P1,2,P2,1,~P2,1}]
+
+Clauses: {~B1,1,P1,2}	{~P1,2,B1,1}
+Resolvents: [{P1,2,~P1,2}]
+
+Clauses: {~B1,1,P1,2}	{B1,1,~B1,1,P2,1}
+Resolvents: [{P1,2,~B1,1,P2,1}]
+
+Clauses: {~B1,1,P1,2}	{B1,1,P1,2,~P1,2}
+Resolvents: [{P1,2,~P1,2}]
+
+Clauses: {~B1,1,P1,2}	{B1,1,~B1,1}
+Resolvents: [{P1,2,~B1,1}]
+
+Clauses: {~B1,1,P1,2}	{~P2,1,B1,1}
+Resolvents: [{P1,2,~P2,1}]
+
+Clauses: {~B1,1,P1,2}	{~B1,1,P2,1,B1,1,P1,2}
+Resolvents: [{P1,2,~B1,1,P2,1}]
+
+Clauses: {~B1,1,P1,2}	{B1,1,~B1,1,P1,2}
+Resolvents: [{P1,2,~B1,1}]
+
+Clauses: {~B1,1,P1,2}	{B1,1,P2,1,~P1,2}
+Resolvents: [{P1,2,P2,1,~P1,2}]
+
+Clauses: {~B1,1,P1,2}	{B1,1,P1,2,~P2,1}
+Resolvents: [{P1,2,~P2,1}]
+
+Clauses: {P1,2,~P1,2}	{~P1,2,B1,1}
+Resolvents: [{~P1,2,B1,1}]
+
+Clauses: {P1,2,~P1,2}	{~P1,2}
+Resolvents: [{~P1,2}]
+
+Clauses: {P1,2,~P1,2}	{P1,2,P2,1,~P1,2}
+Resolvents: [{~P1,2,P1,2,P2,1}]
+
+Clauses: {P1,2,~P1,2}	{B1,1,P1,2,~P1,2}
+Resolvents: [{~P1,2,B1,1,P1,2}]
+
+Clauses: {P1,2,~P1,2}	{P2,1,~P1,2}
+Resolvents: [{~P1,2,P2,1}]
+
+Clauses: {P1,2,~P1,2}	{B1,1,P2,1,~P1,2}
+Resolvents: [{~P1,2,B1,1,P2,1}]
+
+Clauses: {B1,1,~B1,1,P2,1}	{~B1,1,P1,2}
+Resolvents: [{~B1,1,P2,1,P1,2}]
+
+Clauses: {B1,1,~B1,1,P2,1}	{B1,1,~B1,1}
+Resolvents: [{~B1,1,P2,1,B1,1}]
+
+Clauses: {B1,1,~B1,1,P2,1}	{~B1,1,P2,1}
+Resolvents: [{~B1,1,P2,1}]
+
+Clauses: {B1,1,~B1,1,P2,1}	{~B1,1,P2,1,B1,1,P1,2}
+Resolvents: [{~B1,1,P2,1,B1,1,P1,2}]
+
+Clauses: {B1,1,~B1,1,P2,1}	{B1,1,~B1,1,P1,2}
+Resolvents: [{~B1,1,P2,1,B1,1,P1,2}]
+
+Clauses: {B1,1,~B1,1,P2,1}	{~B1,1}
+Resolvents: [{~B1,1,P2,1}]
+
+Clauses: {B1,1,~B1,1,P2,1}	{~B1,1,P1,2,P2,1}
+Resolvents: [{~B1,1,P2,1,P1,2}]
+
+Clauses: {B2,1,P3,1,P2,2,~P3,1}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P3,1,P2,2,~P3,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P3,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2,~P3,1,B2,1,P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P3,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P2,2,~P3,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P3,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P3,1,P2,2,~P3,1,B2,1,P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P3,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P2,2,~P3,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P3,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P3,1,P2,2,~P3,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P3,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,P2,2,~P3,1,B2,1,P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P3,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2,~P3,1,P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P3,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P3,1,P2,2,~P3,1,B2,1,P1,1}]
+
+Clauses: {B2,1,P3,1,P1,1,~P3,1}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P3,1,P1,1,~P3,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P1,1,~P3,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P3,1,P1,1,~P3,1,B2,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1,~P3,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P1,1,~P3,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1,~P3,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P3,1,P1,1,~P3,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P1,1,~P3,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P1,1,~P3,1,B2,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1,~P3,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P3,1,P1,1,~P3,1,B2,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1,~P3,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,P1,1,~P3,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P1,1,~P3,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{P3,1,P1,1,~P3,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1,~P3,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P3,1,P1,1,~P3,1,P2,2,B2,1}]
+
+Clauses: {P3,1,P2,2}	{P3,1,P2,2,~P3,1}
+Resolvents: [{P2,2,P3,1}]
+
+Clauses: {P3,1,P2,2}	{~P3,1,B2,1}
+Resolvents: [{P2,2,B2,1}]
+
+Clauses: {P3,1,P2,2}	{B2,1,P3,1,P2,2,~P3,1}
+Resolvents: [{P2,2,B2,1,P3,1}]
+
+Clauses: {P3,1,P2,2}	{B2,1,P3,1,P1,1,~P3,1}
+Resolvents: [{P2,2,B2,1,P3,1,P1,1}]
+
+Clauses: {P3,1,P2,2}	{B2,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P2,2,B2,1,P1,1}]
+
+Clauses: {P3,1,P2,2}	{P3,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P2,2,P3,1,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P3,1,P2,2,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2,~B2,1,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{P2,2,P1,1,~P1,1,B2,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,P2,2,P1,1,~P2,2}
+Resolvents: [{P3,1,P2,2,P1,1,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{~P3,1,B2,1}
+Resolvents: [{P3,1,P2,2,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,P3,1,P2,2,~P3,1}
+Resolvents: [{P3,1,P2,2,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,P3,1,P1,1,~P3,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P3,1,P2,2,~B2,1,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P2,2,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P3,1,P2,2,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,P2,2,~B2,1,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,P2,2,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{~P2,2,B2,1}
+Resolvents: [{P3,1,P2,2,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,P3,1,P1,1,~P1,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{~P1,1,B2,1}
+Resolvents: [{P3,1,P2,2,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,P3,1,P2,2,~P2,2}
+Resolvents: [{P3,1,P2,2,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,P3,1,P1,1,~P2,2}
+Resolvents: [{P3,1,P2,2,P1,1,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,P3,1,P2,2,~P1,1}
+Resolvents: [{P3,1,P2,2,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P3,1,P2,2,~B2,1,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1}
+Resolvents: [{P3,1,P2,2}]
+
+Clauses: {P3,1,P2,2,P1,1,~P2,2}	{P3,1,P2,2,~P3,1}
+Resolvents: [{P2,2,P1,1,~P2,2,P3,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P2,2}	{~P3,1,B2,1}
+Resolvents: [{P2,2,P1,1,~P2,2,B2,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P2,2}	{B2,1,P3,1,P2,2,~P3,1}
+Resolvents: [{P2,2,P1,1,~P2,2,B2,1,P3,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P2,2}	{B2,1,P3,1,P1,1,~P3,1}
+Resolvents: [{P2,2,P1,1,~P2,2,B2,1,P3,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P2,2}	{B2,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P2,2,P1,1,~P2,2,B2,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P2,2}	{P3,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P2,2,P1,1,~P2,2,P3,1}]
+
+Clauses: {~P1,2}	{~B1,1,P1,2}
+Resolvents: [{~B1,1}]
+
+Clauses: {~P1,2}	{P1,2,~P1,2}
+Resolvents: [{~P1,2}]
+
+Clauses: {~P1,2}	{P1,2,P2,1,~P1,2}
+Resolvents: [{P2,1,~P1,2}]
+
+Clauses: {~P1,2}	{B1,1,P1,2,~P1,2}
+Resolvents: [{B1,1,~P1,2}]
+
+Clauses: {~P1,2}	{P1,2,~P2,1}
+Resolvents: [{~P2,1}]
+
+Clauses: {~P1,2}	{~B1,1,P2,1,B1,1,P1,2}
+Resolvents: [{~B1,1,P2,1,B1,1}]
+
+Clauses: {~P1,2}	{P1,2,P2,1,~P2,1}
+Resolvents: [{P2,1,~P2,1}]
+
+Clauses: {~P1,2}	{B1,1,~B1,1,P1,2}
+Resolvents: [{B1,1,~B1,1}]
+
+Clauses: {~P1,2}	{~B1,1,P1,2,P2,1}
+Resolvents: [{~B1,1,P2,1}]
+
+Clauses: {~P1,2}	{B1,1,P1,2,~P2,1}
+Resolvents: [{B1,1,~P2,1}]
+
+Clauses: {P1,2,P2,1,~P1,2}	{~P1,2,B1,1}
+Resolvents: [{P2,1,~P1,2,B1,1}]
+
+Clauses: {P1,2,P2,1,~P1,2}	{P1,2,~P1,2}
+Resolvents: [{P2,1,~P1,2,P1,2}]
+
+Clauses: {P1,2,P2,1,~P1,2}	{~P1,2}
+Resolvents: [{P2,1,~P1,2}]
+
+Clauses: {P1,2,P2,1,~P1,2}	{B1,1,P1,2,~P1,2}
+Resolvents: [{P2,1,~P1,2,B1,1,P1,2}]
+
+Clauses: {P1,2,P2,1,~P1,2}	{P2,1,~P1,2}
+Resolvents: [{P2,1,~P1,2}]
+
+Clauses: {P1,2,P2,1,~P1,2}	{B1,1,P2,1,~P1,2}
+Resolvents: [{P2,1,~P1,2,B1,1}]
+
+Clauses: {B1,1,P1,2,~P1,2}	{~B1,1,P1,2}
+Resolvents: [{P1,2,~P1,2}]
+
+Clauses: {B1,1,P1,2,~P1,2}	{B1,1,~B1,1,P2,1}
+Resolvents: [{P1,2,~P1,2,B1,1,P2,1}]
+
+Clauses: {B1,1,P1,2,~P1,2}	{B1,1,~B1,1}
+Resolvents: [{P1,2,~P1,2,B1,1}]
+
+Clauses: {B1,1,P1,2,~P1,2}	{~B1,1,P2,1}
+Resolvents: [{P1,2,~P1,2,P2,1}]
+
+Clauses: {B1,1,P1,2,~P1,2}	{~B1,1,P2,1,B1,1,P1,2}
+Resolvents: [{P1,2,~P1,2,P2,1,B1,1}]
+
+Clauses: {B1,1,P1,2,~P1,2}	{B1,1,~B1,1,P1,2}
+Resolvents: [{P1,2,~P1,2,B1,1}]
+
+Clauses: {B1,1,P1,2,~P1,2}	{~B1,1}
+Resolvents: [{P1,2,~P1,2}]
+
+Clauses: {B1,1,P1,2,~P1,2}	{~B1,1,P1,2,P2,1}
+Resolvents: [{P1,2,~P1,2,P2,1}]
+
+Clauses: {P3,1,P2,2,~P1,1}	{P3,1,P2,2,~P3,1}
+Resolvents: [{P2,2,~P1,1,P3,1}]
+
+Clauses: {P3,1,P2,2,~P1,1}	{~P3,1,B2,1}
+Resolvents: [{P2,2,~P1,1,B2,1}]
+
+Clauses: {P3,1,P2,2,~P1,1}	{B2,1,P3,1,P2,2,~P3,1}
+Resolvents: [{P2,2,~P1,1,B2,1,P3,1}]
+
+Clauses: {P3,1,P2,2,~P1,1}	{B2,1,P3,1,P1,1,~P3,1}
+Resolvents: [{P2,2,~P1,1,B2,1,P3,1,P1,1}]
+
+Clauses: {P3,1,P2,2,~P1,1}	{B2,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P2,2,~P1,1,B2,1,P1,1}]
+
+Clauses: {P3,1,P2,2,~P1,1}	{P3,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P2,2,~P1,1,P3,1,P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P3,1,P2,2,B2,1}]
+
+Clauses: {B2,1,P3,1,P2,2}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2}	{~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P2,2}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P2,2,B2,1}]
+
+Clauses: {B2,1,P3,1,P2,2}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P3,1,P2,2,B2,1}]
+
+Clauses: {B2,1,P3,1,P2,2}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2,P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {P3,1,P2,2,~P2,2}	{P3,1,P2,2,~P3,1}
+Resolvents: [{P2,2,~P2,2,P3,1}]
+
+Clauses: {P3,1,P2,2,~P2,2}	{~P3,1,B2,1}
+Resolvents: [{P2,2,~P2,2,B2,1}]
+
+Clauses: {P3,1,P2,2,~P2,2}	{B2,1,P3,1,P2,2,~P3,1}
+Resolvents: [{P2,2,~P2,2,B2,1,P3,1}]
+
+Clauses: {P3,1,P2,2,~P2,2}	{B2,1,P3,1,P1,1,~P3,1}
+Resolvents: [{P2,2,~P2,2,B2,1,P3,1,P1,1}]
+
+Clauses: {P3,1,P2,2,~P2,2}	{B2,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P2,2,~P2,2,B2,1,P1,1}]
+
+Clauses: {P3,1,P2,2,~P2,2}	{P3,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P2,2,~P2,2,P3,1,P1,1}]
+
+Clauses: {B2,1,~B2,1,P1,1}	{B2,1,~B2,1,P3,1}
+Resolvents: [{~B2,1,P1,1,B2,1,P3,1}]
+
+Clauses: {B2,1,~B2,1,P1,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{~B2,1,P1,1,B2,1,P2,2}]
+
+Clauses: {B2,1,~B2,1,P1,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{~B2,1,P1,1,P3,1,P2,2}]
+
+Clauses: {B2,1,~B2,1,P1,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{~B2,1,P1,1,B2,1,P3,1,P2,2}]
+
+Clauses: {B2,1,~B2,1,P1,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{~B2,1,P1,1,B2,1,P2,2}]
+
+Clauses: {B2,1,~B2,1,P1,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{~B2,1,P1,1,B2,1,P3,1}]
+
+Clauses: {B2,1,~B2,1,P1,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{~B2,1,P1,1,P3,1,P2,2}]
+
+Clauses: {B2,1,~B2,1,P1,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{~B2,1,P1,1,P3,1,P2,2,B2,1}]
+
+Clauses: {B2,1,~B2,1,P3,1,P2,2}	{B2,1,~B2,1,P3,1}
+Resolvents: [{~B2,1,P3,1,P2,2,B2,1}]
+
+Clauses: {B2,1,~B2,1,P3,1,P2,2}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{~B2,1,P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {B2,1,~B2,1,P3,1,P2,2}	{~B2,1,P3,1,P2,2}
+Resolvents: [{~B2,1,P3,1,P2,2}]
+
+Clauses: {B2,1,~B2,1,P3,1,P2,2}	{B2,1,~B2,1,P1,1}
+Resolvents: [{~B2,1,P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {B2,1,~B2,1,P3,1,P2,2}	{B2,1,~B2,1,P2,2}
+Resolvents: [{~B2,1,P3,1,P2,2,B2,1}]
+
+Clauses: {B2,1,~B2,1,P3,1,P2,2}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{~B2,1,P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {B2,1,~B2,1,P3,1,P2,2}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{~B2,1,P3,1,P2,2,P1,1}]
+
+Clauses: {B2,1,~B2,1,P3,1,P2,2}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{~B2,1,P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {B2,1,~B2,1,P2,2}	{B2,1,~B2,1,P3,1}
+Resolvents: [{~B2,1,P2,2,B2,1,P3,1}]
+
+Clauses: {B2,1,~B2,1,P2,2}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{~B2,1,P2,2,B2,1,P1,1}]
+
+Clauses: {B2,1,~B2,1,P2,2}	{~B2,1,P3,1,P2,2}
+Resolvents: [{~B2,1,P2,2,P3,1}]
+
+Clauses: {B2,1,~B2,1,P2,2}	{B2,1,~B2,1,P1,1}
+Resolvents: [{~B2,1,P2,2,B2,1,P1,1}]
+
+Clauses: {B2,1,~B2,1,P2,2}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{~B2,1,P2,2,B2,1,P3,1}]
+
+Clauses: {B2,1,~B2,1,P2,2}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{~B2,1,P2,2,B2,1,P3,1,P1,1}]
+
+Clauses: {B2,1,~B2,1,P2,2}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{~B2,1,P2,2,P3,1,P1,1}]
+
+Clauses: {B2,1,~B2,1,P2,2}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{~B2,1,P2,2,P3,1,B2,1,P1,1}]
+
+Clauses: {B2,1,~B2,1,P3,1,P1,1}	{B2,1,~B2,1,P3,1}
+Resolvents: [{~B2,1,P3,1,P1,1,B2,1}]
+
+Clauses: {B2,1,~B2,1,P3,1,P1,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{~B2,1,P3,1,P1,1,B2,1,P2,2}]
+
+Clauses: {B2,1,~B2,1,P3,1,P1,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{~B2,1,P3,1,P1,1,P2,2}]
+
+Clauses: {B2,1,~B2,1,P3,1,P1,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{~B2,1,P3,1,P1,1,B2,1}]
+
+Clauses: {B2,1,~B2,1,P3,1,P1,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{~B2,1,P3,1,P1,1,B2,1,P2,2}]
+
+Clauses: {B2,1,~B2,1,P3,1,P1,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{~B2,1,P3,1,P1,1,B2,1,P2,2}]
+
+Clauses: {B2,1,~B2,1,P3,1,P1,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{~B2,1,P3,1,P1,1,P2,2}]
+
+Clauses: {B2,1,~B2,1,P3,1,P1,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{~B2,1,P3,1,P1,1,P2,2,B2,1}]
+
+Clauses: {B2,1,P3,1,P1,1}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P3,1,P1,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P1,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P3,1,P1,1,B2,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P1,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P3,1,P1,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P1,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P1,1,B2,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P3,1,P1,1,B2,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,P1,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P1,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{P3,1,P1,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P3,1,P1,1,P2,2,B2,1}]
+
+Clauses: {~P2,2,B2,1}	{P3,1,P2,2,~P3,1}
+Resolvents: [{B2,1,P3,1,~P3,1}]
+
+Clauses: {~P2,2,B2,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{B2,1,~B2,1,P1,1}]
+
+Clauses: {~P2,2,B2,1}	{B2,1,P2,2,P1,1}
+Resolvents: [{B2,1,P1,1}]
+
+Clauses: {~P2,2,B2,1}	{P3,1,P2,2,P1,1,~P1,1}
+Resolvents: [{B2,1,P3,1,P1,1,~P1,1}]
+
+Clauses: {~P2,2,B2,1}	{P2,2,P1,1,~P1,1,B2,1}
+Resolvents: [{B2,1,P1,1,~P1,1}]
+
+Clauses: {~P2,2,B2,1}	{B2,1,P2,2,P1,1,~P2,2}
+Resolvents: [{B2,1,P1,1,~P2,2}]
+
+Clauses: {~P2,2,B2,1}	{B2,1,P3,1,P2,2,~P3,1}
+Resolvents: [{B2,1,P3,1,~P3,1}]
+
+Clauses: {~P2,2,B2,1}	{P3,1,P2,2}
+Resolvents: [{B2,1,P3,1}]
+
+Clauses: {~P2,2,B2,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{B2,1,~B2,1,P3,1}]
+
+Clauses: {~P2,2,B2,1}	{P3,1,P2,2,P1,1,~P2,2}
+Resolvents: [{B2,1,P3,1,P1,1,~P2,2}]
+
+Clauses: {~P2,2,B2,1}	{P3,1,P2,2,~P1,1}
+Resolvents: [{B2,1,P3,1,~P1,1}]
+
+Clauses: {~P2,2,B2,1}	{B2,1,P3,1,P2,2}
+Resolvents: [{B2,1,P3,1}]
+
+Clauses: {~P2,2,B2,1}	{P3,1,P2,2,~P2,2}
+Resolvents: [{B2,1,P3,1,~P2,2}]
+
+Clauses: {~P2,2,B2,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{B2,1,~B2,1,P3,1}]
+
+Clauses: {~P2,2,B2,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{B2,1,~B2,1}]
+
+Clauses: {~P2,2,B2,1}	{B2,1,P3,1,P2,2,~P2,2}
+Resolvents: [{B2,1,P3,1,~P2,2}]
+
+Clauses: {~P2,2,B2,1}	{P3,1,P2,2,P1,1}
+Resolvents: [{B2,1,P3,1,P1,1}]
+
+Clauses: {~P2,2,B2,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{B2,1,~B2,1,P3,1,P1,1}]
+
+Clauses: {~P2,2,B2,1}	{B2,1,P2,2,P1,1,~P3,1}
+Resolvents: [{B2,1,P1,1,~P3,1}]
+
+Clauses: {~P2,2,B2,1}	{B2,1,P3,1,P2,2,~P1,1}
+Resolvents: [{B2,1,P3,1,~P1,1}]
+
+Clauses: {~P2,2,B2,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{B2,1,~B2,1,P3,1,P1,1}]
+
+Clauses: {~P2,2,B2,1}	{P3,1,P2,2,P1,1,~P3,1}
+Resolvents: [{B2,1,P3,1,P1,1,~P3,1}]
+
+Clauses: {B2,1,P3,1,P1,1,~P1,1}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P3,1,P1,1,~P1,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P1,1,~P1,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P3,1,P1,1,~P1,1,B2,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1,~P1,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P1,1,~P1,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1,~P1,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P3,1,P1,1,~P1,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P1,1,~P1,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P1,1,~P1,1,B2,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1,~P1,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P3,1,P1,1,~P1,1,B2,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1,~P1,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,P1,1,~P1,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P1,1,~P1,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{P3,1,P1,1,~P1,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1,~P1,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P3,1,P1,1,~P1,1,P2,2,B2,1}]
+
+Clauses: {B1,1,~B1,1}	{~B1,1,P1,2}
+Resolvents: [{~B1,1,P1,2}]
+
+Clauses: {B1,1,~B1,1}	{B1,1,~B1,1,P2,1}
+Resolvents: [{~B1,1,B1,1,P2,1}]
+
+Clauses: {B1,1,~B1,1}	{~B1,1,P2,1}
+Resolvents: [{~B1,1,P2,1}]
+
+Clauses: {B1,1,~B1,1}	{~B1,1,P2,1,B1,1,P1,2}
+Resolvents: [{~B1,1,P2,1,B1,1,P1,2}]
+
+Clauses: {B1,1,~B1,1}	{B1,1,~B1,1,P1,2}
+Resolvents: [{~B1,1,B1,1,P1,2}]
+
+Clauses: {B1,1,~B1,1}	{~B1,1}
+Resolvents: [{~B1,1}]
+
+Clauses: {B1,1,~B1,1}	{~B1,1,P1,2,P2,1}
+Resolvents: [{~B1,1,P1,2,P2,1}]
+
+Clauses: {P2,1,~P1,2}	{B1,1,P2,1,~P2,1}
+Resolvents: [{~P1,2,B1,1,P2,1}]
+
+Clauses: {P2,1,~P1,2}	{P2,1,~P2,1}
+Resolvents: [{~P1,2,P2,1}]
+
+Clauses: {P2,1,~P1,2}	{P1,2,~P2,1}
+Resolvents: [{~P1,2,P1,2}]
+
+Clauses: {P2,1,~P1,2}	{~P2,1,B1,1}
+Resolvents: [{~P1,2,B1,1}]
+
+Clauses: {P2,1,~P1,2}	{P1,2,P2,1,~P2,1}
+Resolvents: [{~P1,2,P1,2,P2,1}]
+
+Clauses: {P2,1,~P1,2}	{B1,1,P1,2,~P2,1}
+Resolvents: [{~P1,2,B1,1,P1,2}]
+
+Clauses: {P2,1,~P1,2}	{~P2,1}
+Resolvents: [{~P1,2}]
+
+Clauses: {P1,2,~P2,1}	{~P1,2,B1,1}
+Resolvents: [{~P2,1,B1,1}]
+
+Clauses: {P1,2,~P2,1}	{P1,2,~P1,2}
+Resolvents: [{~P2,1,P1,2}]
+
+Clauses: {P1,2,~P2,1}	{~P1,2}
+Resolvents: [{~P2,1}]
+
+Clauses: {P1,2,~P2,1}	{P1,2,P2,1,~P1,2}
+Resolvents: [{~P2,1,P1,2,P2,1}]
+
+Clauses: {P1,2,~P2,1}	{B1,1,P1,2,~P1,2}
+Resolvents: [{~P2,1,B1,1,P1,2}]
+
+Clauses: {P1,2,~P2,1}	{P2,1,~P1,2}
+Resolvents: [{~P2,1,P2,1}]
+
+Clauses: {P1,2,~P2,1}	{B1,1,P2,1,~P1,2}
+Resolvents: [{~P2,1,B1,1,P2,1}]
+
+Clauses: {~P2,1,B1,1}	{B1,1,P2,1,~P2,1}
+Resolvents: [{B1,1,~P2,1}]
+
+Clauses: {~P2,1,B1,1}	{P2,1,~P2,1}
+Resolvents: [{B1,1,~P2,1}]
+
+Clauses: {~P2,1,B1,1}	{B1,1,~B1,1,P2,1}
+Resolvents: [{B1,1,~B1,1}]
+
+Clauses: {~P2,1,B1,1}	{P1,2,P2,1,~P1,2}
+Resolvents: [{B1,1,P1,2,~P1,2}]
+
+Clauses: {~P2,1,B1,1}	{P2,1,~P1,2}
+Resolvents: [{B1,1,~P1,2}]
+
+Clauses: {~P2,1,B1,1}	{~B1,1,P2,1}
+Resolvents: [{B1,1,~B1,1}]
+
+Clauses: {~P2,1,B1,1}	{~B1,1,P2,1,B1,1,P1,2}
+Resolvents: [{B1,1,~B1,1,P1,2}]
+
+Clauses: {~P2,1,B1,1}	{P1,2,P2,1,~P2,1}
+Resolvents: [{B1,1,P1,2,~P2,1}]
+
+Clauses: {~P2,1,B1,1}	{~B1,1,P1,2,P2,1}
+Resolvents: [{B1,1,~B1,1,P1,2}]
+
+Clauses: {~P2,1,B1,1}	{B1,1,P2,1,~P1,2}
+Resolvents: [{B1,1,~P1,2}]
+
+Clauses: {~P1,1,B2,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{B2,1,~B2,1,P2,2}]
+
+Clauses: {~P1,1,B2,1}	{B2,1,P2,2,P1,1}
+Resolvents: [{B2,1,P2,2}]
+
+Clauses: {~P1,1,B2,1}	{P3,1,P2,2,P1,1,~P1,1}
+Resolvents: [{B2,1,P3,1,P2,2,~P1,1}]
+
+Clauses: {~P1,1,B2,1}	{P2,2,P1,1,~P1,1,B2,1}
+Resolvents: [{B2,1,P2,2,~P1,1}]
+
+Clauses: {~P1,1,B2,1}	{B2,1,P2,2,P1,1,~P2,2}
+Resolvents: [{B2,1,P2,2,~P2,2}]
+
+Clauses: {~P1,1,B2,1}	{B2,1,P3,1,P1,1,~P3,1}
+Resolvents: [{B2,1,P3,1,~P3,1}]
+
+Clauses: {~P1,1,B2,1}	{P3,1,P2,2,P1,1,~P2,2}
+Resolvents: [{B2,1,P3,1,P2,2,~P2,2}]
+
+Clauses: {~P1,1,B2,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{B2,1,~B2,1}]
+
+Clauses: {~P1,1,B2,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{B2,1,~B2,1,P3,1}]
+
+Clauses: {~P1,1,B2,1}	{B2,1,P3,1,P1,1}
+Resolvents: [{B2,1,P3,1}]
+
+Clauses: {~P1,1,B2,1}	{B2,1,P3,1,P1,1,~P1,1}
+Resolvents: [{B2,1,P3,1,~P1,1}]
+
+Clauses: {~P1,1,B2,1}	{P3,1,P2,2,P1,1}
+Resolvents: [{B2,1,P3,1,P2,2}]
+
+Clauses: {~P1,1,B2,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{B2,1,~B2,1,P3,1,P2,2}]
+
+Clauses: {~P1,1,B2,1}	{B2,1,P3,1,P1,1,~P2,2}
+Resolvents: [{B2,1,P3,1,~P2,2}]
+
+Clauses: {~P1,1,B2,1}	{B2,1,P2,2,P1,1,~P3,1}
+Resolvents: [{B2,1,P2,2,~P3,1}]
+
+Clauses: {~P1,1,B2,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{B2,1,~B2,1,P3,1,P2,2}]
+
+Clauses: {~P1,1,B2,1}	{P3,1,P2,2,P1,1,~P3,1}
+Resolvents: [{B2,1,P3,1,P2,2,~P3,1}]
+
+Clauses: {~B1,1,P2,1}	{B1,1,P2,1,~P2,1}
+Resolvents: [{P2,1,~P2,1}]
+
+Clauses: {~B1,1,P2,1}	{~P1,2,B1,1}
+Resolvents: [{P2,1,~P1,2}]
+
+Clauses: {~B1,1,P2,1}	{B1,1,~B1,1,P2,1}
+Resolvents: [{P2,1,~B1,1}]
+
+Clauses: {~B1,1,P2,1}	{B1,1,P1,2,~P1,2}
+Resolvents: [{P2,1,P1,2,~P1,2}]
+
+Clauses: {~B1,1,P2,1}	{B1,1,~B1,1}
+Resolvents: [{P2,1,~B1,1}]
+
+Clauses: {~B1,1,P2,1}	{~P2,1,B1,1}
+Resolvents: [{P2,1,~P2,1}]
+
+Clauses: {~B1,1,P2,1}	{~B1,1,P2,1,B1,1,P1,2}
+Resolvents: [{P2,1,~B1,1,P1,2}]
+
+Clauses: {~B1,1,P2,1}	{B1,1,~B1,1,P1,2}
+Resolvents: [{P2,1,~B1,1,P1,2}]
+
+Clauses: {~B1,1,P2,1}	{B1,1,P2,1,~P1,2}
+Resolvents: [{P2,1,~P1,2}]
+
+Clauses: {~B1,1,P2,1}	{B1,1,P1,2,~P2,1}
+Resolvents: [{P2,1,P1,2,~P2,1}]
+
+Clauses: {~B1,1,P2,1,B1,1,P1,2}	{B1,1,P2,1,~P2,1}
+Resolvents: [{P2,1,B1,1,P1,2,~P2,1}]
+
+Clauses: {~B1,1,P2,1,B1,1,P1,2}	{~P1,2,B1,1}
+Resolvents: [{P2,1,B1,1,P1,2,~P1,2}]
+
+Clauses: {~B1,1,P2,1,B1,1,P1,2}	{B1,1,~B1,1,P2,1}
+Resolvents: [{P2,1,B1,1,P1,2,~B1,1}]
+
+Clauses: {~B1,1,P2,1,B1,1,P1,2}	{B1,1,P1,2,~P1,2}
+Resolvents: [{P2,1,B1,1,P1,2,~P1,2}]
+
+Clauses: {~B1,1,P2,1,B1,1,P1,2}	{B1,1,~B1,1}
+Resolvents: [{P2,1,B1,1,P1,2,~B1,1}]
+
+Clauses: {~B1,1,P2,1,B1,1,P1,2}	{~P2,1,B1,1}
+Resolvents: [{P2,1,B1,1,P1,2,~P2,1}]
+
+Clauses: {~B1,1,P2,1,B1,1,P1,2}	{B1,1,~B1,1,P1,2}
+Resolvents: [{P2,1,B1,1,P1,2,~B1,1}]
+
+Clauses: {~B1,1,P2,1,B1,1,P1,2}	{B1,1,P2,1,~P1,2}
+Resolvents: [{P2,1,B1,1,P1,2,~P1,2}]
+
+Clauses: {~B1,1,P2,1,B1,1,P1,2}	{B1,1,P1,2,~P2,1}
+Resolvents: [{P2,1,B1,1,P1,2,~P2,1}]
+
+Clauses: {P1,2,P2,1,~P2,1}	{~P1,2,B1,1}
+Resolvents: [{P2,1,~P2,1,B1,1}]
+
+Clauses: {P1,2,P2,1,~P2,1}	{P1,2,~P1,2}
+Resolvents: [{P2,1,~P2,1,P1,2}]
+
+Clauses: {P1,2,P2,1,~P2,1}	{~P1,2}
+Resolvents: [{P2,1,~P2,1}]
+
+Clauses: {P1,2,P2,1,~P2,1}	{P1,2,P2,1,~P1,2}
+Resolvents: [{P2,1,~P2,1,P1,2}]
+
+Clauses: {P1,2,P2,1,~P2,1}	{B1,1,P1,2,~P1,2}
+Resolvents: [{P2,1,~P2,1,B1,1,P1,2}]
+
+Clauses: {P1,2,P2,1,~P2,1}	{P2,1,~P1,2}
+Resolvents: [{P2,1,~P2,1}]
+
+Clauses: {P1,2,P2,1,~P2,1}	{B1,1,P2,1,~P1,2}
+Resolvents: [{P2,1,~P2,1,B1,1}]
+
+Clauses: {B1,1,~B1,1,P1,2}	{~B1,1,P1,2}
+Resolvents: [{~B1,1,P1,2}]
+
+Clauses: {B1,1,~B1,1,P1,2}	{B1,1,~B1,1,P2,1}
+Resolvents: [{~B1,1,P1,2,B1,1,P2,1}]
+
+Clauses: {B1,1,~B1,1,P1,2}	{B1,1,~B1,1}
+Resolvents: [{~B1,1,P1,2,B1,1}]
+
+Clauses: {B1,1,~B1,1,P1,2}	{~B1,1,P2,1}
+Resolvents: [{~B1,1,P1,2,P2,1}]
+
+Clauses: {B1,1,~B1,1,P1,2}	{~B1,1,P2,1,B1,1,P1,2}
+Resolvents: [{~B1,1,P1,2,P2,1,B1,1}]
+
+Clauses: {B1,1,~B1,1,P1,2}	{~B1,1}
+Resolvents: [{~B1,1,P1,2}]
+
+Clauses: {B1,1,~B1,1,P1,2}	{~B1,1,P1,2,P2,1}
+Resolvents: [{~B1,1,P1,2,P2,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P2,2}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P3,1,P2,2,~P2,2,B2,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P2,2}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2,~P2,2,B2,1,P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P2,2}	{~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P2,2,~P2,2}]
+
+Clauses: {B2,1,P3,1,P2,2,~P2,2}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P3,1,P2,2,~P2,2,B2,1,P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P2,2}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P2,2,~P2,2,B2,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P2,2}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P3,1,P2,2,~P2,2,B2,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P2,2}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,P2,2,~P2,2,B2,1,P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P2,2}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2,~P2,2,P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P2,2}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P3,1,P2,2,~P2,2,B2,1,P1,1}]
+
+Clauses: {P3,1,P2,2,P1,1}	{P3,1,P2,2,~P3,1}
+Resolvents: [{P2,2,P1,1,P3,1}]
+
+Clauses: {P3,1,P2,2,P1,1}	{~P3,1,B2,1}
+Resolvents: [{P2,2,P1,1,B2,1}]
+
+Clauses: {P3,1,P2,2,P1,1}	{B2,1,P3,1,P2,2,~P3,1}
+Resolvents: [{P2,2,P1,1,B2,1,P3,1}]
+
+Clauses: {P3,1,P2,2,P1,1}	{B2,1,P3,1,P1,1,~P3,1}
+Resolvents: [{P2,2,P1,1,B2,1,P3,1}]
+
+Clauses: {P3,1,P2,2,P1,1}	{B2,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P2,2,P1,1,B2,1}]
+
+Clauses: {P3,1,P2,2,P1,1}	{P3,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P2,2,P1,1,P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P3,1,P2,2,P1,1,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2,P1,1,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{P2,2,P1,1,~P1,1,B2,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,P2,2,P1,1,~P2,2}
+Resolvents: [{P3,1,P2,2,P1,1,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{~P3,1,B2,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,P3,1,P2,2,~P3,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,P3,1,P1,1,~P3,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P2,2,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P3,1,P2,2,P1,1,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P2,2,P1,1,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P3,1,P2,2,P1,1,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,P2,2,P1,1,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,P2,2,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{~P2,2,B2,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,P3,1,P1,1,~P1,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{~P1,1,B2,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,P3,1,P2,2,~P2,2}
+Resolvents: [{P3,1,P2,2,P1,1,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,P3,1,P1,1,~P2,2}
+Resolvents: [{P3,1,P2,2,P1,1,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,P3,1,P2,2,~P1,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P3,1,P2,2,P1,1,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1}
+Resolvents: [{P3,1,P2,2,P1,1}]
+
+Clauses: {B2,1,P3,1,P1,1,~P2,2}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P3,1,P1,1,~P2,2,B2,1}]
+
+Clauses: {B2,1,P3,1,P1,1,~P2,2}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P3,1,P1,1,~P2,2,B2,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1,~P2,2}	{~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P1,1,~P2,2,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1,~P2,2}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P3,1,P1,1,~P2,2,B2,1}]
+
+Clauses: {B2,1,P3,1,P1,1,~P2,2}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P1,1,~P2,2,B2,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1,~P2,2}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P3,1,P1,1,~P2,2,B2,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1,~P2,2}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,P1,1,~P2,2,B2,1}]
+
+Clauses: {B2,1,P3,1,P1,1,~P2,2}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{P3,1,P1,1,~P2,2,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1,~P2,2}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P3,1,P1,1,~P2,2,P2,2,B2,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P3,1}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P2,2,P1,1,~P3,1,B2,1,P3,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P3,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P2,2,P1,1,~P3,1,B2,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P3,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{P2,2,P1,1,~P3,1,P3,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P3,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P2,2,P1,1,~P3,1,B2,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P3,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P2,2,P1,1,~P3,1,B2,1,P3,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P3,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P2,2,P1,1,~P3,1,B2,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P3,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P2,2,P1,1,~P3,1,B2,1,P3,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P3,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{P2,2,P1,1,~P3,1,P3,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P3,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P2,2,P1,1,~P3,1,P3,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P1,1}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P3,1,P2,2,~P1,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P1,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2,~P1,1,B2,1,P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P1,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P2,2,~P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P1,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P3,1,P2,2,~P1,1,B2,1,P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P1,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P2,2,~P1,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P1,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P3,1,P2,2,~P1,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P1,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,P2,2,~P1,1,B2,1,P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P1,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2,~P1,1,P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P1,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P3,1,P2,2,~P1,1,B2,1,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{P2,2,P1,1,~P1,1,B2,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,P2,2,P1,1,~P2,2}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{~P3,1,B2,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,P3,1,P2,2,~P3,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,P3,1,P1,1,~P3,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{~P2,2,B2,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,P3,1,P1,1,~P1,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{~P1,1,B2,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,P3,1,P2,2,~P2,2}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,P3,1,P1,1,~P2,2}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,P3,1,P2,2,~P1,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P3,1}	{P3,1,P2,2,~P3,1}
+Resolvents: [{P2,2,P1,1,~P3,1,P3,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P3,1}	{~P3,1,B2,1}
+Resolvents: [{P2,2,P1,1,~P3,1,B2,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P3,1}	{B2,1,P3,1,P2,2,~P3,1}
+Resolvents: [{P2,2,P1,1,~P3,1,B2,1,P3,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P3,1}	{B2,1,P3,1,P1,1,~P3,1}
+Resolvents: [{P2,2,P1,1,~P3,1,B2,1,P3,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P3,1}	{B2,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P2,2,P1,1,~P3,1,B2,1}]
+
+Clauses: {~B1,1}	{B1,1,P2,1,~P2,1}
+Resolvents: [{P2,1,~P2,1}]
+
+Clauses: {~B1,1}	{~P1,2,B1,1}
+Resolvents: [{~P1,2}]
+
+Clauses: {~B1,1}	{B1,1,~B1,1,P2,1}
+Resolvents: [{~B1,1,P2,1}]
+
+Clauses: {~B1,1}	{B1,1,P1,2,~P1,2}
+Resolvents: [{P1,2,~P1,2}]
+
+Clauses: {~B1,1}	{B1,1,~B1,1}
+Resolvents: [{~B1,1}]
+
+Clauses: {~B1,1}	{~P2,1,B1,1}
+Resolvents: [{~P2,1}]
+
+Clauses: {~B1,1}	{~B1,1,P2,1,B1,1,P1,2}
+Resolvents: [{~B1,1,P2,1,P1,2}]
+
+Clauses: {~B1,1}	{B1,1,~B1,1,P1,2}
+Resolvents: [{~B1,1,P1,2}]
+
+Clauses: {~B1,1}	{B1,1,P2,1,~P1,2}
+Resolvents: [{P2,1,~P1,2}]
+
+Clauses: {~B1,1}	{B1,1,P1,2,~P2,1}
+Resolvents: [{P1,2,~P2,1}]
+
+Clauses: {B2,1}	{B2,1,~B2,1,P3,1}
+Resolvents: [{B2,1,P3,1}]
+
+Clauses: {B2,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{B2,1,P2,2,P1,1}]
+
+Clauses: {B2,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P2,2}]
+
+Clauses: {B2,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{B2,1,P1,1}]
+
+Clauses: {B2,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{B2,1,P3,1,P2,2}]
+
+Clauses: {B2,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{B2,1,P2,2}]
+
+Clauses: {B2,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{B2,1,P3,1,P1,1}]
+
+Clauses: {B2,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2,P1,1}]
+
+Clauses: {B2,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {~B1,1,P1,2,P2,1}	{B1,1,P2,1,~P2,1}
+Resolvents: [{P1,2,P2,1,~P2,1}]
+
+Clauses: {~B1,1,P1,2,P2,1}	{~P1,2,B1,1}
+Resolvents: [{P1,2,P2,1,~P1,2}]
+
+Clauses: {~B1,1,P1,2,P2,1}	{B1,1,~B1,1,P2,1}
+Resolvents: [{P1,2,P2,1,~B1,1}]
+
+Clauses: {~B1,1,P1,2,P2,1}	{B1,1,P1,2,~P1,2}
+Resolvents: [{P1,2,P2,1,~P1,2}]
+
+Clauses: {~B1,1,P1,2,P2,1}	{B1,1,~B1,1}
+Resolvents: [{P1,2,P2,1,~B1,1}]
+
+Clauses: {~B1,1,P1,2,P2,1}	{~P2,1,B1,1}
+Resolvents: [{P1,2,P2,1,~P2,1}]
+
+Clauses: {~B1,1,P1,2,P2,1}	{~B1,1,P2,1,B1,1,P1,2}
+Resolvents: [{P1,2,P2,1,~B1,1}]
+
+Clauses: {~B1,1,P1,2,P2,1}	{B1,1,~B1,1,P1,2}
+Resolvents: [{P1,2,P2,1,~B1,1}]
+
+Clauses: {~B1,1,P1,2,P2,1}	{B1,1,P2,1,~P1,2}
+Resolvents: [{P1,2,P2,1,~P1,2}]
+
+Clauses: {~B1,1,P1,2,P2,1}	{B1,1,P1,2,~P2,1}
+Resolvents: [{P1,2,P2,1,~P2,1}]
+
+Clauses: {B1,1,P2,1,~P1,2}	{~B1,1,P1,2}
+Resolvents: [{P2,1,~P1,2,P1,2}]
+
+Clauses: {B1,1,P2,1,~P1,2}	{B1,1,~B1,1,P2,1}
+Resolvents: [{P2,1,~P1,2,B1,1}]
+
+Clauses: {B1,1,P2,1,~P1,2}	{B1,1,~B1,1}
+Resolvents: [{P2,1,~P1,2,B1,1}]
+
+Clauses: {B1,1,P2,1,~P1,2}	{~B1,1,P2,1}
+Resolvents: [{P2,1,~P1,2}]
+
+Clauses: {B1,1,P2,1,~P1,2}	{~B1,1,P2,1,B1,1,P1,2}
+Resolvents: [{P2,1,~P1,2,B1,1,P1,2}]
+
+Clauses: {B1,1,P2,1,~P1,2}	{B1,1,~B1,1,P1,2}
+Resolvents: [{P2,1,~P1,2,B1,1,P1,2}]
+
+Clauses: {B1,1,P2,1,~P1,2}	{~B1,1}
+Resolvents: [{P2,1,~P1,2}]
+
+Clauses: {B1,1,P2,1,~P1,2}	{~B1,1,P1,2,P2,1}
+Resolvents: [{P2,1,~P1,2,P1,2}]
+
+Clauses: {B1,1,P1,2,~P2,1}	{~B1,1,P1,2}
+Resolvents: [{P1,2,~P2,1}]
+
+Clauses: {B1,1,P1,2,~P2,1}	{B1,1,~B1,1,P2,1}
+Resolvents: [{P1,2,~P2,1,B1,1,P2,1}]
+
+Clauses: {B1,1,P1,2,~P2,1}	{B1,1,~B1,1}
+Resolvents: [{P1,2,~P2,1,B1,1}]
+
+Clauses: {B1,1,P1,2,~P2,1}	{~B1,1,P2,1}
+Resolvents: [{P1,2,~P2,1,P2,1}]
+
+Clauses: {B1,1,P1,2,~P2,1}	{~B1,1,P2,1,B1,1,P1,2}
+Resolvents: [{P1,2,~P2,1,P2,1,B1,1}]
+
+Clauses: {B1,1,P1,2,~P2,1}	{B1,1,~B1,1,P1,2}
+Resolvents: [{P1,2,~P2,1,B1,1}]
+
+Clauses: {B1,1,P1,2,~P2,1}	{~B1,1}
+Resolvents: [{P1,2,~P2,1}]
+
+Clauses: {B1,1,P1,2,~P2,1}	{~B1,1,P1,2,P2,1}
+Resolvents: [{P1,2,~P2,1,P2,1}]
+
+Clauses: {~P2,1}	{B1,1,P2,1,~P2,1}
+Resolvents: [{B1,1,~P2,1}]
+
+Clauses: {~P2,1}	{P2,1,~P2,1}
+Resolvents: [{~P2,1}]
+
+Clauses: {~P2,1}	{B1,1,~B1,1,P2,1}
+Resolvents: [{B1,1,~B1,1}]
+
+Clauses: {~P2,1}	{P1,2,P2,1,~P1,2}
+Resolvents: [{P1,2,~P1,2}]
+
+Clauses: {~P2,1}	{P2,1,~P1,2}
+Resolvents: [{~P1,2}]
+
+Clauses: {~P2,1}	{~B1,1,P2,1}
+Resolvents: [{~B1,1}]
+
+Clauses: {~P2,1}	{~B1,1,P2,1,B1,1,P1,2}
+Resolvents: [{~B1,1,B1,1,P1,2}]
+
+Clauses: {~P2,1}	{P1,2,P2,1,~P2,1}
+Resolvents: [{P1,2,~P2,1}]
+
+Clauses: {~P2,1}	{~B1,1,P1,2,P2,1}
+Resolvents: [{~B1,1,P1,2}]
+
+Clauses: {~P2,1}	{B1,1,P2,1,~P1,2}
+Resolvents: [{B1,1,~P1,2}]
+
+Clauses: {B1,1,P2,1,~P2,1}	{~B1,1,P1,2}
+Resolvents: [{P2,1,~P2,1,P1,2}]
+
+Clauses: {B1,1,P2,1,~P2,1}	{B1,1,~B1,1,P2,1}
+Resolvents: [{P2,1,~P2,1,B1,1}]
+
+Clauses: {B1,1,P2,1,~P2,1}	{B1,1,~B1,1}
+Resolvents: [{P2,1,~P2,1,B1,1}]
+
+Clauses: {B1,1,P2,1,~P2,1}	{~B1,1,P2,1}
+Resolvents: [{P2,1,~P2,1}]
+
+Clauses: {B1,1,P2,1,~P2,1}	{~B1,1,P2,1,B1,1,P1,2}
+Resolvents: [{P2,1,~P2,1,B1,1,P1,2}]
+
+Clauses: {B1,1,P2,1,~P2,1}	{B1,1,~B1,1,P1,2}
+Resolvents: [{P2,1,~P2,1,B1,1,P1,2}]
+
+Clauses: {B1,1,P2,1,~P2,1}	{~B1,1}
+Resolvents: [{P2,1,~P2,1}]
+
+Clauses: {B1,1,P2,1,~P2,1}	{~B1,1,P1,2,P2,1}
+Resolvents: [{P2,1,~P2,1,P1,2}]
+
+Clauses: {P3,1,P2,2,~P3,1}	{~P3,1,B2,1}
+Resolvents: [{P2,2,~P3,1,B2,1}]
+
+Clauses: {P3,1,P2,2,~P3,1}	{B2,1,P3,1,P2,2,~P3,1}
+Resolvents: [{P2,2,~P3,1,B2,1,P3,1}]
+
+Clauses: {P3,1,P2,2,~P3,1}	{B2,1,P1,1,~P3,1}
+Resolvents: [{P2,2,~P3,1,B2,1,P1,1}]
+
+Clauses: {P3,1,P2,2,~P3,1}	{B2,1,P3,1,P1,1,~P3,1}
+Resolvents: [{P2,2,~P3,1,B2,1,P3,1,P1,1}]
+
+Clauses: {P3,1,P2,2,~P3,1}	{P2,2,~P3,1,B2,1}
+Resolvents: [{P2,2,~P3,1,B2,1}]
+
+Clauses: {P3,1,P2,2,~P3,1}	{B2,1,P3,1,~P3,1}
+Resolvents: [{P2,2,~P3,1,B2,1,P3,1}]
+
+Clauses: {P3,1,P2,2,~P3,1}	{B2,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P2,2,~P3,1,B2,1,P1,1}]
+
+Clauses: {P3,1,P2,2,~P3,1}	{P2,2,~P3,1,B2,1,P3,1,P1,1}
+Resolvents: [{P2,2,~P3,1,B2,1,P3,1,P1,1}]
+
+Clauses: {P3,1,P2,2,~P3,1}	{P3,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P2,2,~P3,1,P3,1,P1,1}]
+
+Clauses: {B2,1,~B2,1,P3,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{~B2,1,P3,1,B2,1,P2,2,P1,1}]
+
+Clauses: {B2,1,~B2,1,P3,1}	{B2,1,~B2,1}
+Resolvents: [{~B2,1,P3,1,B2,1}]
+
+Clauses: {B2,1,~B2,1,P3,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{~B2,1,P3,1,P2,2}]
+
+Clauses: {B2,1,~B2,1,P3,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{~B2,1,P3,1,B2,1,P1,1}]
+
+Clauses: {B2,1,~B2,1,P3,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{~B2,1,P3,1,B2,1,P2,2}]
+
+Clauses: {B2,1,~B2,1,P3,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{~B2,1,P3,1,B2,1,P2,2}]
+
+Clauses: {B2,1,~B2,1,P3,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{~B2,1,P3,1,B2,1,P1,1}]
+
+Clauses: {B2,1,~B2,1,P3,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{~B2,1,P3,1,P2,2,P1,1}]
+
+Clauses: {B2,1,~B2,1,P3,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{~B2,1,P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {P2,2,P1,1,~P1,1,B2,1,P3,1}	{B2,1,P2,2,P1,1,~P2,2}
+Resolvents: [{P1,1,~P1,1,B2,1,P3,1,P2,2}]
+
+Clauses: {P2,2,P1,1,~P1,1,B2,1,P3,1}	{B2,1,P3,1,~P2,2}
+Resolvents: [{P1,1,~P1,1,B2,1,P3,1}]
+
+Clauses: {P2,2,P1,1,~P1,1,B2,1,P3,1}	{P3,1,P2,2,P1,1,~P2,2}
+Resolvents: [{P1,1,~P1,1,B2,1,P3,1,P2,2}]
+
+Clauses: {P2,2,P1,1,~P1,1,B2,1,P3,1}	{P2,2,P1,1,~P2,2,B2,1,P3,1}
+Resolvents: [{P1,1,~P1,1,B2,1,P3,1,P2,2}]
+
+Clauses: {P2,2,P1,1,~P1,1,B2,1,P3,1}	{P3,1,P2,2,~P2,2}
+Resolvents: [{P1,1,~P1,1,B2,1,P3,1,P2,2}]
+
+Clauses: {P2,2,P1,1,~P1,1,B2,1,P3,1}	{~P2,2,B2,1}
+Resolvents: [{P1,1,~P1,1,B2,1,P3,1}]
+
+Clauses: {P2,2,P1,1,~P1,1,B2,1,P3,1}	{B2,1,P1,1,~P2,2}
+Resolvents: [{P1,1,~P1,1,B2,1,P3,1}]
+
+Clauses: {P2,2,P1,1,~P1,1,B2,1,P3,1}	{B2,1,P2,2,~P2,2}
+Resolvents: [{P1,1,~P1,1,B2,1,P3,1,P2,2}]
+
+Clauses: {P2,2,P1,1,~P1,1,B2,1,P3,1}	{B2,1,P3,1,P2,2,~P2,2}
+Resolvents: [{P1,1,~P1,1,B2,1,P3,1,P2,2}]
+
+Clauses: {P2,2,P1,1,~P1,1,B2,1,P3,1}	{B2,1,P3,1,P1,1,~P2,2}
+Resolvents: [{P1,1,~P1,1,B2,1,P3,1}]
+
+Clauses: {B2,1,~B2,1,P2,2,P1,1}	{B2,1,~B2,1,P3,1}
+Resolvents: [{~B2,1,P2,2,P1,1,B2,1,P3,1}]
+
+Clauses: {B2,1,~B2,1,P2,2,P1,1}	{B2,1,~B2,1}
+Resolvents: [{~B2,1,P2,2,P1,1,B2,1}]
+
+Clauses: {B2,1,~B2,1,P2,2,P1,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{~B2,1,P2,2,P1,1,P3,1}]
+
+Clauses: {B2,1,~B2,1,P2,2,P1,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{~B2,1,P2,2,P1,1,B2,1}]
+
+Clauses: {B2,1,~B2,1,P2,2,P1,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{~B2,1,P2,2,P1,1,B2,1,P3,1}]
+
+Clauses: {B2,1,~B2,1,P2,2,P1,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{~B2,1,P2,2,P1,1,B2,1}]
+
+Clauses: {B2,1,~B2,1,P2,2,P1,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{~B2,1,P2,2,P1,1,B2,1,P3,1}]
+
+Clauses: {B2,1,~B2,1,P2,2,P1,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{~B2,1,P2,2,P1,1,P3,1}]
+
+Clauses: {B2,1,~B2,1,P2,2,P1,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{~B2,1,P2,2,P1,1,P3,1,B2,1}]
+
+Clauses: {B2,1,P2,2,P1,1}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P2,2,P1,1,B2,1,P3,1}]
+
+Clauses: {B2,1,P2,2,P1,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P2,2,P1,1,B2,1}]
+
+Clauses: {B2,1,P2,2,P1,1}	{B2,1,~B2,1}
+Resolvents: [{P2,2,P1,1,B2,1}]
+
+Clauses: {B2,1,P2,2,P1,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{P2,2,P1,1,P3,1}]
+
+Clauses: {B2,1,P2,2,P1,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P2,2,P1,1,B2,1}]
+
+Clauses: {B2,1,P2,2,P1,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P2,2,P1,1,B2,1,P3,1}]
+
+Clauses: {B2,1,P2,2,P1,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P2,2,P1,1,B2,1}]
+
+Clauses: {B2,1,P2,2,P1,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P2,2,P1,1,B2,1,P3,1}]
+
+Clauses: {B2,1,P2,2,P1,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{P2,2,P1,1,P3,1}]
+
+Clauses: {B2,1,P2,2,P1,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P2,2,P1,1,P3,1,B2,1}]
+
+Clauses: {B2,1,P3,1}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P3,1,B2,1}]
+
+Clauses: {B2,1,P3,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P3,1,B2,1,P2,2,P1,1}]
+
+Clauses: {B2,1,P3,1}	{B2,1,~B2,1}
+Resolvents: [{P3,1,B2,1}]
+
+Clauses: {B2,1,P3,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P2,2}]
+
+Clauses: {B2,1,P3,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P3,1,B2,1,P1,1}]
+
+Clauses: {B2,1,P3,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,B2,1,P2,2}]
+
+Clauses: {B2,1,P3,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P3,1,B2,1,P2,2}]
+
+Clauses: {B2,1,P3,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,B2,1,P1,1}]
+
+Clauses: {B2,1,P3,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2,P1,1}]
+
+Clauses: {B2,1,P3,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P1,1}	{P3,1,P2,2,~P3,1}
+Resolvents: [{P2,2,P1,1,~P1,1,P3,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P1,1}	{~P3,1,B2,1}
+Resolvents: [{P2,2,P1,1,~P1,1,B2,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P1,1}	{B2,1,P3,1,P2,2,~P3,1}
+Resolvents: [{P2,2,P1,1,~P1,1,B2,1,P3,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P1,1}	{B2,1,P1,1,~P3,1}
+Resolvents: [{P2,2,P1,1,~P1,1,B2,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P1,1}	{B2,1,P3,1,P1,1,~P3,1}
+Resolvents: [{P2,2,P1,1,~P1,1,B2,1,P3,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P1,1}	{P2,2,~P3,1,B2,1}
+Resolvents: [{P2,2,P1,1,~P1,1,B2,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P1,1}	{B2,1,P3,1,~P3,1}
+Resolvents: [{P2,2,P1,1,~P1,1,B2,1,P3,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P1,1}	{B2,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P2,2,P1,1,~P1,1,B2,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P1,1}	{P2,2,~P3,1,B2,1,P3,1,P1,1}
+Resolvents: [{P2,2,P1,1,~P1,1,B2,1,P3,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P1,1}	{P3,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P2,2,P1,1,~P1,1,P3,1}]
+
+Clauses: {P2,2,P1,1,~P1,1,B2,1}	{B2,1,P2,2,P1,1,~P2,2}
+Resolvents: [{P1,1,~P1,1,B2,1,P2,2}]
+
+Clauses: {P2,2,P1,1,~P1,1,B2,1}	{B2,1,P3,1,~P2,2}
+Resolvents: [{P1,1,~P1,1,B2,1,P3,1}]
+
+Clauses: {P2,2,P1,1,~P1,1,B2,1}	{P3,1,P2,2,P1,1,~P2,2}
+Resolvents: [{P1,1,~P1,1,B2,1,P3,1,P2,2}]
+
+Clauses: {P2,2,P1,1,~P1,1,B2,1}	{P2,2,P1,1,~P2,2,B2,1,P3,1}
+Resolvents: [{P1,1,~P1,1,B2,1,P2,2,P3,1}]
+
+Clauses: {P2,2,P1,1,~P1,1,B2,1}	{P3,1,P2,2,~P2,2}
+Resolvents: [{P1,1,~P1,1,B2,1,P3,1,P2,2}]
+
+Clauses: {P2,2,P1,1,~P1,1,B2,1}	{~P2,2,B2,1}
+Resolvents: [{P1,1,~P1,1,B2,1}]
+
+Clauses: {P2,2,P1,1,~P1,1,B2,1}	{B2,1,P1,1,~P2,2}
+Resolvents: [{P1,1,~P1,1,B2,1}]
+
+Clauses: {P2,2,P1,1,~P1,1,B2,1}	{B2,1,P2,2,~P2,2}
+Resolvents: [{P1,1,~P1,1,B2,1,P2,2}]
+
+Clauses: {P2,2,P1,1,~P1,1,B2,1}	{B2,1,P3,1,P2,2,~P2,2}
+Resolvents: [{P1,1,~P1,1,B2,1,P3,1,P2,2}]
+
+Clauses: {P2,2,P1,1,~P1,1,B2,1}	{B2,1,P3,1,P1,1,~P2,2}
+Resolvents: [{P1,1,~P1,1,B2,1,P3,1}]
+
+Clauses: {P2,1,~P2,1,B1,1,P1,2}	{B1,1,P2,1,~P2,1}
+Resolvents: [{~P2,1,B1,1,P1,2,P2,1}]
+
+Clauses: {P2,1,~P2,1,B1,1,P1,2}	{P2,1,~P2,1}
+Resolvents: [{~P2,1,B1,1,P1,2,P2,1}]
+
+Clauses: {P2,1,~P2,1,B1,1,P1,2}	{P1,2,~P2,1}
+Resolvents: [{~P2,1,B1,1,P1,2}]
+
+Clauses: {P2,1,~P2,1,B1,1,P1,2}	{~P2,1,B1,1}
+Resolvents: [{~P2,1,B1,1,P1,2}]
+
+Clauses: {P2,1,~P2,1,B1,1,P1,2}	{P1,2,P2,1,~P2,1}
+Resolvents: [{~P2,1,B1,1,P1,2,P2,1}]
+
+Clauses: {P2,1,~P2,1,B1,1,P1,2}	{B1,1,P1,2,~P2,1}
+Resolvents: [{~P2,1,B1,1,P1,2}]
+
+Clauses: {P2,1,~P2,1,B1,1,P1,2}	{~P2,1}
+Resolvents: [{~P2,1,B1,1,P1,2}]
+
+Clauses: {B2,1,P2,2,P1,1,~P2,2}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P2,2,P1,1,~P2,2,B2,1,P3,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P2,2}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P2,2,P1,1,~P2,2,B2,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P2,2}	{B2,1,~B2,1}
+Resolvents: [{P2,2,P1,1,~P2,2,B2,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P2,2}	{~B2,1,P3,1,P2,2}
+Resolvents: [{P2,2,P1,1,~P2,2,P3,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P2,2}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P2,2,P1,1,~P2,2,B2,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P2,2}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P2,2,P1,1,~P2,2,B2,1,P3,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P2,2}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P2,2,P1,1,~P2,2,B2,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P2,2}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P2,2,P1,1,~P2,2,B2,1,P3,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P2,2}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{P2,2,P1,1,~P2,2,P3,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P2,2}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P2,2,P1,1,~P2,2,P3,1,B2,1}]
+
+Clauses: {B2,1,~B2,1}	{B2,1,~B2,1,P3,1}
+Resolvents: [{~B2,1,B2,1,P3,1}]
+
+Clauses: {B2,1,~B2,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{~B2,1,B2,1,P2,2,P1,1}]
+
+Clauses: {B2,1,~B2,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{~B2,1,P3,1,P2,2}]
+
+Clauses: {B2,1,~B2,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{~B2,1,B2,1,P1,1}]
+
+Clauses: {B2,1,~B2,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{~B2,1,B2,1,P3,1,P2,2}]
+
+Clauses: {B2,1,~B2,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{~B2,1,B2,1,P2,2}]
+
+Clauses: {B2,1,~B2,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{~B2,1,B2,1,P3,1,P1,1}]
+
+Clauses: {B2,1,~B2,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{~B2,1,P3,1,P2,2,P1,1}]
+
+Clauses: {B2,1,~B2,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{~B2,1,P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {~P1,1}	{P2,2,P1,1,~P1,1,B2,1,P3,1}
+Resolvents: [{P2,2,~P1,1,B2,1,P3,1}]
+
+Clauses: {~P1,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{B2,1,~B2,1,P2,2}]
+
+Clauses: {~P1,1}	{B2,1,P2,2,P1,1}
+Resolvents: [{B2,1,P2,2}]
+
+Clauses: {~P1,1}	{P3,1,P2,2,P1,1,~P1,1}
+Resolvents: [{P3,1,P2,2,~P1,1}]
+
+Clauses: {~P1,1}	{P2,2,P1,1,~P1,1,B2,1}
+Resolvents: [{P2,2,~P1,1,B2,1}]
+
+Clauses: {~P1,1}	{B2,1,P2,2,P1,1,~P2,2}
+Resolvents: [{B2,1,P2,2,~P2,2}]
+
+Clauses: {~P1,1}	{P2,2,P1,1,B2,1,P3,1}
+Resolvents: [{P2,2,B2,1,P3,1}]
+
+Clauses: {~P1,1}	{B2,1,P1,1,~P3,1}
+Resolvents: [{B2,1,~P3,1}]
+
+Clauses: {~P1,1}	{B2,1,P3,1,P1,1,~P3,1}
+Resolvents: [{B2,1,P3,1,~P3,1}]
+
+Clauses: {~P1,1}	{P3,1,P2,2,P1,1,~P2,2}
+Resolvents: [{P3,1,P2,2,~P2,2}]
+
+Clauses: {~P1,1}	{P2,2,P1,1,~P2,2,B2,1,P3,1}
+Resolvents: [{P2,2,~P2,2,B2,1,P3,1}]
+
+Clauses: {~P1,1}	{B2,1,P1,1}
+Resolvents: [{B2,1}]
+
+Clauses: {~P1,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{B2,1,~B2,1}]
+
+Clauses: {~P1,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{B2,1,~B2,1,P3,1}]
+
+Clauses: {~P1,1}	{B2,1,P3,1,P1,1}
+Resolvents: [{B2,1,P3,1}]
+
+Clauses: {~P1,1}	{B2,1,P3,1,P1,1,~P1,1}
+Resolvents: [{B2,1,P3,1,~P1,1}]
+
+Clauses: {~P1,1}	{P1,1,~P1,1,B2,1}
+Resolvents: [{~P1,1,B2,1}]
+
+Clauses: {~P1,1}	{B2,1,P1,1,~P2,2}
+Resolvents: [{B2,1,~P2,2}]
+
+Clauses: {~P1,1}	{P3,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2}]
+
+Clauses: {~P1,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{~B2,1,P3,1,P2,2}]
+
+Clauses: {~P1,1}	{B2,1,P3,1,P1,1,~P2,2}
+Resolvents: [{B2,1,P3,1,~P2,2}]
+
+Clauses: {~P1,1}	{B2,1,P2,2,P1,1,~P3,1}
+Resolvents: [{B2,1,P2,2,~P3,1}]
+
+Clauses: {~P1,1}	{P2,2,~P3,1,B2,1,P3,1,P1,1}
+Resolvents: [{P2,2,~P3,1,B2,1,P3,1}]
+
+Clauses: {~P1,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{~B2,1,P3,1,P2,2,B2,1}]
+
+Clauses: {~P1,1}	{P3,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P3,1,P2,2,~P3,1}]
+
+Clauses: {~P3,1,B2,1}	{P3,1,P2,2,~P3,1}
+Resolvents: [{B2,1,P2,2,~P3,1}]
+
+Clauses: {~P3,1,B2,1}	{B2,1,~B2,1,P3,1}
+Resolvents: [{B2,1,~B2,1}]
+
+Clauses: {~P3,1,B2,1}	{P2,2,P1,1,~P1,1,B2,1,P3,1}
+Resolvents: [{B2,1,P2,2,P1,1,~P1,1}]
+
+Clauses: {~P3,1,B2,1}	{B2,1,P3,1}
+Resolvents: [{B2,1}]
+
+Clauses: {~P3,1,B2,1}	{P3,1,P2,2,P1,1,~P1,1}
+Resolvents: [{B2,1,P2,2,P1,1,~P1,1}]
+
+Clauses: {~P3,1,B2,1}	{P2,2,P1,1,B2,1,P3,1}
+Resolvents: [{B2,1,P2,2,P1,1}]
+
+Clauses: {~P3,1,B2,1}	{B2,1,P3,1,P2,2,~P3,1}
+Resolvents: [{B2,1,P2,2,~P3,1}]
+
+Clauses: {~P3,1,B2,1}	{B2,1,P3,1,~P1,1}
+Resolvents: [{B2,1,~P1,1}]
+
+Clauses: {~P3,1,B2,1}	{B2,1,P3,1,P1,1,~P3,1}
+Resolvents: [{B2,1,P1,1,~P3,1}]
+
+Clauses: {~P3,1,B2,1}	{P3,1,P2,2}
+Resolvents: [{B2,1,P2,2}]
+
+Clauses: {~P3,1,B2,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{B2,1,~B2,1,P2,2}]
+
+Clauses: {~P3,1,B2,1}	{B2,1,P3,1,~P2,2}
+Resolvents: [{B2,1,~P2,2}]
+
+Clauses: {~P3,1,B2,1}	{P3,1,P2,2,P1,1,~P2,2}
+Resolvents: [{B2,1,P2,2,P1,1,~P2,2}]
+
+Clauses: {~P3,1,B2,1}	{P2,2,P1,1,~P2,2,B2,1,P3,1}
+Resolvents: [{B2,1,P2,2,P1,1,~P2,2}]
+
+Clauses: {~P3,1,B2,1}	{P3,1,P2,2,~P1,1}
+Resolvents: [{B2,1,P2,2,~P1,1}]
+
+Clauses: {~P3,1,B2,1}	{B2,1,P3,1,P2,2}
+Resolvents: [{B2,1,P2,2}]
+
+Clauses: {~P3,1,B2,1}	{P3,1,P2,2,~P2,2}
+Resolvents: [{B2,1,P2,2,~P2,2}]
+
+Clauses: {~P3,1,B2,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{B2,1,~B2,1,P2,2}]
+
+Clauses: {~P3,1,B2,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{B2,1,~B2,1,P1,1}]
+
+Clauses: {~P3,1,B2,1}	{B2,1,P3,1,P1,1}
+Resolvents: [{B2,1,P1,1}]
+
+Clauses: {~P3,1,B2,1}	{B2,1,P3,1,P1,1,~P1,1}
+Resolvents: [{B2,1,P1,1,~P1,1}]
+
+Clauses: {~P3,1,B2,1}	{B2,1,P3,1,P2,2,~P2,2}
+Resolvents: [{B2,1,P2,2,~P2,2}]
+
+Clauses: {~P3,1,B2,1}	{P3,1,P2,2,P1,1}
+Resolvents: [{B2,1,P2,2,P1,1}]
+
+Clauses: {~P3,1,B2,1}	{B2,1,P3,1,~P3,1}
+Resolvents: [{B2,1,~P3,1}]
+
+Clauses: {~P3,1,B2,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{B2,1,~B2,1,P2,2,P1,1}]
+
+Clauses: {~P3,1,B2,1}	{B2,1,P3,1,P1,1,~P2,2}
+Resolvents: [{B2,1,P1,1,~P2,2}]
+
+Clauses: {~P3,1,B2,1}	{B2,1,P3,1,P2,2,~P1,1}
+Resolvents: [{B2,1,P2,2,~P1,1}]
+
+Clauses: {~P3,1,B2,1}	{P2,2,~P3,1,B2,1,P3,1,P1,1}
+Resolvents: [{B2,1,P2,2,~P3,1,P1,1}]
+
+Clauses: {~P3,1,B2,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{B2,1,~B2,1,P2,2,P1,1}]
+
+Clauses: {~P3,1,B2,1}	{P3,1,P2,2,P1,1,~P3,1}
+Resolvents: [{B2,1,P2,2,P1,1,~P3,1}]
+
+Clauses: {P2,1,~P2,1}	{B1,1,P2,1,~P2,1}
+Resolvents: [{~P2,1,B1,1,P2,1}]
+
+Clauses: {P2,1,~P2,1}	{P2,1,~P2,1,B1,1,P1,2}
+Resolvents: [{~P2,1,P2,1,B1,1,P1,2}]
+
+Clauses: {P2,1,~P2,1}	{P1,2,~P2,1}
+Resolvents: [{~P2,1,P1,2}]
+
+Clauses: {P2,1,~P2,1}	{~P2,1,B1,1}
+Resolvents: [{~P2,1,B1,1}]
+
+Clauses: {P2,1,~P2,1}	{P1,2,P2,1,~P2,1}
+Resolvents: [{~P2,1,P1,2,P2,1}]
+
+Clauses: {P2,1,~P2,1}	{B1,1,P1,2,~P2,1}
+Resolvents: [{~P2,1,B1,1,P1,2}]
+
+Clauses: {P2,1,~P2,1}	{~P2,1}
+Resolvents: [{~P2,1}]
+
+Clauses: {P2,2,P1,1,B2,1,P3,1}	{B2,1,P2,2,P1,1,~P2,2}
+Resolvents: [{P1,1,B2,1,P3,1,P2,2}]
+
+Clauses: {P2,2,P1,1,B2,1,P3,1}	{B2,1,P3,1,~P2,2}
+Resolvents: [{P1,1,B2,1,P3,1}]
+
+Clauses: {P2,2,P1,1,B2,1,P3,1}	{P3,1,P2,2,P1,1,~P2,2}
+Resolvents: [{P1,1,B2,1,P3,1,P2,2}]
+
+Clauses: {P2,2,P1,1,B2,1,P3,1}	{P2,2,P1,1,~P2,2,B2,1,P3,1}
+Resolvents: [{P1,1,B2,1,P3,1,P2,2}]
+
+Clauses: {P2,2,P1,1,B2,1,P3,1}	{P3,1,P2,2,~P2,2}
+Resolvents: [{P1,1,B2,1,P3,1,P2,2}]
+
+Clauses: {P2,2,P1,1,B2,1,P3,1}	{~P2,2,B2,1}
+Resolvents: [{P1,1,B2,1,P3,1}]
+
+Clauses: {P2,2,P1,1,B2,1,P3,1}	{B2,1,P1,1,~P2,2}
+Resolvents: [{P1,1,B2,1,P3,1}]
+
+Clauses: {P2,2,P1,1,B2,1,P3,1}	{B2,1,P2,2,~P2,2}
+Resolvents: [{P1,1,B2,1,P3,1,P2,2}]
+
+Clauses: {P2,2,P1,1,B2,1,P3,1}	{B2,1,P3,1,P2,2,~P2,2}
+Resolvents: [{P1,1,B2,1,P3,1,P2,2}]
+
+Clauses: {P2,2,P1,1,B2,1,P3,1}	{B2,1,P3,1,P1,1,~P2,2}
+Resolvents: [{P1,1,B2,1,P3,1}]
+
+Clauses: {~P1,2,B1,1}	{P2,1,~P2,1,B1,1,P1,2}
+Resolvents: [{B1,1,P2,1,~P2,1}]
+
+Clauses: {~P1,2,B1,1}	{~B1,1,P1,2}
+Resolvents: [{B1,1,~B1,1}]
+
+Clauses: {~P1,2,B1,1}	{P1,2,~P1,2}
+Resolvents: [{B1,1,~P1,2}]
+
+Clauses: {~P1,2,B1,1}	{P1,2,P2,1,~P1,2}
+Resolvents: [{B1,1,P2,1,~P1,2}]
+
+Clauses: {~P1,2,B1,1}	{B1,1,P1,2,~P1,2}
+Resolvents: [{B1,1,~P1,2}]
+
+Clauses: {~P1,2,B1,1}	{P1,2,~P2,1}
+Resolvents: [{B1,1,~P2,1}]
+
+Clauses: {~P1,2,B1,1}	{P2,1,~P1,2,B1,1,P1,2}
+Resolvents: [{B1,1,P2,1,~P1,2}]
+
+Clauses: {~P1,2,B1,1}	{~B1,1,P2,1,B1,1,P1,2}
+Resolvents: [{B1,1,~B1,1,P2,1}]
+
+Clauses: {~P1,2,B1,1}	{P1,2,P2,1,~P2,1}
+Resolvents: [{B1,1,P2,1,~P2,1}]
+
+Clauses: {~P1,2,B1,1}	{B1,1,~B1,1,P1,2}
+Resolvents: [{B1,1,~B1,1}]
+
+Clauses: {~P1,2,B1,1}	{~B1,1,P1,2,P2,1}
+Resolvents: [{B1,1,~B1,1,P2,1}]
+
+Clauses: {~P1,2,B1,1}	{B1,1,P1,2,~P2,1}
+Resolvents: [{B1,1,~P2,1}]
+
+Clauses: {~B1,1,P1,2}	{B1,1,P2,1,~P2,1}
+Resolvents: [{P1,2,P2,1,~P2,1}]
+
+Clauses: {~B1,1,P1,2}	{P2,1,~P2,1,B1,1,P1,2}
+Resolvents: [{P1,2,P2,1,~P2,1}]
+
+Clauses: {~B1,1,P1,2}	{~P1,2,B1,1}
+Resolvents: [{P1,2,~P1,2}]
+
+Clauses: {~B1,1,P1,2}	{B1,1,~B1,1,P2,1}
+Resolvents: [{P1,2,~B1,1,P2,1}]
+
+Clauses: {~B1,1,P1,2}	{B1,1,P1,2,~P1,2}
+Resolvents: [{P1,2,~P1,2}]
+
+Clauses: {~B1,1,P1,2}	{B1,1,~B1,1}
+Resolvents: [{P1,2,~B1,1}]
+
+Clauses: {~B1,1,P1,2}	{~P2,1,B1,1}
+Resolvents: [{P1,2,~P2,1}]
+
+Clauses: {~B1,1,P1,2}	{P2,1,~P1,2,B1,1,P1,2}
+Resolvents: [{P1,2,P2,1,~P1,2}]
+
+Clauses: {~B1,1,P1,2}	{~B1,1,P2,1,B1,1,P1,2}
+Resolvents: [{P1,2,~B1,1,P2,1}]
+
+Clauses: {~B1,1,P1,2}	{B1,1,~B1,1,P1,2}
+Resolvents: [{P1,2,~B1,1}]
+
+Clauses: {~B1,1,P1,2}	{B1,1,P2,1,~P1,2}
+Resolvents: [{P1,2,P2,1,~P1,2}]
+
+Clauses: {~B1,1,P1,2}	{B1,1,P1,2,~P2,1}
+Resolvents: [{P1,2,~P2,1}]
+
+Clauses: {P1,2,~P1,2}	{~P1,2,B1,1}
+Resolvents: [{~P1,2,B1,1}]
+
+Clauses: {P1,2,~P1,2}	{~P1,2}
+Resolvents: [{~P1,2}]
+
+Clauses: {P1,2,~P1,2}	{P1,2,P2,1,~P1,2}
+Resolvents: [{~P1,2,P1,2,P2,1}]
+
+Clauses: {P1,2,~P1,2}	{B1,1,P1,2,~P1,2}
+Resolvents: [{~P1,2,B1,1,P1,2}]
+
+Clauses: {P1,2,~P1,2}	{P2,1,~P1,2}
+Resolvents: [{~P1,2,P2,1}]
+
+Clauses: {P1,2,~P1,2}	{P2,1,~P1,2,B1,1,P1,2}
+Resolvents: [{~P1,2,P2,1,B1,1,P1,2}]
+
+Clauses: {P1,2,~P1,2}	{B1,1,P2,1,~P1,2}
+Resolvents: [{~P1,2,B1,1,P2,1}]
+
+Clauses: {B1,1,~B1,1,P2,1}	{~B1,1,P1,2}
+Resolvents: [{~B1,1,P2,1,P1,2}]
+
+Clauses: {B1,1,~B1,1,P2,1}	{B1,1,~B1,1}
+Resolvents: [{~B1,1,P2,1,B1,1}]
+
+Clauses: {B1,1,~B1,1,P2,1}	{~B1,1,P2,1}
+Resolvents: [{~B1,1,P2,1}]
+
+Clauses: {B1,1,~B1,1,P2,1}	{~B1,1,P2,1,B1,1,P1,2}
+Resolvents: [{~B1,1,P2,1,B1,1,P1,2}]
+
+Clauses: {B1,1,~B1,1,P2,1}	{B1,1,~B1,1,P1,2}
+Resolvents: [{~B1,1,P2,1,B1,1,P1,2}]
+
+Clauses: {B1,1,~B1,1,P2,1}	{~B1,1}
+Resolvents: [{~B1,1,P2,1}]
+
+Clauses: {B1,1,~B1,1,P2,1}	{~B1,1,P1,2,P2,1}
+Resolvents: [{~B1,1,P2,1,P1,2}]
+
+Clauses: {B2,1,P3,1,P2,2,~P3,1}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P3,1,P2,2,~P3,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P3,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2,~P3,1,B2,1,P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P3,1}	{B2,1,~B2,1}
+Resolvents: [{P3,1,P2,2,~P3,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P3,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P2,2,~P3,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P3,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P3,1,P2,2,~P3,1,B2,1,P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P3,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P2,2,~P3,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P3,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P3,1,P2,2,~P3,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P3,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,P2,2,~P3,1,B2,1,P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P3,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2,~P3,1,P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P3,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P3,1,P2,2,~P3,1,B2,1,P1,1}]
+
+Clauses: {B2,1,P3,1,~P1,1}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P3,1,~P1,1,B2,1}]
+
+Clauses: {B2,1,P3,1,~P1,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P3,1,~P1,1,B2,1,P2,2,P1,1}]
+
+Clauses: {B2,1,P3,1,~P1,1}	{B2,1,~B2,1}
+Resolvents: [{P3,1,~P1,1,B2,1}]
+
+Clauses: {B2,1,P3,1,~P1,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,~P1,1,P2,2}]
+
+Clauses: {B2,1,P3,1,~P1,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P3,1,~P1,1,B2,1,P1,1}]
+
+Clauses: {B2,1,P3,1,~P1,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,~P1,1,B2,1,P2,2}]
+
+Clauses: {B2,1,P3,1,~P1,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P3,1,~P1,1,B2,1,P2,2}]
+
+Clauses: {B2,1,P3,1,~P1,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,~P1,1,B2,1,P1,1}]
+
+Clauses: {B2,1,P3,1,~P1,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{P3,1,~P1,1,P2,2,P1,1}]
+
+Clauses: {B2,1,P3,1,~P1,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P3,1,~P1,1,P2,2,B2,1,P1,1}]
+
+Clauses: {B2,1,P1,1,~P3,1}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P1,1,~P3,1,B2,1,P3,1}]
+
+Clauses: {B2,1,P1,1,~P3,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P1,1,~P3,1,B2,1,P2,2}]
+
+Clauses: {B2,1,P1,1,~P3,1}	{B2,1,~B2,1}
+Resolvents: [{P1,1,~P3,1,B2,1}]
+
+Clauses: {B2,1,P1,1,~P3,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{P1,1,~P3,1,P3,1,P2,2}]
+
+Clauses: {B2,1,P1,1,~P3,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P1,1,~P3,1,B2,1}]
+
+Clauses: {B2,1,P1,1,~P3,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P1,1,~P3,1,B2,1,P3,1,P2,2}]
+
+Clauses: {B2,1,P1,1,~P3,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P1,1,~P3,1,B2,1,P2,2}]
+
+Clauses: {B2,1,P1,1,~P3,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P1,1,~P3,1,B2,1,P3,1}]
+
+Clauses: {B2,1,P1,1,~P3,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{P1,1,~P3,1,P3,1,P2,2}]
+
+Clauses: {B2,1,P1,1,~P3,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P1,1,~P3,1,P3,1,P2,2,B2,1}]
+
+Clauses: {B2,1,P3,1,P1,1,~P3,1}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P3,1,P1,1,~P3,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P1,1,~P3,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P3,1,P1,1,~P3,1,B2,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1,~P3,1}	{B2,1,~B2,1}
+Resolvents: [{P3,1,P1,1,~P3,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P1,1,~P3,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P1,1,~P3,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1,~P3,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P3,1,P1,1,~P3,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P1,1,~P3,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P1,1,~P3,1,B2,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1,~P3,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P3,1,P1,1,~P3,1,B2,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1,~P3,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,P1,1,~P3,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P1,1,~P3,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{P3,1,P1,1,~P3,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1,~P3,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P3,1,P1,1,~P3,1,P2,2,B2,1}]
+
+Clauses: {P3,1,P2,2}	{P3,1,P2,2,~P3,1}
+Resolvents: [{P2,2,P3,1}]
+
+Clauses: {P3,1,P2,2}	{~P3,1,B2,1}
+Resolvents: [{P2,2,B2,1}]
+
+Clauses: {P3,1,P2,2}	{B2,1,P3,1,P2,2,~P3,1}
+Resolvents: [{P2,2,B2,1,P3,1}]
+
+Clauses: {P3,1,P2,2}	{B2,1,P1,1,~P3,1}
+Resolvents: [{P2,2,B2,1,P1,1}]
+
+Clauses: {P3,1,P2,2}	{B2,1,P3,1,P1,1,~P3,1}
+Resolvents: [{P2,2,B2,1,P3,1,P1,1}]
+
+Clauses: {P3,1,P2,2}	{P2,2,~P3,1,B2,1}
+Resolvents: [{P2,2,B2,1}]
+
+Clauses: {P3,1,P2,2}	{B2,1,P3,1,~P3,1}
+Resolvents: [{P2,2,B2,1,P3,1}]
+
+Clauses: {P3,1,P2,2}	{B2,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P2,2,B2,1,P1,1}]
+
+Clauses: {P3,1,P2,2}	{P2,2,~P3,1,B2,1,P3,1,P1,1}
+Resolvents: [{P2,2,B2,1,P3,1,P1,1}]
+
+Clauses: {P3,1,P2,2}	{P3,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P2,2,P3,1,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P3,1,P2,2,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{P2,2,P1,1,~P1,1,B2,1,P3,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2,~B2,1,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,P3,1}
+Resolvents: [{P3,1,P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{P2,2,P1,1,~P1,1,B2,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,P2,2,P1,1,~P2,2}
+Resolvents: [{P3,1,P2,2,P1,1,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,~B2,1}
+Resolvents: [{P3,1,P2,2,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{~P3,1,B2,1}
+Resolvents: [{P3,1,P2,2,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{P2,2,P1,1,B2,1,P3,1}
+Resolvents: [{P3,1,P2,2,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,P3,1,P2,2,~P3,1}
+Resolvents: [{P3,1,P2,2,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,P3,1,~P1,1}
+Resolvents: [{P3,1,P2,2,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,P1,1,~P3,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,P3,1,P1,1,~P3,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{P2,2,~P3,1,B2,1}
+Resolvents: [{P3,1,P2,2,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,P3,1,~P2,2}
+Resolvents: [{P3,1,P2,2,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{P2,2,P1,1,~P2,2,B2,1,P3,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,P1,1}
+Resolvents: [{P3,1,P2,2,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P3,1,P2,2,~B2,1,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P2,2,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P3,1,P2,2,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,P2,2}
+Resolvents: [{P3,1,P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,P2,2,~B2,1,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,P2,2,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{~P2,2,B2,1}
+Resolvents: [{P3,1,P2,2,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,P3,1,P1,1,~P1,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{~P1,1,B2,1}
+Resolvents: [{P3,1,P2,2,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{P1,1,~P1,1,B2,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{P2,2,~P1,1,B2,1}
+Resolvents: [{P3,1,P2,2,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,P1,1,~P2,2}
+Resolvents: [{P3,1,P2,2,P1,1,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,P2,2,~P2,2}
+Resolvents: [{P3,1,P2,2,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,P3,1,P2,2,~P2,2}
+Resolvents: [{P3,1,P2,2,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,P3,1,~P3,1}
+Resolvents: [{P3,1,P2,2,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,P3,1,P1,1,~P2,2}
+Resolvents: [{P3,1,P2,2,P1,1,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1,P3,1,P2,2,~P1,1}
+Resolvents: [{P3,1,P2,2,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{P2,2,~P3,1,B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,P2,2,~P3,1,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P3,1,P2,2,~B2,1,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2}	{B2,1}
+Resolvents: [{P3,1,P2,2}]
+
+Clauses: {P2,2,~P3,1,B2,1}	{B2,1,P2,2,P1,1,~P2,2}
+Resolvents: [{~P3,1,B2,1,P2,2,P1,1}]
+
+Clauses: {P2,2,~P3,1,B2,1}	{B2,1,P3,1,~P2,2}
+Resolvents: [{~P3,1,B2,1,P3,1}]
+
+Clauses: {P2,2,~P3,1,B2,1}	{P3,1,P2,2,P1,1,~P2,2}
+Resolvents: [{~P3,1,B2,1,P3,1,P2,2,P1,1}]
+
+Clauses: {P2,2,~P3,1,B2,1}	{P2,2,P1,1,~P2,2,B2,1,P3,1}
+Resolvents: [{~P3,1,B2,1,P2,2,P1,1,P3,1}]
+
+Clauses: {P2,2,~P3,1,B2,1}	{P3,1,P2,2,~P2,2}
+Resolvents: [{~P3,1,B2,1,P3,1,P2,2}]
+
+Clauses: {P2,2,~P3,1,B2,1}	{~P2,2,B2,1}
+Resolvents: [{~P3,1,B2,1}]
+
+Clauses: {P2,2,~P3,1,B2,1}	{B2,1,P1,1,~P2,2}
+Resolvents: [{~P3,1,B2,1,P1,1}]
+
+Clauses: {P2,2,~P3,1,B2,1}	{B2,1,P2,2,~P2,2}
+Resolvents: [{~P3,1,B2,1,P2,2}]
+
+Clauses: {P2,2,~P3,1,B2,1}	{B2,1,P3,1,P2,2,~P2,2}
+Resolvents: [{~P3,1,B2,1,P3,1,P2,2}]
+
+Clauses: {P2,2,~P3,1,B2,1}	{B2,1,P3,1,P1,1,~P2,2}
+Resolvents: [{~P3,1,B2,1,P3,1,P1,1}]
+
+Clauses: {B2,1,P3,1,~P2,2}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P3,1,~P2,2,B2,1}]
+
+Clauses: {B2,1,P3,1,~P2,2}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P3,1,~P2,2,B2,1,P2,2,P1,1}]
+
+Clauses: {B2,1,P3,1,~P2,2}	{B2,1,~B2,1}
+Resolvents: [{P3,1,~P2,2,B2,1}]
+
+Clauses: {B2,1,P3,1,~P2,2}	{~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,~P2,2,P2,2}]
+
+Clauses: {B2,1,P3,1,~P2,2}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P3,1,~P2,2,B2,1,P1,1}]
+
+Clauses: {B2,1,P3,1,~P2,2}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,~P2,2,B2,1,P2,2}]
+
+Clauses: {B2,1,P3,1,~P2,2}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P3,1,~P2,2,B2,1,P2,2}]
+
+Clauses: {B2,1,P3,1,~P2,2}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,~P2,2,B2,1,P1,1}]
+
+Clauses: {B2,1,P3,1,~P2,2}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{P3,1,~P2,2,P2,2,P1,1}]
+
+Clauses: {B2,1,P3,1,~P2,2}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P3,1,~P2,2,P2,2,B2,1,P1,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P2,2}	{P3,1,P2,2,~P3,1}
+Resolvents: [{P2,2,P1,1,~P2,2,P3,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P2,2}	{~P3,1,B2,1}
+Resolvents: [{P2,2,P1,1,~P2,2,B2,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P2,2}	{B2,1,P3,1,P2,2,~P3,1}
+Resolvents: [{P2,2,P1,1,~P2,2,B2,1,P3,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P2,2}	{B2,1,P1,1,~P3,1}
+Resolvents: [{P2,2,P1,1,~P2,2,B2,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P2,2}	{B2,1,P3,1,P1,1,~P3,1}
+Resolvents: [{P2,2,P1,1,~P2,2,B2,1,P3,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P2,2}	{P2,2,~P3,1,B2,1}
+Resolvents: [{P2,2,P1,1,~P2,2,B2,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P2,2}	{B2,1,P3,1,~P3,1}
+Resolvents: [{P2,2,P1,1,~P2,2,B2,1,P3,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P2,2}	{B2,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P2,2,P1,1,~P2,2,B2,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P2,2}	{P2,2,~P3,1,B2,1,P3,1,P1,1}
+Resolvents: [{P2,2,P1,1,~P2,2,B2,1,P3,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P2,2}	{P3,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P2,2,P1,1,~P2,2,P3,1}]
+
+Clauses: {~P1,2}	{P2,1,~P2,1,B1,1,P1,2}
+Resolvents: [{P2,1,~P2,1,B1,1}]
+
+Clauses: {~P1,2}	{~B1,1,P1,2}
+Resolvents: [{~B1,1}]
+
+Clauses: {~P1,2}	{P1,2,~P1,2}
+Resolvents: [{~P1,2}]
+
+Clauses: {~P1,2}	{P1,2,P2,1,~P1,2}
+Resolvents: [{P2,1,~P1,2}]
+
+Clauses: {~P1,2}	{B1,1,P1,2,~P1,2}
+Resolvents: [{B1,1,~P1,2}]
+
+Clauses: {~P1,2}	{P1,2,~P2,1}
+Resolvents: [{~P2,1}]
+
+Clauses: {~P1,2}	{P2,1,~P1,2,B1,1,P1,2}
+Resolvents: [{P2,1,~P1,2,B1,1}]
+
+Clauses: {~P1,2}	{~B1,1,P2,1,B1,1,P1,2}
+Resolvents: [{~B1,1,P2,1,B1,1}]
+
+Clauses: {~P1,2}	{P1,2,P2,1,~P2,1}
+Resolvents: [{P2,1,~P2,1}]
+
+Clauses: {~P1,2}	{B1,1,~B1,1,P1,2}
+Resolvents: [{B1,1,~B1,1}]
+
+Clauses: {~P1,2}	{~B1,1,P1,2,P2,1}
+Resolvents: [{~B1,1,P2,1}]
+
+Clauses: {~P1,2}	{B1,1,P1,2,~P2,1}
+Resolvents: [{B1,1,~P2,1}]
+
+Clauses: {P2,2,P1,1,~P2,2,B2,1,P3,1}	{B2,1,P2,2,P1,1,~P2,2}
+Resolvents: [{P1,1,~P2,2,B2,1,P3,1,P2,2}]
+
+Clauses: {P2,2,P1,1,~P2,2,B2,1,P3,1}	{B2,1,P3,1,~P2,2}
+Resolvents: [{P1,1,~P2,2,B2,1,P3,1}]
+
+Clauses: {P2,2,P1,1,~P2,2,B2,1,P3,1}	{P3,1,P2,2,P1,1,~P2,2}
+Resolvents: [{P1,1,~P2,2,B2,1,P3,1,P2,2}]
+
+Clauses: {P2,2,P1,1,~P2,2,B2,1,P3,1}	{P3,1,P2,2,~P2,2}
+Resolvents: [{P1,1,~P2,2,B2,1,P3,1,P2,2}]
+
+Clauses: {P2,2,P1,1,~P2,2,B2,1,P3,1}	{~P2,2,B2,1}
+Resolvents: [{P1,1,~P2,2,B2,1,P3,1}]
+
+Clauses: {P2,2,P1,1,~P2,2,B2,1,P3,1}	{B2,1,P1,1,~P2,2}
+Resolvents: [{P1,1,~P2,2,B2,1,P3,1}]
+
+Clauses: {P2,2,P1,1,~P2,2,B2,1,P3,1}	{B2,1,P2,2,~P2,2}
+Resolvents: [{P1,1,~P2,2,B2,1,P3,1,P2,2}]
+
+Clauses: {P2,2,P1,1,~P2,2,B2,1,P3,1}	{B2,1,P3,1,P2,2,~P2,2}
+Resolvents: [{P1,1,~P2,2,B2,1,P3,1,P2,2}]
+
+Clauses: {P2,2,P1,1,~P2,2,B2,1,P3,1}	{B2,1,P3,1,P1,1,~P2,2}
+Resolvents: [{P1,1,~P2,2,B2,1,P3,1}]
+
+Clauses: {P1,2,P2,1,~P1,2}	{~P1,2,B1,1}
+Resolvents: [{P2,1,~P1,2,B1,1}]
+
+Clauses: {P1,2,P2,1,~P1,2}	{P1,2,~P1,2}
+Resolvents: [{P2,1,~P1,2,P1,2}]
+
+Clauses: {P1,2,P2,1,~P1,2}	{~P1,2}
+Resolvents: [{P2,1,~P1,2}]
+
+Clauses: {P1,2,P2,1,~P1,2}	{B1,1,P1,2,~P1,2}
+Resolvents: [{P2,1,~P1,2,B1,1,P1,2}]
+
+Clauses: {P1,2,P2,1,~P1,2}	{P2,1,~P1,2}
+Resolvents: [{P2,1,~P1,2}]
+
+Clauses: {P1,2,P2,1,~P1,2}	{P2,1,~P1,2,B1,1,P1,2}
+Resolvents: [{P2,1,~P1,2,B1,1,P1,2}]
+
+Clauses: {P1,2,P2,1,~P1,2}	{B1,1,P2,1,~P1,2}
+Resolvents: [{P2,1,~P1,2,B1,1}]
+
+Clauses: {B1,1,P1,2,~P1,2}	{~B1,1,P1,2}
+Resolvents: [{P1,2,~P1,2}]
+
+Clauses: {B1,1,P1,2,~P1,2}	{B1,1,~B1,1,P2,1}
+Resolvents: [{P1,2,~P1,2,B1,1,P2,1}]
+
+Clauses: {B1,1,P1,2,~P1,2}	{B1,1,~B1,1}
+Resolvents: [{P1,2,~P1,2,B1,1}]
+
+Clauses: {B1,1,P1,2,~P1,2}	{~B1,1,P2,1}
+Resolvents: [{P1,2,~P1,2,P2,1}]
+
+Clauses: {B1,1,P1,2,~P1,2}	{~B1,1,P2,1,B1,1,P1,2}
+Resolvents: [{P1,2,~P1,2,P2,1,B1,1}]
+
+Clauses: {B1,1,P1,2,~P1,2}	{B1,1,~B1,1,P1,2}
+Resolvents: [{P1,2,~P1,2,B1,1}]
+
+Clauses: {B1,1,P1,2,~P1,2}	{~B1,1}
+Resolvents: [{P1,2,~P1,2}]
+
+Clauses: {B1,1,P1,2,~P1,2}	{~B1,1,P1,2,P2,1}
+Resolvents: [{P1,2,~P1,2,P2,1}]
+
+Clauses: {B2,1,P1,1}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P1,1,B2,1,P3,1}]
+
+Clauses: {B2,1,P1,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P1,1,B2,1,P2,2}]
+
+Clauses: {B2,1,P1,1}	{B2,1,~B2,1}
+Resolvents: [{P1,1,B2,1}]
+
+Clauses: {B2,1,P1,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{P1,1,P3,1,P2,2}]
+
+Clauses: {B2,1,P1,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P1,1,B2,1}]
+
+Clauses: {B2,1,P1,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P1,1,B2,1,P3,1,P2,2}]
+
+Clauses: {B2,1,P1,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P1,1,B2,1,P2,2}]
+
+Clauses: {B2,1,P1,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P1,1,B2,1,P3,1}]
+
+Clauses: {B2,1,P1,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{P1,1,P3,1,P2,2}]
+
+Clauses: {B2,1,P1,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P1,1,P3,1,P2,2,B2,1}]
+
+Clauses: {P3,1,P2,2,~P1,1}	{P3,1,P2,2,~P3,1}
+Resolvents: [{P2,2,~P1,1,P3,1}]
+
+Clauses: {P3,1,P2,2,~P1,1}	{~P3,1,B2,1}
+Resolvents: [{P2,2,~P1,1,B2,1}]
+
+Clauses: {P3,1,P2,2,~P1,1}	{B2,1,P3,1,P2,2,~P3,1}
+Resolvents: [{P2,2,~P1,1,B2,1,P3,1}]
+
+Clauses: {P3,1,P2,2,~P1,1}	{B2,1,P1,1,~P3,1}
+Resolvents: [{P2,2,~P1,1,B2,1,P1,1}]
+
+Clauses: {P3,1,P2,2,~P1,1}	{B2,1,P3,1,P1,1,~P3,1}
+Resolvents: [{P2,2,~P1,1,B2,1,P3,1,P1,1}]
+
+Clauses: {P3,1,P2,2,~P1,1}	{P2,2,~P3,1,B2,1}
+Resolvents: [{P2,2,~P1,1,B2,1}]
+
+Clauses: {P3,1,P2,2,~P1,1}	{B2,1,P3,1,~P3,1}
+Resolvents: [{P2,2,~P1,1,B2,1,P3,1}]
+
+Clauses: {P3,1,P2,2,~P1,1}	{B2,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P2,2,~P1,1,B2,1,P1,1}]
+
+Clauses: {P3,1,P2,2,~P1,1}	{P2,2,~P3,1,B2,1,P3,1,P1,1}
+Resolvents: [{P2,2,~P1,1,B2,1,P3,1,P1,1}]
+
+Clauses: {P3,1,P2,2,~P1,1}	{P3,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P2,2,~P1,1,P3,1,P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P3,1,P2,2,B2,1}]
+
+Clauses: {B2,1,P3,1,P2,2}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2}	{B2,1,~B2,1}
+Resolvents: [{P3,1,P2,2,B2,1}]
+
+Clauses: {B2,1,P3,1,P2,2}	{~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P2,2}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P2,2,B2,1}]
+
+Clauses: {B2,1,P3,1,P2,2}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P3,1,P2,2,B2,1}]
+
+Clauses: {B2,1,P3,1,P2,2}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2,P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {P3,1,P2,2,~P2,2}	{P3,1,P2,2,~P3,1}
+Resolvents: [{P2,2,~P2,2,P3,1}]
+
+Clauses: {P3,1,P2,2,~P2,2}	{~P3,1,B2,1}
+Resolvents: [{P2,2,~P2,2,B2,1}]
+
+Clauses: {P3,1,P2,2,~P2,2}	{B2,1,P3,1,P2,2,~P3,1}
+Resolvents: [{P2,2,~P2,2,B2,1,P3,1}]
+
+Clauses: {P3,1,P2,2,~P2,2}	{B2,1,P1,1,~P3,1}
+Resolvents: [{P2,2,~P2,2,B2,1,P1,1}]
+
+Clauses: {P3,1,P2,2,~P2,2}	{B2,1,P3,1,P1,1,~P3,1}
+Resolvents: [{P2,2,~P2,2,B2,1,P3,1,P1,1}]
+
+Clauses: {P3,1,P2,2,~P2,2}	{P2,2,~P3,1,B2,1}
+Resolvents: [{P2,2,~P2,2,B2,1}]
+
+Clauses: {P3,1,P2,2,~P2,2}	{B2,1,P3,1,~P3,1}
+Resolvents: [{P2,2,~P2,2,B2,1,P3,1}]
+
+Clauses: {P3,1,P2,2,~P2,2}	{B2,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P2,2,~P2,2,B2,1,P1,1}]
+
+Clauses: {P3,1,P2,2,~P2,2}	{P2,2,~P3,1,B2,1,P3,1,P1,1}
+Resolvents: [{P2,2,~P2,2,B2,1,P3,1,P1,1}]
+
+Clauses: {P3,1,P2,2,~P2,2}	{P3,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P2,2,~P2,2,P3,1,P1,1}]
+
+Clauses: {B2,1,~B2,1,P1,1}	{B2,1,~B2,1,P3,1}
+Resolvents: [{~B2,1,P1,1,B2,1,P3,1}]
+
+Clauses: {B2,1,~B2,1,P1,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{~B2,1,P1,1,B2,1,P2,2}]
+
+Clauses: {B2,1,~B2,1,P1,1}	{B2,1,~B2,1}
+Resolvents: [{~B2,1,P1,1,B2,1}]
+
+Clauses: {B2,1,~B2,1,P1,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{~B2,1,P1,1,P3,1,P2,2}]
+
+Clauses: {B2,1,~B2,1,P1,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{~B2,1,P1,1,B2,1,P3,1,P2,2}]
+
+Clauses: {B2,1,~B2,1,P1,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{~B2,1,P1,1,B2,1,P2,2}]
+
+Clauses: {B2,1,~B2,1,P1,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{~B2,1,P1,1,B2,1,P3,1}]
+
+Clauses: {B2,1,~B2,1,P1,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{~B2,1,P1,1,P3,1,P2,2}]
+
+Clauses: {B2,1,~B2,1,P1,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{~B2,1,P1,1,P3,1,P2,2,B2,1}]
+
+Clauses: {B2,1,~B2,1,P3,1,P2,2}	{B2,1,~B2,1,P3,1}
+Resolvents: [{~B2,1,P3,1,P2,2,B2,1}]
+
+Clauses: {B2,1,~B2,1,P3,1,P2,2}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{~B2,1,P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {B2,1,~B2,1,P3,1,P2,2}	{B2,1,~B2,1}
+Resolvents: [{~B2,1,P3,1,P2,2,B2,1}]
+
+Clauses: {B2,1,~B2,1,P3,1,P2,2}	{~B2,1,P3,1,P2,2}
+Resolvents: [{~B2,1,P3,1,P2,2}]
+
+Clauses: {B2,1,~B2,1,P3,1,P2,2}	{B2,1,~B2,1,P1,1}
+Resolvents: [{~B2,1,P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {B2,1,~B2,1,P3,1,P2,2}	{B2,1,~B2,1,P2,2}
+Resolvents: [{~B2,1,P3,1,P2,2,B2,1}]
+
+Clauses: {B2,1,~B2,1,P3,1,P2,2}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{~B2,1,P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {B2,1,~B2,1,P3,1,P2,2}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{~B2,1,P3,1,P2,2,P1,1}]
+
+Clauses: {B2,1,~B2,1,P3,1,P2,2}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{~B2,1,P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {B2,1,~B2,1,P2,2}	{B2,1,~B2,1,P3,1}
+Resolvents: [{~B2,1,P2,2,B2,1,P3,1}]
+
+Clauses: {B2,1,~B2,1,P2,2}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{~B2,1,P2,2,B2,1,P1,1}]
+
+Clauses: {B2,1,~B2,1,P2,2}	{B2,1,~B2,1}
+Resolvents: [{~B2,1,P2,2,B2,1}]
+
+Clauses: {B2,1,~B2,1,P2,2}	{~B2,1,P3,1,P2,2}
+Resolvents: [{~B2,1,P2,2,P3,1}]
+
+Clauses: {B2,1,~B2,1,P2,2}	{B2,1,~B2,1,P1,1}
+Resolvents: [{~B2,1,P2,2,B2,1,P1,1}]
+
+Clauses: {B2,1,~B2,1,P2,2}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{~B2,1,P2,2,B2,1,P3,1}]
+
+Clauses: {B2,1,~B2,1,P2,2}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{~B2,1,P2,2,B2,1,P3,1,P1,1}]
+
+Clauses: {B2,1,~B2,1,P2,2}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{~B2,1,P2,2,P3,1,P1,1}]
+
+Clauses: {B2,1,~B2,1,P2,2}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{~B2,1,P2,2,P3,1,B2,1,P1,1}]
+
+Clauses: {B2,1,P2,2}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P2,2,B2,1,P3,1}]
+
+Clauses: {B2,1,P2,2}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P2,2,B2,1,P1,1}]
+
+Clauses: {B2,1,P2,2}	{B2,1,~B2,1}
+Resolvents: [{P2,2,B2,1}]
+
+Clauses: {B2,1,P2,2}	{~B2,1,P3,1,P2,2}
+Resolvents: [{P2,2,P3,1}]
+
+Clauses: {B2,1,P2,2}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P2,2,B2,1,P1,1}]
+
+Clauses: {B2,1,P2,2}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P2,2,B2,1,P3,1}]
+
+Clauses: {B2,1,P2,2}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P2,2,B2,1}]
+
+Clauses: {B2,1,P2,2}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P2,2,B2,1,P3,1,P1,1}]
+
+Clauses: {B2,1,P2,2}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{P2,2,P3,1,P1,1}]
+
+Clauses: {B2,1,P2,2}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P2,2,P3,1,B2,1,P1,1}]
+
+Clauses: {B2,1,~B2,1,P3,1,P1,1}	{B2,1,~B2,1,P3,1}
+Resolvents: [{~B2,1,P3,1,P1,1,B2,1}]
+
+Clauses: {B2,1,~B2,1,P3,1,P1,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{~B2,1,P3,1,P1,1,B2,1,P2,2}]
+
+Clauses: {B2,1,~B2,1,P3,1,P1,1}	{B2,1,~B2,1}
+Resolvents: [{~B2,1,P3,1,P1,1,B2,1}]
+
+Clauses: {B2,1,~B2,1,P3,1,P1,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{~B2,1,P3,1,P1,1,P2,2}]
+
+Clauses: {B2,1,~B2,1,P3,1,P1,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{~B2,1,P3,1,P1,1,B2,1}]
+
+Clauses: {B2,1,~B2,1,P3,1,P1,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{~B2,1,P3,1,P1,1,B2,1,P2,2}]
+
+Clauses: {B2,1,~B2,1,P3,1,P1,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{~B2,1,P3,1,P1,1,B2,1,P2,2}]
+
+Clauses: {B2,1,~B2,1,P3,1,P1,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{~B2,1,P3,1,P1,1,P2,2}]
+
+Clauses: {B2,1,~B2,1,P3,1,P1,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{~B2,1,P3,1,P1,1,P2,2,B2,1}]
+
+Clauses: {B2,1,P3,1,P1,1}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P3,1,P1,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P1,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P3,1,P1,1,B2,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1}	{B2,1,~B2,1}
+Resolvents: [{P3,1,P1,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P1,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P1,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P3,1,P1,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P1,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P1,1,B2,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P3,1,P1,1,B2,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,P1,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P1,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{P3,1,P1,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P3,1,P1,1,P2,2,B2,1}]
+
+Clauses: {~P2,2,B2,1}	{P3,1,P2,2,~P3,1}
+Resolvents: [{B2,1,P3,1,~P3,1}]
+
+Clauses: {~P2,2,B2,1}	{P2,2,P1,1,~P1,1,B2,1,P3,1}
+Resolvents: [{B2,1,P1,1,~P1,1,P3,1}]
+
+Clauses: {~P2,2,B2,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{B2,1,~B2,1,P1,1}]
+
+Clauses: {~P2,2,B2,1}	{B2,1,P2,2,P1,1}
+Resolvents: [{B2,1,P1,1}]
+
+Clauses: {~P2,2,B2,1}	{P3,1,P2,2,P1,1,~P1,1}
+Resolvents: [{B2,1,P3,1,P1,1,~P1,1}]
+
+Clauses: {~P2,2,B2,1}	{P2,2,P1,1,~P1,1,B2,1}
+Resolvents: [{B2,1,P1,1,~P1,1}]
+
+Clauses: {~P2,2,B2,1}	{B2,1,P2,2,P1,1,~P2,2}
+Resolvents: [{B2,1,P1,1,~P2,2}]
+
+Clauses: {~P2,2,B2,1}	{P2,2,P1,1,B2,1,P3,1}
+Resolvents: [{B2,1,P1,1,P3,1}]
+
+Clauses: {~P2,2,B2,1}	{B2,1,P3,1,P2,2,~P3,1}
+Resolvents: [{B2,1,P3,1,~P3,1}]
+
+Clauses: {~P2,2,B2,1}	{P3,1,P2,2}
+Resolvents: [{B2,1,P3,1}]
+
+Clauses: {~P2,2,B2,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{B2,1,~B2,1,P3,1}]
+
+Clauses: {~P2,2,B2,1}	{P2,2,~P3,1,B2,1}
+Resolvents: [{B2,1,~P3,1}]
+
+Clauses: {~P2,2,B2,1}	{P3,1,P2,2,P1,1,~P2,2}
+Resolvents: [{B2,1,P3,1,P1,1,~P2,2}]
+
+Clauses: {~P2,2,B2,1}	{P2,2,P1,1,~P2,2,B2,1,P3,1}
+Resolvents: [{B2,1,P1,1,~P2,2,P3,1}]
+
+Clauses: {~P2,2,B2,1}	{P3,1,P2,2,~P1,1}
+Resolvents: [{B2,1,P3,1,~P1,1}]
+
+Clauses: {~P2,2,B2,1}	{B2,1,P3,1,P2,2}
+Resolvents: [{B2,1,P3,1}]
+
+Clauses: {~P2,2,B2,1}	{P3,1,P2,2,~P2,2}
+Resolvents: [{B2,1,P3,1,~P2,2}]
+
+Clauses: {~P2,2,B2,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{B2,1,~B2,1,P3,1}]
+
+Clauses: {~P2,2,B2,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{B2,1,~B2,1}]
+
+Clauses: {~P2,2,B2,1}	{B2,1,P2,2}
+Resolvents: [{B2,1}]
+
+Clauses: {~P2,2,B2,1}	{P2,2,~P1,1,B2,1}
+Resolvents: [{B2,1,~P1,1}]
+
+Clauses: {~P2,2,B2,1}	{B2,1,P2,2,~P2,2}
+Resolvents: [{B2,1,~P2,2}]
+
+Clauses: {~P2,2,B2,1}	{B2,1,P3,1,P2,2,~P2,2}
+Resolvents: [{B2,1,P3,1,~P2,2}]
+
+Clauses: {~P2,2,B2,1}	{P3,1,P2,2,P1,1}
+Resolvents: [{B2,1,P3,1,P1,1}]
+
+Clauses: {~P2,2,B2,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{B2,1,~B2,1,P3,1,P1,1}]
+
+Clauses: {~P2,2,B2,1}	{B2,1,P2,2,P1,1,~P3,1}
+Resolvents: [{B2,1,P1,1,~P3,1}]
+
+Clauses: {~P2,2,B2,1}	{B2,1,P3,1,P2,2,~P1,1}
+Resolvents: [{B2,1,P3,1,~P1,1}]
+
+Clauses: {~P2,2,B2,1}	{P2,2,~P3,1,B2,1,P3,1,P1,1}
+Resolvents: [{B2,1,~P3,1,P3,1,P1,1}]
+
+Clauses: {~P2,2,B2,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{B2,1,~B2,1,P3,1,P1,1}]
+
+Clauses: {~P2,2,B2,1}	{P3,1,P2,2,P1,1,~P3,1}
+Resolvents: [{B2,1,P3,1,P1,1,~P3,1}]
+
+Clauses: {B2,1,P3,1,P1,1,~P1,1}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P3,1,P1,1,~P1,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P1,1,~P1,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P3,1,P1,1,~P1,1,B2,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1,~P1,1}	{B2,1,~B2,1}
+Resolvents: [{P3,1,P1,1,~P1,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P1,1,~P1,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P1,1,~P1,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1,~P1,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P3,1,P1,1,~P1,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P1,1,~P1,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P1,1,~P1,1,B2,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1,~P1,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P3,1,P1,1,~P1,1,B2,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1,~P1,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,P1,1,~P1,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P1,1,~P1,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{P3,1,P1,1,~P1,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1,~P1,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P3,1,P1,1,~P1,1,P2,2,B2,1}]
+
+Clauses: {B1,1,~B1,1}	{~B1,1,P1,2}
+Resolvents: [{~B1,1,P1,2}]
+
+Clauses: {B1,1,~B1,1}	{B1,1,~B1,1,P2,1}
+Resolvents: [{~B1,1,B1,1,P2,1}]
+
+Clauses: {B1,1,~B1,1}	{~B1,1,P2,1}
+Resolvents: [{~B1,1,P2,1}]
+
+Clauses: {B1,1,~B1,1}	{~B1,1,P2,1,B1,1,P1,2}
+Resolvents: [{~B1,1,P2,1,B1,1,P1,2}]
+
+Clauses: {B1,1,~B1,1}	{B1,1,~B1,1,P1,2}
+Resolvents: [{~B1,1,B1,1,P1,2}]
+
+Clauses: {B1,1,~B1,1}	{~B1,1}
+Resolvents: [{~B1,1}]
+
+Clauses: {B1,1,~B1,1}	{~B1,1,P1,2,P2,1}
+Resolvents: [{~B1,1,P1,2,P2,1}]
+
+Clauses: {P2,1,~P1,2}	{B1,1,P2,1,~P2,1}
+Resolvents: [{~P1,2,B1,1,P2,1}]
+
+Clauses: {P2,1,~P1,2}	{P2,1,~P2,1,B1,1,P1,2}
+Resolvents: [{~P1,2,P2,1,B1,1,P1,2}]
+
+Clauses: {P2,1,~P1,2}	{P2,1,~P2,1}
+Resolvents: [{~P1,2,P2,1}]
+
+Clauses: {P2,1,~P1,2}	{P1,2,~P2,1}
+Resolvents: [{~P1,2,P1,2}]
+
+Clauses: {P2,1,~P1,2}	{~P2,1,B1,1}
+Resolvents: [{~P1,2,B1,1}]
+
+Clauses: {P2,1,~P1,2}	{P1,2,P2,1,~P2,1}
+Resolvents: [{~P1,2,P1,2,P2,1}]
+
+Clauses: {P2,1,~P1,2}	{B1,1,P1,2,~P2,1}
+Resolvents: [{~P1,2,B1,1,P1,2}]
+
+Clauses: {P2,1,~P1,2}	{~P2,1}
+Resolvents: [{~P1,2}]
+
+Clauses: {P1,2,~P2,1}	{~P1,2,B1,1}
+Resolvents: [{~P2,1,B1,1}]
+
+Clauses: {P1,2,~P2,1}	{P1,2,~P1,2}
+Resolvents: [{~P2,1,P1,2}]
+
+Clauses: {P1,2,~P2,1}	{~P1,2}
+Resolvents: [{~P2,1}]
+
+Clauses: {P1,2,~P2,1}	{P1,2,P2,1,~P1,2}
+Resolvents: [{~P2,1,P1,2,P2,1}]
+
+Clauses: {P1,2,~P2,1}	{B1,1,P1,2,~P1,2}
+Resolvents: [{~P2,1,B1,1,P1,2}]
+
+Clauses: {P1,2,~P2,1}	{P2,1,~P1,2}
+Resolvents: [{~P2,1,P2,1}]
+
+Clauses: {P1,2,~P2,1}	{P2,1,~P1,2,B1,1,P1,2}
+Resolvents: [{~P2,1,P2,1,B1,1,P1,2}]
+
+Clauses: {P1,2,~P2,1}	{B1,1,P2,1,~P1,2}
+Resolvents: [{~P2,1,B1,1,P2,1}]
+
+Clauses: {~P2,1,B1,1}	{B1,1,P2,1,~P2,1}
+Resolvents: [{B1,1,~P2,1}]
+
+Clauses: {~P2,1,B1,1}	{P2,1,~P2,1,B1,1,P1,2}
+Resolvents: [{B1,1,~P2,1,P1,2}]
+
+Clauses: {~P2,1,B1,1}	{P2,1,~P2,1}
+Resolvents: [{B1,1,~P2,1}]
+
+Clauses: {~P2,1,B1,1}	{B1,1,~B1,1,P2,1}
+Resolvents: [{B1,1,~B1,1}]
+
+Clauses: {~P2,1,B1,1}	{P1,2,P2,1,~P1,2}
+Resolvents: [{B1,1,P1,2,~P1,2}]
+
+Clauses: {~P2,1,B1,1}	{P2,1,~P1,2}
+Resolvents: [{B1,1,~P1,2}]
+
+Clauses: {~P2,1,B1,1}	{~B1,1,P2,1}
+Resolvents: [{B1,1,~B1,1}]
+
+Clauses: {~P2,1,B1,1}	{P2,1,~P1,2,B1,1,P1,2}
+Resolvents: [{B1,1,~P1,2,P1,2}]
+
+Clauses: {~P2,1,B1,1}	{~B1,1,P2,1,B1,1,P1,2}
+Resolvents: [{B1,1,~B1,1,P1,2}]
+
+Clauses: {~P2,1,B1,1}	{P1,2,P2,1,~P2,1}
+Resolvents: [{B1,1,P1,2,~P2,1}]
+
+Clauses: {~P2,1,B1,1}	{~B1,1,P1,2,P2,1}
+Resolvents: [{B1,1,~B1,1,P1,2}]
+
+Clauses: {~P2,1,B1,1}	{B1,1,P2,1,~P1,2}
+Resolvents: [{B1,1,~P1,2}]
+
+Clauses: {~P1,1,B2,1}	{P2,2,P1,1,~P1,1,B2,1,P3,1}
+Resolvents: [{B2,1,P2,2,~P1,1,P3,1}]
+
+Clauses: {~P1,1,B2,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{B2,1,~B2,1,P2,2}]
+
+Clauses: {~P1,1,B2,1}	{B2,1,P2,2,P1,1}
+Resolvents: [{B2,1,P2,2}]
+
+Clauses: {~P1,1,B2,1}	{P3,1,P2,2,P1,1,~P1,1}
+Resolvents: [{B2,1,P3,1,P2,2,~P1,1}]
+
+Clauses: {~P1,1,B2,1}	{P2,2,P1,1,~P1,1,B2,1}
+Resolvents: [{B2,1,P2,2,~P1,1}]
+
+Clauses: {~P1,1,B2,1}	{B2,1,P2,2,P1,1,~P2,2}
+Resolvents: [{B2,1,P2,2,~P2,2}]
+
+Clauses: {~P1,1,B2,1}	{P2,2,P1,1,B2,1,P3,1}
+Resolvents: [{B2,1,P2,2,P3,1}]
+
+Clauses: {~P1,1,B2,1}	{B2,1,P1,1,~P3,1}
+Resolvents: [{B2,1,~P3,1}]
+
+Clauses: {~P1,1,B2,1}	{B2,1,P3,1,P1,1,~P3,1}
+Resolvents: [{B2,1,P3,1,~P3,1}]
+
+Clauses: {~P1,1,B2,1}	{P3,1,P2,2,P1,1,~P2,2}
+Resolvents: [{B2,1,P3,1,P2,2,~P2,2}]
+
+Clauses: {~P1,1,B2,1}	{P2,2,P1,1,~P2,2,B2,1,P3,1}
+Resolvents: [{B2,1,P2,2,~P2,2,P3,1}]
+
+Clauses: {~P1,1,B2,1}	{B2,1,P1,1}
+Resolvents: [{B2,1}]
+
+Clauses: {~P1,1,B2,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{B2,1,~B2,1}]
+
+Clauses: {~P1,1,B2,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{B2,1,~B2,1,P3,1}]
+
+Clauses: {~P1,1,B2,1}	{B2,1,P3,1,P1,1}
+Resolvents: [{B2,1,P3,1}]
+
+Clauses: {~P1,1,B2,1}	{B2,1,P3,1,P1,1,~P1,1}
+Resolvents: [{B2,1,P3,1,~P1,1}]
+
+Clauses: {~P1,1,B2,1}	{P1,1,~P1,1,B2,1}
+Resolvents: [{B2,1,~P1,1}]
+
+Clauses: {~P1,1,B2,1}	{B2,1,P1,1,~P2,2}
+Resolvents: [{B2,1,~P2,2}]
+
+Clauses: {~P1,1,B2,1}	{P3,1,P2,2,P1,1}
+Resolvents: [{B2,1,P3,1,P2,2}]
+
+Clauses: {~P1,1,B2,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{B2,1,~B2,1,P3,1,P2,2}]
+
+Clauses: {~P1,1,B2,1}	{B2,1,P3,1,P1,1,~P2,2}
+Resolvents: [{B2,1,P3,1,~P2,2}]
+
+Clauses: {~P1,1,B2,1}	{B2,1,P2,2,P1,1,~P3,1}
+Resolvents: [{B2,1,P2,2,~P3,1}]
+
+Clauses: {~P1,1,B2,1}	{P2,2,~P3,1,B2,1,P3,1,P1,1}
+Resolvents: [{B2,1,P2,2,~P3,1,P3,1}]
+
+Clauses: {~P1,1,B2,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{B2,1,~B2,1,P3,1,P2,2}]
+
+Clauses: {~P1,1,B2,1}	{P3,1,P2,2,P1,1,~P3,1}
+Resolvents: [{B2,1,P3,1,P2,2,~P3,1}]
+
+Clauses: {~B1,1,P2,1}	{B1,1,P2,1,~P2,1}
+Resolvents: [{P2,1,~P2,1}]
+
+Clauses: {~B1,1,P2,1}	{P2,1,~P2,1,B1,1,P1,2}
+Resolvents: [{P2,1,~P2,1,P1,2}]
+
+Clauses: {~B1,1,P2,1}	{~P1,2,B1,1}
+Resolvents: [{P2,1,~P1,2}]
+
+Clauses: {~B1,1,P2,1}	{B1,1,~B1,1,P2,1}
+Resolvents: [{P2,1,~B1,1}]
+
+Clauses: {~B1,1,P2,1}	{B1,1,P1,2,~P1,2}
+Resolvents: [{P2,1,P1,2,~P1,2}]
+
+Clauses: {~B1,1,P2,1}	{B1,1,~B1,1}
+Resolvents: [{P2,1,~B1,1}]
+
+Clauses: {~B1,1,P2,1}	{~P2,1,B1,1}
+Resolvents: [{P2,1,~P2,1}]
+
+Clauses: {~B1,1,P2,1}	{P2,1,~P1,2,B1,1,P1,2}
+Resolvents: [{P2,1,~P1,2,P1,2}]
+
+Clauses: {~B1,1,P2,1}	{~B1,1,P2,1,B1,1,P1,2}
+Resolvents: [{P2,1,~B1,1,P1,2}]
+
+Clauses: {~B1,1,P2,1}	{B1,1,~B1,1,P1,2}
+Resolvents: [{P2,1,~B1,1,P1,2}]
+
+Clauses: {~B1,1,P2,1}	{B1,1,P2,1,~P1,2}
+Resolvents: [{P2,1,~P1,2}]
+
+Clauses: {~B1,1,P2,1}	{B1,1,P1,2,~P2,1}
+Resolvents: [{P2,1,P1,2,~P2,1}]
+
+Clauses: {P2,1,~P1,2,B1,1,P1,2}	{B1,1,P2,1,~P2,1}
+Resolvents: [{~P1,2,B1,1,P1,2,P2,1}]
+
+Clauses: {P2,1,~P1,2,B1,1,P1,2}	{P2,1,~P2,1,B1,1,P1,2}
+Resolvents: [{~P1,2,B1,1,P1,2,P2,1}]
+
+Clauses: {P2,1,~P1,2,B1,1,P1,2}	{P2,1,~P2,1}
+Resolvents: [{~P1,2,B1,1,P1,2,P2,1}]
+
+Clauses: {P2,1,~P1,2,B1,1,P1,2}	{P1,2,~P2,1}
+Resolvents: [{~P1,2,B1,1,P1,2}]
+
+Clauses: {P2,1,~P1,2,B1,1,P1,2}	{~P2,1,B1,1}
+Resolvents: [{~P1,2,B1,1,P1,2}]
+
+Clauses: {P2,1,~P1,2,B1,1,P1,2}	{P1,2,P2,1,~P2,1}
+Resolvents: [{~P1,2,B1,1,P1,2,P2,1}]
+
+Clauses: {P2,1,~P1,2,B1,1,P1,2}	{B1,1,P1,2,~P2,1}
+Resolvents: [{~P1,2,B1,1,P1,2}]
+
+Clauses: {P2,1,~P1,2,B1,1,P1,2}	{~P2,1}
+Resolvents: [{~P1,2,B1,1,P1,2}]
+
+Clauses: {~B1,1,P2,1,B1,1,P1,2}	{B1,1,P2,1,~P2,1}
+Resolvents: [{P2,1,B1,1,P1,2,~P2,1}]
+
+Clauses: {~B1,1,P2,1,B1,1,P1,2}	{P2,1,~P2,1,B1,1,P1,2}
+Resolvents: [{P2,1,B1,1,P1,2,~P2,1}]
+
+Clauses: {~B1,1,P2,1,B1,1,P1,2}	{~P1,2,B1,1}
+Resolvents: [{P2,1,B1,1,P1,2,~P1,2}]
+
+Clauses: {~B1,1,P2,1,B1,1,P1,2}	{B1,1,~B1,1,P2,1}
+Resolvents: [{P2,1,B1,1,P1,2,~B1,1}]
+
+Clauses: {~B1,1,P2,1,B1,1,P1,2}	{B1,1,P1,2,~P1,2}
+Resolvents: [{P2,1,B1,1,P1,2,~P1,2}]
+
+Clauses: {~B1,1,P2,1,B1,1,P1,2}	{B1,1,~B1,1}
+Resolvents: [{P2,1,B1,1,P1,2,~B1,1}]
+
+Clauses: {~B1,1,P2,1,B1,1,P1,2}	{~P2,1,B1,1}
+Resolvents: [{P2,1,B1,1,P1,2,~P2,1}]
+
+Clauses: {~B1,1,P2,1,B1,1,P1,2}	{P2,1,~P1,2,B1,1,P1,2}
+Resolvents: [{P2,1,B1,1,P1,2,~P1,2}]
+
+Clauses: {~B1,1,P2,1,B1,1,P1,2}	{B1,1,~B1,1,P1,2}
+Resolvents: [{P2,1,B1,1,P1,2,~B1,1}]
+
+Clauses: {~B1,1,P2,1,B1,1,P1,2}	{B1,1,P2,1,~P1,2}
+Resolvents: [{P2,1,B1,1,P1,2,~P1,2}]
+
+Clauses: {~B1,1,P2,1,B1,1,P1,2}	{B1,1,P1,2,~P2,1}
+Resolvents: [{P2,1,B1,1,P1,2,~P2,1}]
+
+Clauses: {P1,1,~P1,1,B2,1}	{P2,2,P1,1,~P1,1,B2,1,P3,1}
+Resolvents: [{~P1,1,B2,1,P2,2,P1,1,P3,1}]
+
+Clauses: {P1,1,~P1,1,B2,1}	{P3,1,P2,2,P1,1,~P1,1}
+Resolvents: [{~P1,1,B2,1,P3,1,P2,2,P1,1}]
+
+Clauses: {P1,1,~P1,1,B2,1}	{P2,2,P1,1,~P1,1,B2,1}
+Resolvents: [{~P1,1,B2,1,P2,2,P1,1}]
+
+Clauses: {P1,1,~P1,1,B2,1}	{~P1,1}
+Resolvents: [{~P1,1,B2,1}]
+
+Clauses: {P1,1,~P1,1,B2,1}	{B2,1,P3,1,~P1,1}
+Resolvents: [{~P1,1,B2,1,P3,1}]
+
+Clauses: {P1,1,~P1,1,B2,1}	{P3,1,P2,2,~P1,1}
+Resolvents: [{~P1,1,B2,1,P3,1,P2,2}]
+
+Clauses: {P1,1,~P1,1,B2,1}	{B2,1,P3,1,P1,1,~P1,1}
+Resolvents: [{~P1,1,B2,1,P3,1,P1,1}]
+
+Clauses: {P1,1,~P1,1,B2,1}	{~P1,1,B2,1}
+Resolvents: [{~P1,1,B2,1}]
+
+Clauses: {P1,1,~P1,1,B2,1}	{P2,2,~P1,1,B2,1}
+Resolvents: [{~P1,1,B2,1,P2,2}]
+
+Clauses: {P1,1,~P1,1,B2,1}	{B2,1,P3,1,P2,2,~P1,1}
+Resolvents: [{~P1,1,B2,1,P3,1,P2,2}]
+
+Clauses: {P2,2,~P1,1,B2,1}	{B2,1,P2,2,P1,1,~P2,2}
+Resolvents: [{~P1,1,B2,1,P2,2,P1,1}]
+
+Clauses: {P2,2,~P1,1,B2,1}	{B2,1,P3,1,~P2,2}
+Resolvents: [{~P1,1,B2,1,P3,1}]
+
+Clauses: {P2,2,~P1,1,B2,1}	{P3,1,P2,2,P1,1,~P2,2}
+Resolvents: [{~P1,1,B2,1,P3,1,P2,2,P1,1}]
+
+Clauses: {P2,2,~P1,1,B2,1}	{P2,2,P1,1,~P2,2,B2,1,P3,1}
+Resolvents: [{~P1,1,B2,1,P2,2,P1,1,P3,1}]
+
+Clauses: {P2,2,~P1,1,B2,1}	{P3,1,P2,2,~P2,2}
+Resolvents: [{~P1,1,B2,1,P3,1,P2,2}]
+
+Clauses: {P2,2,~P1,1,B2,1}	{~P2,2,B2,1}
+Resolvents: [{~P1,1,B2,1}]
+
+Clauses: {P2,2,~P1,1,B2,1}	{B2,1,P1,1,~P2,2}
+Resolvents: [{~P1,1,B2,1,P1,1}]
+
+Clauses: {P2,2,~P1,1,B2,1}	{B2,1,P2,2,~P2,2}
+Resolvents: [{~P1,1,B2,1,P2,2}]
+
+Clauses: {P2,2,~P1,1,B2,1}	{B2,1,P3,1,P2,2,~P2,2}
+Resolvents: [{~P1,1,B2,1,P3,1,P2,2}]
+
+Clauses: {P2,2,~P1,1,B2,1}	{B2,1,P3,1,P1,1,~P2,2}
+Resolvents: [{~P1,1,B2,1,P3,1,P1,1}]
+
+Clauses: {B2,1,P1,1,~P2,2}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P1,1,~P2,2,B2,1,P3,1}]
+
+Clauses: {B2,1,P1,1,~P2,2}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P1,1,~P2,2,B2,1,P2,2}]
+
+Clauses: {B2,1,P1,1,~P2,2}	{B2,1,~B2,1}
+Resolvents: [{P1,1,~P2,2,B2,1}]
+
+Clauses: {B2,1,P1,1,~P2,2}	{~B2,1,P3,1,P2,2}
+Resolvents: [{P1,1,~P2,2,P3,1,P2,2}]
+
+Clauses: {B2,1,P1,1,~P2,2}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P1,1,~P2,2,B2,1}]
+
+Clauses: {B2,1,P1,1,~P2,2}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P1,1,~P2,2,B2,1,P3,1,P2,2}]
+
+Clauses: {B2,1,P1,1,~P2,2}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P1,1,~P2,2,B2,1,P2,2}]
+
+Clauses: {B2,1,P1,1,~P2,2}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P1,1,~P2,2,B2,1,P3,1}]
+
+Clauses: {B2,1,P1,1,~P2,2}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{P1,1,~P2,2,P3,1,P2,2}]
+
+Clauses: {B2,1,P1,1,~P2,2}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P1,1,~P2,2,P3,1,P2,2,B2,1}]
+
+Clauses: {B2,1,P2,2,~P2,2}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P2,2,~P2,2,B2,1,P3,1}]
+
+Clauses: {B2,1,P2,2,~P2,2}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P2,2,~P2,2,B2,1,P1,1}]
+
+Clauses: {B2,1,P2,2,~P2,2}	{B2,1,~B2,1}
+Resolvents: [{P2,2,~P2,2,B2,1}]
+
+Clauses: {B2,1,P2,2,~P2,2}	{~B2,1,P3,1,P2,2}
+Resolvents: [{P2,2,~P2,2,P3,1}]
+
+Clauses: {B2,1,P2,2,~P2,2}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P2,2,~P2,2,B2,1,P1,1}]
+
+Clauses: {B2,1,P2,2,~P2,2}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P2,2,~P2,2,B2,1,P3,1}]
+
+Clauses: {B2,1,P2,2,~P2,2}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P2,2,~P2,2,B2,1}]
+
+Clauses: {B2,1,P2,2,~P2,2}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P2,2,~P2,2,B2,1,P3,1,P1,1}]
+
+Clauses: {B2,1,P2,2,~P2,2}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{P2,2,~P2,2,P3,1,P1,1}]
+
+Clauses: {B2,1,P2,2,~P2,2}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P2,2,~P2,2,P3,1,B2,1,P1,1}]
+
+Clauses: {P1,2,P2,1,~P2,1}	{~P1,2,B1,1}
+Resolvents: [{P2,1,~P2,1,B1,1}]
+
+Clauses: {P1,2,P2,1,~P2,1}	{P1,2,~P1,2}
+Resolvents: [{P2,1,~P2,1,P1,2}]
+
+Clauses: {P1,2,P2,1,~P2,1}	{~P1,2}
+Resolvents: [{P2,1,~P2,1}]
+
+Clauses: {P1,2,P2,1,~P2,1}	{P1,2,P2,1,~P1,2}
+Resolvents: [{P2,1,~P2,1,P1,2}]
+
+Clauses: {P1,2,P2,1,~P2,1}	{B1,1,P1,2,~P1,2}
+Resolvents: [{P2,1,~P2,1,B1,1,P1,2}]
+
+Clauses: {P1,2,P2,1,~P2,1}	{P2,1,~P1,2}
+Resolvents: [{P2,1,~P2,1}]
+
+Clauses: {P1,2,P2,1,~P2,1}	{P2,1,~P1,2,B1,1,P1,2}
+Resolvents: [{P2,1,~P2,1,B1,1,P1,2}]
+
+Clauses: {P1,2,P2,1,~P2,1}	{B1,1,P2,1,~P1,2}
+Resolvents: [{P2,1,~P2,1,B1,1}]
+
+Clauses: {B1,1,~B1,1,P1,2}	{~B1,1,P1,2}
+Resolvents: [{~B1,1,P1,2}]
+
+Clauses: {B1,1,~B1,1,P1,2}	{B1,1,~B1,1,P2,1}
+Resolvents: [{~B1,1,P1,2,B1,1,P2,1}]
+
+Clauses: {B1,1,~B1,1,P1,2}	{B1,1,~B1,1}
+Resolvents: [{~B1,1,P1,2,B1,1}]
+
+Clauses: {B1,1,~B1,1,P1,2}	{~B1,1,P2,1}
+Resolvents: [{~B1,1,P1,2,P2,1}]
+
+Clauses: {B1,1,~B1,1,P1,2}	{~B1,1,P2,1,B1,1,P1,2}
+Resolvents: [{~B1,1,P1,2,P2,1,B1,1}]
+
+Clauses: {B1,1,~B1,1,P1,2}	{~B1,1}
+Resolvents: [{~B1,1,P1,2}]
+
+Clauses: {B1,1,~B1,1,P1,2}	{~B1,1,P1,2,P2,1}
+Resolvents: [{~B1,1,P1,2,P2,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P2,2}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P3,1,P2,2,~P2,2,B2,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P2,2}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2,~P2,2,B2,1,P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P2,2}	{B2,1,~B2,1}
+Resolvents: [{P3,1,P2,2,~P2,2,B2,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P2,2}	{~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P2,2,~P2,2}]
+
+Clauses: {B2,1,P3,1,P2,2,~P2,2}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P3,1,P2,2,~P2,2,B2,1,P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P2,2}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P2,2,~P2,2,B2,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P2,2}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P3,1,P2,2,~P2,2,B2,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P2,2}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,P2,2,~P2,2,B2,1,P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P2,2}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2,~P2,2,P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P2,2}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P3,1,P2,2,~P2,2,B2,1,P1,1}]
+
+Clauses: {P3,1,P2,2,P1,1}	{P3,1,P2,2,~P3,1}
+Resolvents: [{P2,2,P1,1,P3,1}]
+
+Clauses: {P3,1,P2,2,P1,1}	{~P3,1,B2,1}
+Resolvents: [{P2,2,P1,1,B2,1}]
+
+Clauses: {P3,1,P2,2,P1,1}	{B2,1,P3,1,P2,2,~P3,1}
+Resolvents: [{P2,2,P1,1,B2,1,P3,1}]
+
+Clauses: {P3,1,P2,2,P1,1}	{B2,1,P1,1,~P3,1}
+Resolvents: [{P2,2,P1,1,B2,1}]
+
+Clauses: {P3,1,P2,2,P1,1}	{B2,1,P3,1,P1,1,~P3,1}
+Resolvents: [{P2,2,P1,1,B2,1,P3,1}]
+
+Clauses: {P3,1,P2,2,P1,1}	{P2,2,~P3,1,B2,1}
+Resolvents: [{P2,2,P1,1,B2,1}]
+
+Clauses: {P3,1,P2,2,P1,1}	{B2,1,P3,1,~P3,1}
+Resolvents: [{P2,2,P1,1,B2,1,P3,1}]
+
+Clauses: {P3,1,P2,2,P1,1}	{B2,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P2,2,P1,1,B2,1}]
+
+Clauses: {P3,1,P2,2,P1,1}	{P2,2,~P3,1,B2,1,P3,1,P1,1}
+Resolvents: [{P2,2,P1,1,B2,1,P3,1}]
+
+Clauses: {P3,1,P2,2,P1,1}	{P3,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P2,2,P1,1,P3,1}]
+
+Clauses: {B2,1,P3,1,~P3,1}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P3,1,~P3,1,B2,1}]
+
+Clauses: {B2,1,P3,1,~P3,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P3,1,~P3,1,B2,1,P2,2,P1,1}]
+
+Clauses: {B2,1,P3,1,~P3,1}	{B2,1,~B2,1}
+Resolvents: [{P3,1,~P3,1,B2,1}]
+
+Clauses: {B2,1,P3,1,~P3,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,~P3,1,P2,2}]
+
+Clauses: {B2,1,P3,1,~P3,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P3,1,~P3,1,B2,1,P1,1}]
+
+Clauses: {B2,1,P3,1,~P3,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,~P3,1,B2,1,P2,2}]
+
+Clauses: {B2,1,P3,1,~P3,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P3,1,~P3,1,B2,1,P2,2}]
+
+Clauses: {B2,1,P3,1,~P3,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,~P3,1,B2,1,P1,1}]
+
+Clauses: {B2,1,P3,1,~P3,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{P3,1,~P3,1,P2,2,P1,1}]
+
+Clauses: {B2,1,P3,1,~P3,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P3,1,~P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P3,1,P2,2,P1,1,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{P2,2,P1,1,~P1,1,B2,1,P3,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2,P1,1,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,P3,1}
+Resolvents: [{P3,1,P2,2,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{P2,2,P1,1,~P1,1,B2,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,P2,2,P1,1,~P2,2}
+Resolvents: [{P3,1,P2,2,P1,1,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,~B2,1}
+Resolvents: [{P3,1,P2,2,P1,1,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{~P3,1,B2,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{P2,2,P1,1,B2,1,P3,1}
+Resolvents: [{P3,1,P2,2,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,P3,1,P2,2,~P3,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,P3,1,~P1,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,P1,1,~P3,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,P3,1,P1,1,~P3,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{P2,2,~P3,1,B2,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,P3,1,~P2,2}
+Resolvents: [{P3,1,P2,2,P1,1,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{P2,2,P1,1,~P2,2,B2,1,P3,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,P1,1}
+Resolvents: [{P3,1,P2,2,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P2,2,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P3,1,P2,2,P1,1,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P2,2,P1,1,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P3,1,P2,2,P1,1,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,P2,2}
+Resolvents: [{P3,1,P2,2,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,P2,2,P1,1,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,P2,2,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{~P2,2,B2,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,P3,1,P1,1,~P1,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{~P1,1,B2,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{P1,1,~P1,1,B2,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{P2,2,~P1,1,B2,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,P1,1,~P2,2}
+Resolvents: [{P3,1,P2,2,P1,1,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,P2,2,~P2,2}
+Resolvents: [{P3,1,P2,2,P1,1,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,P3,1,P2,2,~P2,2}
+Resolvents: [{P3,1,P2,2,P1,1,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,P3,1,~P3,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,P3,1,P1,1,~P2,2}
+Resolvents: [{P3,1,P2,2,P1,1,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1,P3,1,P2,2,~P1,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{P2,2,~P3,1,B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,P2,2,P1,1,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P3,1,P2,2,P1,1,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,P1,1}	{B2,1}
+Resolvents: [{P3,1,P2,2,P1,1}]
+
+Clauses: {B2,1,P3,1,P1,1,~P2,2}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P3,1,P1,1,~P2,2,B2,1}]
+
+Clauses: {B2,1,P3,1,P1,1,~P2,2}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P3,1,P1,1,~P2,2,B2,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1,~P2,2}	{B2,1,~B2,1}
+Resolvents: [{P3,1,P1,1,~P2,2,B2,1}]
+
+Clauses: {B2,1,P3,1,P1,1,~P2,2}	{~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P1,1,~P2,2,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1,~P2,2}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P3,1,P1,1,~P2,2,B2,1}]
+
+Clauses: {B2,1,P3,1,P1,1,~P2,2}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P1,1,~P2,2,B2,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1,~P2,2}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P3,1,P1,1,~P2,2,B2,1,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1,~P2,2}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,P1,1,~P2,2,B2,1}]
+
+Clauses: {B2,1,P3,1,P1,1,~P2,2}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{P3,1,P1,1,~P2,2,P2,2}]
+
+Clauses: {B2,1,P3,1,P1,1,~P2,2}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P3,1,P1,1,~P2,2,P2,2,B2,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P3,1}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P2,2,P1,1,~P3,1,B2,1,P3,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P3,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P2,2,P1,1,~P3,1,B2,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P3,1}	{B2,1,~B2,1}
+Resolvents: [{P2,2,P1,1,~P3,1,B2,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P3,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{P2,2,P1,1,~P3,1,P3,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P3,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P2,2,P1,1,~P3,1,B2,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P3,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P2,2,P1,1,~P3,1,B2,1,P3,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P3,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P2,2,P1,1,~P3,1,B2,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P3,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P2,2,P1,1,~P3,1,B2,1,P3,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P3,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{P2,2,P1,1,~P3,1,P3,1}]
+
+Clauses: {B2,1,P2,2,P1,1,~P3,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P2,2,P1,1,~P3,1,P3,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P1,1}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P3,1,P2,2,~P1,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P1,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2,~P1,1,B2,1,P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P1,1}	{B2,1,~B2,1}
+Resolvents: [{P3,1,P2,2,~P1,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P1,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P2,2,~P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P1,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P3,1,P2,2,~P1,1,B2,1,P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P1,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P2,2,~P1,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P1,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P3,1,P2,2,~P1,1,B2,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P1,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,P2,2,~P1,1,B2,1,P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P1,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2,~P1,1,P1,1}]
+
+Clauses: {B2,1,P3,1,P2,2,~P1,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P3,1,P2,2,~P1,1,B2,1,P1,1}]
+
+Clauses: {P2,2,~P3,1,B2,1,P3,1,P1,1}	{B2,1,P2,2,P1,1,~P2,2}
+Resolvents: [{~P3,1,B2,1,P3,1,P1,1,P2,2}]
+
+Clauses: {P2,2,~P3,1,B2,1,P3,1,P1,1}	{B2,1,P3,1,~P2,2}
+Resolvents: [{~P3,1,B2,1,P3,1,P1,1}]
+
+Clauses: {P2,2,~P3,1,B2,1,P3,1,P1,1}	{P3,1,P2,2,P1,1,~P2,2}
+Resolvents: [{~P3,1,B2,1,P3,1,P1,1,P2,2}]
+
+Clauses: {P2,2,~P3,1,B2,1,P3,1,P1,1}	{P2,2,P1,1,~P2,2,B2,1,P3,1}
+Resolvents: [{~P3,1,B2,1,P3,1,P1,1,P2,2}]
+
+Clauses: {P2,2,~P3,1,B2,1,P3,1,P1,1}	{P3,1,P2,2,~P2,2}
+Resolvents: [{~P3,1,B2,1,P3,1,P1,1,P2,2}]
+
+Clauses: {P2,2,~P3,1,B2,1,P3,1,P1,1}	{~P2,2,B2,1}
+Resolvents: [{~P3,1,B2,1,P3,1,P1,1}]
+
+Clauses: {P2,2,~P3,1,B2,1,P3,1,P1,1}	{B2,1,P1,1,~P2,2}
+Resolvents: [{~P3,1,B2,1,P3,1,P1,1}]
+
+Clauses: {P2,2,~P3,1,B2,1,P3,1,P1,1}	{B2,1,P2,2,~P2,2}
+Resolvents: [{~P3,1,B2,1,P3,1,P1,1,P2,2}]
+
+Clauses: {P2,2,~P3,1,B2,1,P3,1,P1,1}	{B2,1,P3,1,P2,2,~P2,2}
+Resolvents: [{~P3,1,B2,1,P3,1,P1,1,P2,2}]
+
+Clauses: {P2,2,~P3,1,B2,1,P3,1,P1,1}	{B2,1,P3,1,P1,1,~P2,2}
+Resolvents: [{~P3,1,B2,1,P3,1,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,~B2,1,P3,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{P2,2,P1,1,~P1,1,B2,1,P3,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,P3,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{P2,2,P1,1,~P1,1,B2,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,P2,2,P1,1,~P2,2}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,~B2,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{~P3,1,B2,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{P2,2,P1,1,B2,1,P3,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,P3,1,P2,2,~P3,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,P3,1,~P1,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,P1,1,~P3,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,P3,1,P1,1,~P3,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{P2,2,~P3,1,B2,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,P3,1,~P2,2}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{P2,2,P1,1,~P2,2,B2,1,P3,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,P1,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,P2,2}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~B2,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{~P2,2,B2,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,P3,1,P1,1,~P1,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{~P1,1,B2,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{P1,1,~P1,1,B2,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{P2,2,~P1,1,B2,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,P1,1,~P2,2}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,P2,2,~P2,2}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,P3,1,P2,2,~P2,2}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,P3,1,~P3,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,P3,1,P1,1,~P2,2}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P2,2}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1,P3,1,P2,2,~P1,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P1,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{P2,2,~P3,1,B2,1,P3,1,P1,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1,~P3,1}]
+
+Clauses: {~B2,1,P3,1,P2,2,B2,1,P1,1}	{B2,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P3,1}	{P3,1,P2,2,~P3,1}
+Resolvents: [{P2,2,P1,1,~P3,1,P3,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P3,1}	{~P3,1,B2,1}
+Resolvents: [{P2,2,P1,1,~P3,1,B2,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P3,1}	{B2,1,P3,1,P2,2,~P3,1}
+Resolvents: [{P2,2,P1,1,~P3,1,B2,1,P3,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P3,1}	{B2,1,P1,1,~P3,1}
+Resolvents: [{P2,2,P1,1,~P3,1,B2,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P3,1}	{B2,1,P3,1,P1,1,~P3,1}
+Resolvents: [{P2,2,P1,1,~P3,1,B2,1,P3,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P3,1}	{P2,2,~P3,1,B2,1}
+Resolvents: [{P2,2,P1,1,~P3,1,B2,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P3,1}	{B2,1,P3,1,~P3,1}
+Resolvents: [{P2,2,P1,1,~P3,1,B2,1,P3,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P3,1}	{B2,1,P2,2,P1,1,~P3,1}
+Resolvents: [{P2,2,P1,1,~P3,1,B2,1}]
+
+Clauses: {P3,1,P2,2,P1,1,~P3,1}	{P2,2,~P3,1,B2,1,P3,1,P1,1}
+Resolvents: [{P2,2,P1,1,~P3,1,B2,1,P3,1}]
+
+Clauses: {~B1,1}	{B1,1,P2,1,~P2,1}
+Resolvents: [{P2,1,~P2,1}]
+
+Clauses: {~B1,1}	{P2,1,~P2,1,B1,1,P1,2}
+Resolvents: [{P2,1,~P2,1,P1,2}]
+
+Clauses: {~B1,1}	{~P1,2,B1,1}
+Resolvents: [{~P1,2}]
+
+Clauses: {~B1,1}	{B1,1,~B1,1,P2,1}
+Resolvents: [{~B1,1,P2,1}]
+
+Clauses: {~B1,1}	{B1,1,P1,2,~P1,2}
+Resolvents: [{P1,2,~P1,2}]
+
+Clauses: {~B1,1}	{B1,1,~B1,1}
+Resolvents: [{~B1,1}]
+
+Clauses: {~B1,1}	{~P2,1,B1,1}
+Resolvents: [{~P2,1}]
+
+Clauses: {~B1,1}	{P2,1,~P1,2,B1,1,P1,2}
+Resolvents: [{P2,1,~P1,2,P1,2}]
+
+Clauses: {~B1,1}	{~B1,1,P2,1,B1,1,P1,2}
+Resolvents: [{~B1,1,P2,1,P1,2}]
+
+Clauses: {~B1,1}	{B1,1,~B1,1,P1,2}
+Resolvents: [{~B1,1,P1,2}]
+
+Clauses: {~B1,1}	{B1,1,P2,1,~P1,2}
+Resolvents: [{P2,1,~P1,2}]
+
+Clauses: {~B1,1}	{B1,1,P1,2,~P2,1}
+Resolvents: [{P1,2,~P2,1}]
+
+Clauses: {B2,1}	{B2,1,~B2,1,P3,1}
+Resolvents: [{B2,1,P3,1}]
+
+Clauses: {B2,1}	{B2,1,~B2,1,P2,2,P1,1}
+Resolvents: [{B2,1,P2,2,P1,1}]
+
+Clauses: {B2,1}	{B2,1,~B2,1}
+Resolvents: [{B2,1}]
+
+Clauses: {B2,1}	{~B2,1,P3,1,P2,2}
+Resolvents: [{P3,1,P2,2}]
+
+Clauses: {B2,1}	{B2,1,~B2,1,P1,1}
+Resolvents: [{B2,1,P1,1}]
+
+Clauses: {B2,1}	{B2,1,~B2,1,P3,1,P2,2}
+Resolvents: [{B2,1,P3,1,P2,2}]
+
+Clauses: {B2,1}	{B2,1,~B2,1,P2,2}
+Resolvents: [{B2,1,P2,2}]
+
+Clauses: {B2,1}	{B2,1,~B2,1,P3,1,P1,1}
+Resolvents: [{B2,1,P3,1,P1,1}]
+
+Clauses: {B2,1}	{~B2,1,P3,1,P2,2,P1,1}
+Resolvents: [{P3,1,P2,2,P1,1}]
+
+Clauses: {B2,1}	{~B2,1,P3,1,P2,2,B2,1,P1,1}
+Resolvents: [{P3,1,P2,2,B2,1,P1,1}]
+
+Clauses: {~B1,1,P1,2,P2,1}	{B1,1,P2,1,~P2,1}
+Resolvents: [{P1,2,P2,1,~P2,1}]
+
+Clauses: {~B1,1,P1,2,P2,1}	{P2,1,~P2,1,B1,1,P1,2}
+Resolvents: [{P1,2,P2,1,~P2,1}]
+
+Clauses: {~B1,1,P1,2,P2,1}	{~P1,2,B1,1}
+Resolvents: [{P1,2,P2,1,~P1,2}]
+
+Clauses: {~B1,1,P1,2,P2,1}	{B1,1,~B1,1,P2,1}
+Resolvents: [{P1,2,P2,1,~B1,1}]
+
+Clauses: {~B1,1,P1,2,P2,1}	{B1,1,P1,2,~P1,2}
+Resolvents: [{P1,2,P2,1,~P1,2}]
+
+Clauses: {~B1,1,P1,2,P2,1}	{B1,1,~B1,1}
+Resolvents: [{P1,2,P2,1,~B1,1}]
+
+Clauses: {~B1,1,P1,2,P2,1}	{~P2,1,B1,1}
+Resolvents: [{P1,2,P2,1,~P2,1}]
+
+Clauses: {~B1,1,P1,2,P2,1}	{P2,1,~P1,2,B1,1,P1,2}
+Resolvents: [{P1,2,P2,1,~P1,2}]
+
+Clauses: {~B1,1,P1,2,P2,1}	{~B1,1,P2,1,B1,1,P1,2}
+Resolvents: [{P1,2,P2,1,~B1,1}]
+
+Clauses: {~B1,1,P1,2,P2,1}	{B1,1,~B1,1,P1,2}
+Resolvents: [{P1,2,P2,1,~B1,1}]
+
+Clauses: {~B1,1,P1,2,P2,1}	{B1,1,P2,1,~P1,2}
+Resolvents: [{P1,2,P2,1,~P1,2}]
+
+Clauses: {~B1,1,P1,2,P2,1}	{B1,1,P1,2,~P2,1}
+Resolvents: [{P1,2,P2,1,~P2,1}]
+
+Clauses: {B1,1,P2,1,~P1,2}	{~B1,1,P1,2}
+Resolvents: [{P2,1,~P1,2,P1,2}]
+
+Clauses: {B1,1,P2,1,~P1,2}	{B1,1,~B1,1,P2,1}
+Resolvents: [{P2,1,~P1,2,B1,1}]
+
+Clauses: {B1,1,P2,1,~P1,2}	{B1,1,~B1,1}
+Resolvents: [{P2,1,~P1,2,B1,1}]
+
+Clauses: {B1,1,P2,1,~P1,2}	{~B1,1,P2,1}
+Resolvents: [{P2,1,~P1,2}]
+
+Clauses: {B1,1,P2,1,~P1,2}	{~B1,1,P2,1,B1,1,P1,2}
+Resolvents: [{P2,1,~P1,2,B1,1,P1,2}]
+
+Clauses: {B1,1,P2,1,~P1,2}	{B1,1,~B1,1,P1,2}
+Resolvents: [{P2,1,~P1,2,B1,1,P1,2}]
+
+Clauses: {B1,1,P2,1,~P1,2}	{~B1,1}
+Resolvents: [{P2,1,~P1,2}]
+
+Clauses: {B1,1,P2,1,~P1,2}	{~B1,1,P1,2,P2,1}
+Resolvents: [{P2,1,~P1,2,P1,2}]
+
+Clauses: {B1,1,P1,2,~P2,1}	{~B1,1,P1,2}
+Resolvents: [{P1,2,~P2,1}]
+
+Clauses: {B1,1,P1,2,~P2,1}	{B1,1,~B1,1,P2,1}
+Resolvents: [{P1,2,~P2,1,B1,1,P2,1}]
+
+Clauses: {B1,1,P1,2,~P2,1}	{B1,1,~B1,1}
+Resolvents: [{P1,2,~P2,1,B1,1}]
+
+Clauses: {B1,1,P1,2,~P2,1}	{~B1,1,P2,1}
+Resolvents: [{P1,2,~P2,1,P2,1}]
+
+Clauses: {B1,1,P1,2,~P2,1}	{~B1,1,P2,1,B1,1,P1,2}
+Resolvents: [{P1,2,~P2,1,P2,1,B1,1}]
+
+Clauses: {B1,1,P1,2,~P2,1}	{B1,1,~B1,1,P1,2}
+Resolvents: [{P1,2,~P2,1,B1,1}]
+
+Clauses: {B1,1,P1,2,~P2,1}	{~B1,1}
+Resolvents: [{P1,2,~P2,1}]
+
+Clauses: {B1,1,P1,2,~P2,1}	{~B1,1,P1,2,P2,1}
+Resolvents: [{P1,2,~P2,1,P2,1}]
+
+Clauses: {~P2,1}	{B1,1,P2,1,~P2,1}
+Resolvents: [{B1,1,~P2,1}]
+
+Clauses: {~P2,1}	{P2,1,~P2,1,B1,1,P1,2}
+Resolvents: [{~P2,1,B1,1,P1,2}]
+
+Clauses: {~P2,1}	{P2,1,~P2,1}
+Resolvents: [{~P2,1}]
+
+Clauses: {~P2,1}	{B1,1,~B1,1,P2,1}
+Resolvents: [{B1,1,~B1,1}]
+
+Clauses: {~P2,1}	{P1,2,P2,1,~P1,2}
+Resolvents: [{P1,2,~P1,2}]
+
+Clauses: {~P2,1}	{P2,1,~P1,2}
+Resolvents: [{~P1,2}]
+
+Clauses: {~P2,1}	{~B1,1,P2,1}
+Resolvents: [{~B1,1}]
+
+Clauses: {~P2,1}	{P2,1,~P1,2,B1,1,P1,2}
+Resolvents: [{~P1,2,B1,1,P1,2}]
+
+Clauses: {~P2,1}	{~B1,1,P2,1,B1,1,P1,2}
+Resolvents: [{~B1,1,B1,1,P1,2}]
+
+Clauses: {~P2,1}	{P1,2,P2,1,~P2,1}
+Resolvents: [{P1,2,~P2,1}]
+
+Clauses: {~P2,1}	{~B1,1,P1,2,P2,1}
+Resolvents: [{~B1,1,P1,2}]
+
+Clauses: {~P2,1}	{B1,1,P2,1,~P1,2}
+Resolvents: [{B1,1,~P1,2}]
+
+**********
+SolvingHorn Clause (Resolution)
+Clauses: {~mythical}	{mythical,mammal}
+Resolvents: [{mammal}]
+
+Clauses: {~mythical}	{mythical,~immortal}
+Resolvents: [{~immortal}]
+
+Clauses: {~horned,magical}	{~immortal,horned}
+Resolvents: [{magical,~immortal}]
+
+Clauses: {~horned,magical}	{~mammal,horned}
+Resolvents: [{magical,~mammal}]
+
+Clauses: {mythical,mammal}	{~mythical}
+Resolvents: [{mammal}]
+
+Clauses: {mythical,mammal}	{~mythical,immortal}
+Resolvents: [{mammal,immortal}]
+
+Clauses: {~mythical,immortal}	{mythical,mammal}
+Resolvents: [{immortal,mammal}]
+
+Clauses: {~mythical,immortal}	{mythical,~immortal}
+Resolvents: [{immortal,~immortal}]
+
+Clauses: {mythical,~immortal}	{~mythical}
+Resolvents: [{~immortal}]
+
+Clauses: {mythical,~immortal}	{~mythical,immortal}
+Resolvents: [{~immortal,immortal}]
+
+Clauses: {~immortal,horned}	{~mythical,immortal}
+Resolvents: [{horned,~mythical}]
+
+Clauses: {~mammal,horned}	{mythical,mammal}
+Resolvents: [{horned,mythical}]
+
+Clauses: {~horned,magical}	{~immortal,horned}
+Resolvents: [{magical,~immortal}]
+
+Clauses: {~horned,magical}	{horned,~mythical}
+Resolvents: [{magical,~mythical}]
+
+Clauses: {~horned,magical}	{horned,mythical}
+Resolvents: [{magical,mythical}]
+
+Clauses: {~horned,magical}	{~mammal,horned}
+Resolvents: [{magical,~mammal}]
+
+Clauses: {mammal,immortal}	{magical,~mammal}
+Resolvents: [{immortal,magical}]
+
+Clauses: {mammal,immortal}	{~mammal,horned}
+Resolvents: [{immortal,horned}]
+
+Clauses: {~immortal,horned}	{mammal,immortal}
+Resolvents: [{horned,mammal}]
+
+Clauses: {~immortal,horned}	{immortal,~immortal}
+Resolvents: [{horned,~immortal}]
+
+Clauses: {~immortal,horned}	{~mythical,immortal}
+Resolvents: [{horned,~mythical}]
+
+Clauses: {~mythical}	{mythical,mammal}
+Resolvents: [{mammal}]
+
+Clauses: {~mythical}	{horned,mythical}
+Resolvents: [{horned}]
+
+Clauses: {~mythical}	{mythical,~immortal}
+Resolvents: [{~immortal}]
+
+Clauses: {~immortal}	{mammal,immortal}
+Resolvents: [{mammal}]
+
+Clauses: {~immortal}	{immortal,~immortal}
+Resolvents: [{~immortal}]
+
+Clauses: {~immortal}	{~mythical,immortal}
+Resolvents: [{~mythical}]
+
+Clauses: {horned,~mythical}	{~horned,magical}
+Resolvents: [{~mythical,magical}]
+
+Clauses: {mythical,mammal}	{~mythical}
+Resolvents: [{mammal}]
+
+Clauses: {mythical,mammal}	{horned,~mythical}
+Resolvents: [{mammal,horned}]
+
+Clauses: {mythical,mammal}	{~mythical,immortal}
+Resolvents: [{mammal,immortal}]
+
+Clauses: {immortal,~immortal}	{~immortal,horned}
+Resolvents: [{~immortal,horned}]
+
+Clauses: {immortal,~immortal}	{~immortal}
+Resolvents: [{~immortal}]
+
+Clauses: {immortal,~immortal}	{magical,~immortal}
+Resolvents: [{~immortal,magical}]
+
+Clauses: {immortal,~immortal}	{mythical,~immortal}
+Resolvents: [{~immortal,mythical}]
+
+Clauses: {horned,mythical}	{~horned,magical}
+Resolvents: [{mythical,magical}]
+
+Clauses: {~mythical,immortal}	{mythical,mammal}
+Resolvents: [{immortal,mammal}]
+
+Clauses: {~mythical,immortal}	{horned,mythical}
+Resolvents: [{immortal,horned}]
+
+Clauses: {~mythical,immortal}	{mythical,~immortal}
+Resolvents: [{immortal,~immortal}]
+
+Clauses: {mythical,~immortal}	{~mythical}
+Resolvents: [{~immortal}]
+
+Clauses: {mythical,~immortal}	{horned,~mythical}
+Resolvents: [{~immortal,horned}]
+
+Clauses: {mythical,~immortal}	{~mythical,immortal}
+Resolvents: [{~immortal,immortal}]
+
+Clauses: {mammal}	{magical,~mammal}
+Resolvents: [{magical}]
+
+Clauses: {mammal}	{~mammal,horned}
+Resolvents: [{horned}]
+
+Clauses: {~mammal,horned}	{mammal,immortal}
+Resolvents: [{horned,immortal}]
+
+Clauses: {~mammal,horned}	{mythical,mammal}
+Resolvents: [{horned,mythical}]
+
+Clauses: {~mammal,horned}	{mammal}
+Resolvents: [{horned}]
+
+Clauses: {horned,mammal}	{~horned,magical}
+Resolvents: [{mammal,magical}]
+
+Clauses: {horned}	{~horned,magical}
+Resolvents: [{magical}]
+
+Clauses: {~horned,magical}	{horned,mammal}
+Resolvents: [{magical,mammal}]
+
+Clauses: {~horned,magical}	{horned}
+Resolvents: [{magical}]
+
+Clauses: {~horned,magical}	{~immortal,horned}
+Resolvents: [{magical,~immortal}]
+
+Clauses: {~horned,magical}	{horned,~mythical}
+Resolvents: [{magical,~mythical}]
+
+Clauses: {~horned,magical}	{horned,mythical}
+Resolvents: [{magical,mythical}]
+
+Clauses: {~horned,magical}	{immortal,horned}
+Resolvents: [{magical,immortal}]
+
+Clauses: {~horned,magical}	{~mammal,horned}
+Resolvents: [{magical,~mammal}]
+
+Clauses: {mammal,immortal}	{magical,~mammal}
+Resolvents: [{immortal,magical}]
+
+Clauses: {mammal,immortal}	{~mammal,horned}
+Resolvents: [{immortal,horned}]
+
+Clauses: {~immortal,horned}	{mammal,immortal}
+Resolvents: [{horned,mammal}]
+
+Clauses: {~immortal,horned}	{immortal,magical}
+Resolvents: [{horned,magical}]
+
+Clauses: {~immortal,horned}	{immortal,~immortal}
+Resolvents: [{horned,~immortal}]
+
+Clauses: {~immortal,horned}	{~mythical,immortal}
+Resolvents: [{horned,~mythical}]
+
+Clauses: {~immortal,horned}	{immortal,horned}
+Resolvents: [{horned}]
+
+Clauses: {~mythical}	{magical,mythical}
+Resolvents: [{magical}]
+
+Clauses: {~mythical}	{mythical,mammal}
+Resolvents: [{mammal}]
+
+Clauses: {~mythical}	{horned,mythical}
+Resolvents: [{horned}]
+
+Clauses: {~mythical}	{mythical,~immortal}
+Resolvents: [{~immortal}]
+
+Clauses: {~immortal}	{mammal,immortal}
+Resolvents: [{mammal}]
+
+Clauses: {~immortal}	{immortal,magical}
+Resolvents: [{magical}]
+
+Clauses: {~immortal}	{immortal,~immortal}
+Resolvents: [{~immortal}]
+
+Clauses: {~immortal}	{~mythical,immortal}
+Resolvents: [{~mythical}]
+
+Clauses: {~immortal}	{immortal,horned}
+Resolvents: [{horned}]
+
+Clauses: {immortal,magical}	{~immortal,horned}
+Resolvents: [{magical,horned}]
+
+Clauses: {immortal,magical}	{~immortal}
+Resolvents: [{magical}]
+
+Clauses: {immortal,magical}	{magical,~immortal}
+Resolvents: [{magical}]
+
+Clauses: {immortal,magical}	{immortal,~immortal}
+Resolvents: [{magical,immortal}]
+
+Clauses: {immortal,magical}	{mythical,~immortal}
+Resolvents: [{magical,mythical}]
+
+Clauses: {horned,~mythical}	{~horned,magical}
+Resolvents: [{~mythical,magical}]
+
+Clauses: {mythical,mammal}	{~mythical}
+Resolvents: [{mammal}]
+
+Clauses: {mythical,mammal}	{magical,~mythical}
+Resolvents: [{mammal,magical}]
+
+Clauses: {mythical,mammal}	{horned,~mythical}
+Resolvents: [{mammal,horned}]
+
+Clauses: {mythical,mammal}	{~mythical,immortal}
+Resolvents: [{mammal,immortal}]
+
+Clauses: {immortal,~immortal}	{~immortal,horned}
+Resolvents: [{~immortal,horned}]
+
+Clauses: {immortal,~immortal}	{~immortal}
+Resolvents: [{~immortal}]
+
+Clauses: {immortal,~immortal}	{magical,~immortal}
+Resolvents: [{~immortal,magical}]
+
+Clauses: {immortal,~immortal}	{mythical,~immortal}
+Resolvents: [{~immortal,mythical}]
+
+Clauses: {horned,mythical}	{~horned,magical}
+Resolvents: [{mythical,magical}]
+
+Clauses: {~mythical,immortal}	{magical,mythical}
+Resolvents: [{immortal,magical}]
+
+Clauses: {~mythical,immortal}	{mythical,mammal}
+Resolvents: [{immortal,mammal}]
+
+Clauses: {~mythical,immortal}	{horned,mythical}
+Resolvents: [{immortal,horned}]
+
+Clauses: {~mythical,immortal}	{mythical,~immortal}
+Resolvents: [{immortal,~immortal}]
+
+Clauses: {mythical,~immortal}	{~mythical}
+Resolvents: [{~immortal}]
+
+Clauses: {mythical,~immortal}	{magical,~mythical}
+Resolvents: [{~immortal,magical}]
+
+Clauses: {mythical,~immortal}	{horned,~mythical}
+Resolvents: [{~immortal,horned}]
+
+Clauses: {mythical,~immortal}	{~mythical,immortal}
+Resolvents: [{~immortal,immortal}]
+
+Clauses: {immortal,horned}	{~immortal,horned}
+Resolvents: [{horned}]
+
+Clauses: {immortal,horned}	{~immortal}
+Resolvents: [{horned}]
+
+Clauses: {immortal,horned}	{magical,~immortal}
+Resolvents: [{horned,magical}]
+
+Clauses: {immortal,horned}	{immortal,~immortal}
+Resolvents: [{horned,immortal}]
+
+Clauses: {immortal,horned}	{mythical,~immortal}
+Resolvents: [{horned,mythical}]
+
+Clauses: {mammal}	{magical,~mammal}
+Resolvents: [{magical}]
+
+Clauses: {mammal}	{~mammal,horned}
+Resolvents: [{horned}]
+
+Clauses: {~mammal,horned}	{horned,mammal}
+Resolvents: [{horned}]
+
+Clauses: {~mammal,horned}	{mammal,immortal}
+Resolvents: [{horned,immortal}]
+
+Clauses: {~mammal,horned}	{mythical,mammal}
+Resolvents: [{horned,mythical}]
+
+Clauses: {~mammal,horned}	{mammal}
+Resolvents: [{horned}]
+
+Clauses: {horned,magical}	{~horned,magical}
+Resolvents: [{magical}]
+
+Clauses: {horned,mammal}	{~horned,magical}
+Resolvents: [{mammal,magical}]
+
+Clauses: {horned}	{~horned,magical}
+Resolvents: [{magical}]
+
+Clauses: {~horned,magical}	{horned,magical}
+Resolvents: [{magical}]
+
+Clauses: {~horned,magical}	{horned,mammal}
+Resolvents: [{magical,mammal}]
+
+Clauses: {~horned,magical}	{horned}
+Resolvents: [{magical}]
+
+Clauses: {~horned,magical}	{~immortal,horned}
+Resolvents: [{magical,~immortal}]
+
+Clauses: {~horned,magical}	{horned,~mythical}
+Resolvents: [{magical,~mythical}]
+
+Clauses: {~horned,magical}	{horned,mythical}
+Resolvents: [{magical,mythical}]
+
+Clauses: {~horned,magical}	{immortal,horned}
+Resolvents: [{magical,immortal}]
+
+Clauses: {~horned,magical}	{~mammal,horned}
+Resolvents: [{magical,~mammal}]
+
+Clauses: {mammal,magical}	{magical,~mammal}
+Resolvents: [{magical}]
+
+Clauses: {mammal,magical}	{~mammal,horned}
+Resolvents: [{magical,horned}]
+
+Clauses: {mammal,immortal}	{magical,~mammal}
+Resolvents: [{immortal,magical}]
+
+Clauses: {mammal,immortal}	{~mammal,horned}
+Resolvents: [{immortal,horned}]
+
+Clauses: {~immortal,horned}	{mammal,immortal}
+Resolvents: [{horned,mammal}]
+
+Clauses: {~immortal,horned}	{immortal,magical}
+Resolvents: [{horned,magical}]
+
+Clauses: {~immortal,horned}	{immortal,~immortal}
+Resolvents: [{horned,~immortal}]
+
+Clauses: {~immortal,horned}	{~mythical,immortal}
+Resolvents: [{horned,~mythical}]
+
+Clauses: {~immortal,horned}	{immortal,horned}
+Resolvents: [{horned}]
+
+Clauses: {~mythical}	{magical,mythical}
+Resolvents: [{magical}]
+
+Clauses: {~mythical}	{mythical,mammal}
+Resolvents: [{mammal}]
+
+Clauses: {~mythical}	{horned,mythical}
+Resolvents: [{horned}]
+
+Clauses: {~mythical}	{mythical,~immortal}
+Resolvents: [{~immortal}]
+
+Clauses: {~immortal}	{mammal,immortal}
+Resolvents: [{mammal}]
+
+Clauses: {~immortal}	{immortal,magical}
+Resolvents: [{magical}]
+
+Clauses: {~immortal}	{immortal,~immortal}
+Resolvents: [{~immortal}]
+
+Clauses: {~immortal}	{~mythical,immortal}
+Resolvents: [{~mythical}]
+
+Clauses: {~immortal}	{immortal,horned}
+Resolvents: [{horned}]
+
+Clauses: {immortal,magical}	{~immortal,horned}
+Resolvents: [{magical,horned}]
+
+Clauses: {immortal,magical}	{~immortal}
+Resolvents: [{magical}]
+
+Clauses: {immortal,magical}	{magical,~immortal}
+Resolvents: [{magical}]
+
+Clauses: {immortal,magical}	{immortal,~immortal}
+Resolvents: [{magical,immortal}]
+
+Clauses: {immortal,magical}	{mythical,~immortal}
+Resolvents: [{magical,mythical}]
+
+Clauses: {horned,~mythical}	{~horned,magical}
+Resolvents: [{~mythical,magical}]
+
+Clauses: {mythical,mammal}	{~mythical}
+Resolvents: [{mammal}]
+
+Clauses: {mythical,mammal}	{magical,~mythical}
+Resolvents: [{mammal,magical}]
+
+Clauses: {mythical,mammal}	{horned,~mythical}
+Resolvents: [{mammal,horned}]
+
+Clauses: {mythical,mammal}	{~mythical,immortal}
+Resolvents: [{mammal,immortal}]
+
+Clauses: {immortal,~immortal}	{~immortal,horned}
+Resolvents: [{~immortal,horned}]
+
+Clauses: {immortal,~immortal}	{~immortal}
+Resolvents: [{~immortal}]
+
+Clauses: {immortal,~immortal}	{magical,~immortal}
+Resolvents: [{~immortal,magical}]
+
+Clauses: {immortal,~immortal}	{mythical,~immortal}
+Resolvents: [{~immortal,mythical}]
+
+Clauses: {horned,mythical}	{~horned,magical}
+Resolvents: [{mythical,magical}]
+
+Clauses: {~mythical,immortal}	{magical,mythical}
+Resolvents: [{immortal,magical}]
+
+Clauses: {~mythical,immortal}	{mythical,mammal}
+Resolvents: [{immortal,mammal}]
+
+Clauses: {~mythical,immortal}	{horned,mythical}
+Resolvents: [{immortal,horned}]
+
+Clauses: {~mythical,immortal}	{mythical,~immortal}
+Resolvents: [{immortal,~immortal}]
+
+Clauses: {mythical,~immortal}	{~mythical}
+Resolvents: [{~immortal}]
+
+Clauses: {mythical,~immortal}	{magical,~mythical}
+Resolvents: [{~immortal,magical}]
+
+Clauses: {mythical,~immortal}	{horned,~mythical}
+Resolvents: [{~immortal,horned}]
+
+Clauses: {mythical,~immortal}	{~mythical,immortal}
+Resolvents: [{~immortal,immortal}]
+
+Clauses: {immortal,horned}	{~immortal,horned}
+Resolvents: [{horned}]
+
+Clauses: {immortal,horned}	{~immortal}
+Resolvents: [{horned}]
+
+Clauses: {immortal,horned}	{magical,~immortal}
+Resolvents: [{horned,magical}]
+
+Clauses: {immortal,horned}	{immortal,~immortal}
+Resolvents: [{horned,immortal}]
+
+Clauses: {immortal,horned}	{mythical,~immortal}
+Resolvents: [{horned,mythical}]
+
+Clauses: {mammal}	{magical,~mammal}
+Resolvents: [{magical}]
+
+Clauses: {mammal}	{~mammal,horned}
+Resolvents: [{horned}]
+
+Clauses: {~mammal,horned}	{horned,mammal}
+Resolvents: [{horned}]
+
+Clauses: {~mammal,horned}	{mammal,magical}
+Resolvents: [{horned,magical}]
+
+Clauses: {~mammal,horned}	{mammal,immortal}
+Resolvents: [{horned,immortal}]
+
+Clauses: {~mammal,horned}	{mythical,mammal}
+Resolvents: [{horned,mythical}]
+
+Clauses: {~mammal,horned}	{mammal}
+Resolvents: [{horned}]
+
+Clauses: {~mythical}	{mythical,mammal}
+Resolvents: [{mammal}]
+
+Clauses: {~mythical}	{mythical,~immortal}
+Resolvents: [{~immortal}]
+
+Clauses: {~horned,magical}	{~immortal,horned}
+Resolvents: [{magical,~immortal}]
+
+Clauses: {~horned,magical}	{~mammal,horned}
+Resolvents: [{magical,~mammal}]
+
+Clauses: {mythical,mammal}	{~mythical}
+Resolvents: [{mammal}]
+
+Clauses: {mythical,mammal}	{~mythical,immortal}
+Resolvents: [{mammal,immortal}]
+
+Clauses: {~magical}	{~horned,magical}
+Resolvents: [{~horned}]
+
+Clauses: {~mythical,immortal}	{mythical,mammal}
+Resolvents: [{immortal,mammal}]
+
+Clauses: {~mythical,immortal}	{mythical,~immortal}
+Resolvents: [{immortal,~immortal}]
+
+Clauses: {mythical,~immortal}	{~mythical}
+Resolvents: [{~immortal}]
+
+Clauses: {mythical,~immortal}	{~mythical,immortal}
+Resolvents: [{~immortal,immortal}]
+
+Clauses: {~immortal,horned}	{~mythical,immortal}
+Resolvents: [{horned,~mythical}]
+
+Clauses: {~mammal,horned}	{mythical,mammal}
+Resolvents: [{horned,mythical}]
+
+Clauses: {~horned,magical}	{~immortal,horned}
+Resolvents: [{magical,~immortal}]
+
+Clauses: {~horned,magical}	{horned,~mythical}
+Resolvents: [{magical,~mythical}]
+
+Clauses: {~horned,magical}	{horned,mythical}
+Resolvents: [{magical,mythical}]
+
+Clauses: {~horned,magical}	{~mammal,horned}
+Resolvents: [{magical,~mammal}]
+
+Clauses: {~magical}	{~horned,magical}
+Resolvents: [{~horned}]
+
+Clauses: {~magical}	{magical,~mammal}
+Resolvents: [{~mammal}]
+
+Clauses: {~magical}	{magical,~immortal}
+Resolvents: [{~immortal}]
+
+Clauses: {magical,~mammal}	{~magical}
+Resolvents: [{~mammal}]
+
+Clauses: {mammal,immortal}	{magical,~mammal}
+Resolvents: [{immortal,magical}]
+
+Clauses: {mammal,immortal}	{~mammal,horned}
+Resolvents: [{immortal,horned}]
+
+Clauses: {~immortal,horned}	{mammal,immortal}
+Resolvents: [{horned,mammal}]
+
+Clauses: {~immortal,horned}	{immortal,~immortal}
+Resolvents: [{horned,~immortal}]
+
+Clauses: {~immortal,horned}	{~mythical,immortal}
+Resolvents: [{horned,~mythical}]
+
+Clauses: {~mythical}	{mythical,mammal}
+Resolvents: [{mammal}]
+
+Clauses: {~mythical}	{horned,mythical}
+Resolvents: [{horned}]
+
+Clauses: {~mythical}	{mythical,~immortal}
+Resolvents: [{~immortal}]
+
+Clauses: {~immortal}	{mammal,immortal}
+Resolvents: [{mammal}]
+
+Clauses: {~immortal}	{immortal,~immortal}
+Resolvents: [{~immortal}]
+
+Clauses: {~immortal}	{~mythical,immortal}
+Resolvents: [{~mythical}]
+
+Clauses: {magical,~immortal}	{~magical}
+Resolvents: [{~immortal}]
+
+Clauses: {horned,~mythical}	{~horned,magical}
+Resolvents: [{~mythical,magical}]
+
+Clauses: {horned,~mythical}	{~horned}
+Resolvents: [{~mythical}]
+
+Clauses: {mythical,mammal}	{~mythical}
+Resolvents: [{mammal}]
+
+Clauses: {mythical,mammal}	{horned,~mythical}
+Resolvents: [{mammal,horned}]
+
+Clauses: {mythical,mammal}	{~mythical,immortal}
+Resolvents: [{mammal,immortal}]
+
+Clauses: {immortal,~immortal}	{~immortal,horned}
+Resolvents: [{~immortal,horned}]
+
+Clauses: {immortal,~immortal}	{~immortal}
+Resolvents: [{~immortal}]
+
+Clauses: {immortal,~immortal}	{magical,~immortal}
+Resolvents: [{~immortal,magical}]
+
+Clauses: {immortal,~immortal}	{mythical,~immortal}
+Resolvents: [{~immortal,mythical}]
+
+Clauses: {horned,mythical}	{~horned,magical}
+Resolvents: [{mythical,magical}]
+
+Clauses: {horned,mythical}	{~horned}
+Resolvents: [{mythical}]
+
+Clauses: {~mythical,immortal}	{mythical,mammal}
+Resolvents: [{immortal,mammal}]
+
+Clauses: {~mythical,immortal}	{horned,mythical}
+Resolvents: [{immortal,horned}]
+
+Clauses: {~mythical,immortal}	{mythical,~immortal}
+Resolvents: [{immortal,~immortal}]
+
+Clauses: {mythical,~immortal}	{~mythical}
+Resolvents: [{~immortal}]
+
+Clauses: {mythical,~immortal}	{horned,~mythical}
+Resolvents: [{~immortal,horned}]
+
+Clauses: {mythical,~immortal}	{~mythical,immortal}
+Resolvents: [{~immortal,immortal}]
+
+Clauses: {mammal}	{magical,~mammal}
+Resolvents: [{magical}]
+
+Clauses: {mammal}	{~mammal,horned}
+Resolvents: [{horned}]
+
+Clauses: {~horned}	{~immortal,horned}
+Resolvents: [{~immortal}]
+
+Clauses: {~horned}	{horned,~mythical}
+Resolvents: [{~mythical}]
+
+Clauses: {~horned}	{horned,mythical}
+Resolvents: [{mythical}]
+
+Clauses: {~horned}	{~mammal,horned}
+Resolvents: [{~mammal}]
+
+Clauses: {~mammal,horned}	{mammal,immortal}
+Resolvents: [{horned,immortal}]
+
+Clauses: {~mammal,horned}	{mythical,mammal}
+Resolvents: [{horned,mythical}]
+
+Clauses: {~mammal,horned}	{mammal}
+Resolvents: [{horned}]
+
+Clauses: {~mammal}	{mythical,mammal}
+Resolvents: [{mythical}]
+
+Clauses: {~mammal}	{mammal}
+Resolvents: [{}]
+
+Clauses: {~mythical}	{mythical,mammal}
+Resolvents: [{mammal}]
+
+Clauses: {~mythical}	{mythical,~immortal}
+Resolvents: [{~immortal}]
+
+Clauses: {~horned,magical}	{~immortal,horned}
+Resolvents: [{magical,~immortal}]
+
+Clauses: {~horned,magical}	{~mammal,horned}
+Resolvents: [{magical,~mammal}]
+
+Clauses: {mythical,mammal}	{~mythical}
+Resolvents: [{mammal}]
+
+Clauses: {mythical,mammal}	{~mythical,immortal}
+Resolvents: [{mammal,immortal}]
+
+Clauses: {~magical}	{~horned,magical}
+Resolvents: [{~horned}]
+
+Clauses: {~mythical,immortal}	{mythical,mammal}
+Resolvents: [{immortal,mammal}]
+
+Clauses: {~mythical,immortal}	{mythical,~immortal}
+Resolvents: [{immortal,~immortal}]
+
+Clauses: {mythical,~immortal}	{~mythical}
+Resolvents: [{~immortal}]
+
+Clauses: {mythical,~immortal}	{~mythical,immortal}
+Resolvents: [{~immortal,immortal}]
+
+Clauses: {~immortal,horned}	{~mythical,immortal}
+Resolvents: [{horned,~mythical}]
+
+Clauses: {~horned}	{~immortal,horned}
+Resolvents: [{~immortal}]
+
+Clauses: {~horned}	{~mammal,horned}
+Resolvents: [{~mammal}]
+
+Clauses: {~mammal,horned}	{mythical,mammal}
+Resolvents: [{horned,mythical}]
+
+Clauses: {~mammal}	{mammal,immortal}
+Resolvents: [{immortal}]
+
+Clauses: {~mammal}	{mythical,mammal}
+Resolvents: [{mythical}]
+
+Clauses: {~mammal}	{mammal}
+Resolvents: [{}]
+
+**********
+SolvingLiars and Truth Tellers (a) (Resolution)
+Clauses: {~Bob,~Cal}	{~Cal,Bob,~Amy}
+Resolvents: [{~Cal,~Amy}]
+
+Clauses: {~Cal,Bob,~Amy}	{~Amy,Cal}
+Resolvents: [{Bob,~Amy}]
+
+Clauses: {~Amy,Cal}	{~Amy,Amy}
+Resolvents: [{Cal,~Amy}]
+
+Clauses: {~Amy}	{~Amy,Amy}
+Resolvents: [{~Amy}]
+
+Clauses: {~Bob,~Cal}	{Bob,~Amy}
+Resolvents: [{~Cal,~Amy}]
+
+Clauses: {~Bob,~Cal}	{~Cal,Bob,~Amy}
+Resolvents: [{~Cal,~Amy}]
+
+Clauses: {Bob,~Amy}	{~Bob,~Cal}
+Resolvents: [{~Amy,~Cal}]
+
+Clauses: {~Cal,~Amy}	{~Amy,Cal}
+Resolvents: [{~Amy}]
+
+Clauses: {~Cal,Bob,~Amy}	{~Amy,Cal}
+Resolvents: [{Bob,~Amy}]
+
+Clauses: {~Amy,Cal}	{~Amy,Amy}
+Resolvents: [{Cal,~Amy}]
+
+Clauses: {~Amy}	{~Amy,Amy}
+Resolvents: [{~Amy}]
+
+Clauses: {~Bob,~Cal}	{~Cal,Bob,~Amy}
+Resolvents: [{~Cal,~Amy}]
+
+Clauses: {~Bob}	{~Cal,Bob,~Amy}
+Resolvents: [{~Cal,~Amy}]
+
+Clauses: {~Cal,Bob,~Amy}	{~Amy,Cal}
+Resolvents: [{Bob,~Amy}]
+
+Clauses: {~Amy,Cal}	{~Amy,Amy}
+Resolvents: [{Cal,~Amy}]
+
+Clauses: {~Amy}	{~Amy,Amy}
+Resolvents: [{~Amy}]
+
+Clauses: {~Bob,~Cal}	{Bob,~Amy}
+Resolvents: [{~Cal,~Amy}]
+
+Clauses: {~Bob,~Cal}	{~Cal,Bob,~Amy}
+Resolvents: [{~Cal,~Amy}]
+
+Clauses: {Bob,~Amy}	{~Bob,~Cal}
+Resolvents: [{~Amy,~Cal}]
+
+Clauses: {Bob,~Amy}	{~Bob}
+Resolvents: [{~Amy}]
+
+Clauses: {~Cal,~Amy}	{~Amy,Cal}
+Resolvents: [{~Amy}]
+
+Clauses: {~Bob}	{Bob,~Amy}
+Resolvents: [{~Amy}]
+
+Clauses: {~Bob}	{~Cal,Bob,~Amy}
+Resolvents: [{~Cal,~Amy}]
+
+Clauses: {~Cal,Bob,~Amy}	{~Amy,Cal}
+Resolvents: [{Bob,~Amy}]
+
+Clauses: {~Amy,Cal}	{~Amy,Amy}
+Resolvents: [{Cal,~Amy}]
+
+Clauses: {~Amy}	{~Amy,Amy}
+Resolvents: [{~Amy}]
+
+Clauses: {~Bob,~Cal}	{~Cal,Bob,~Amy}
+Resolvents: [{~Cal,~Amy}]
+
+Clauses: {~Cal}	{~Amy,Cal}
+Resolvents: [{~Amy}]
+
+Clauses: {~Bob}	{~Cal,Bob,~Amy}
+Resolvents: [{~Cal,~Amy}]
+
+Clauses: {~Cal,Bob,~Amy}	{~Amy,Cal}
+Resolvents: [{Bob,~Amy}]
+
+Clauses: {~Amy,Cal}	{~Amy,Amy}
+Resolvents: [{Cal,~Amy}]
+
+Clauses: {~Amy}	{~Amy,Amy}
+Resolvents: [{~Amy}]
+
+Clauses: {~Bob,~Cal}	{Bob,~Amy}
+Resolvents: [{~Cal,~Amy}]
+
+Clauses: {~Bob,~Cal}	{~Cal,Bob,~Amy}
+Resolvents: [{~Cal,~Amy}]
+
+Clauses: {Bob,~Amy}	{~Bob,~Cal}
+Resolvents: [{~Amy,~Cal}]
+
+Clauses: {Bob,~Amy}	{~Bob}
+Resolvents: [{~Amy}]
+
+Clauses: {~Cal,~Amy}	{~Amy,Cal}
+Resolvents: [{~Amy}]
+
+Clauses: {~Cal}	{~Amy,Cal}
+Resolvents: [{~Amy}]
+
+Clauses: {~Bob}	{Bob,~Amy}
+Resolvents: [{~Amy}]
+
+Clauses: {~Bob}	{~Cal,Bob,~Amy}
+Resolvents: [{~Cal,~Amy}]
+
+Clauses: {~Cal,Bob,~Amy}	{~Amy,Cal}
+Resolvents: [{Bob,~Amy}]
+
+Clauses: {~Amy,Cal}	{~Amy,Amy}
+Resolvents: [{Cal,~Amy}]
+
+Clauses: {~Amy}	{~Amy,Amy}
+Resolvents: [{~Amy}]
+
+**********
+SolvingLiars and Truth Tellers (b) (Resolution)
+Clauses: {~Bob,Amy}	{~Cal,Bob}
+Resolvents: [{Amy,~Cal}]
+
+Clauses: {~Amy,~Cal}	{~Bob,Amy}
+Resolvents: [{~Cal,~Bob}]
+
+Clauses: {~Bob,Cal}	{~Cal,Bob}
+Resolvents: [{Cal,~Cal}]
+
+Clauses: {~Cal,Bob}	{~Bob,Cal}
+Resolvents: [{Bob,~Bob}]
+
+Clauses: {~Amy}	{~Bob,Amy}
+Resolvents: [{~Bob}]
+
+Clauses: {~Cal,~Bob}	{Cal,~Cal}
+Resolvents: [{~Bob,~Cal}]
+
+Clauses: {~Cal,~Bob}	{~Bob,Cal}
+Resolvents: [{~Bob}]
+
+Clauses: {~Bob,Amy}	{~Cal,Bob}
+Resolvents: [{Amy,~Cal}]
+
+Clauses: {~Bob,Amy}	{Bob,~Bob}
+Resolvents: [{Amy,~Bob}]
+
+Clauses: {~Amy,~Cal}	{~Bob,Amy}
+Resolvents: [{~Cal,~Bob}]
+
+Clauses: {~Amy,~Cal}	{Amy,~Cal}
+Resolvents: [{~Cal}]
+
+Clauses: {Cal,~Cal}	{~Cal,~Bob}
+Resolvents: [{~Cal,~Bob}]
+
+Clauses: {Cal,~Cal}	{~Amy,~Cal}
+Resolvents: [{~Cal,~Amy}]
+
+Clauses: {Cal,~Cal}	{~Cal,Bob}
+Resolvents: [{~Cal,Bob}]
+
+Clauses: {Cal,~Cal}	{Amy,~Cal}
+Resolvents: [{~Cal,Amy}]
+
+Clauses: {~Bob}	{~Cal,Bob}
+Resolvents: [{~Cal}]
+
+Clauses: {~Bob}	{Bob,~Bob}
+Resolvents: [{~Bob}]
+
+Clauses: {~Bob,Cal}	{~Cal,Bob}
+Resolvents: [{Cal,~Cal}]
+
+Clauses: {~Bob,Cal}	{Bob,~Bob}
+Resolvents: [{Cal,~Bob}]
+
+Clauses: {~Cal,Bob}	{Cal,~Cal}
+Resolvents: [{Bob,~Cal}]
+
+Clauses: {~Cal,Bob}	{~Bob,Cal}
+Resolvents: [{Bob,~Bob}]
+
+Clauses: {Amy,~Cal}	{~Amy,~Cal}
+Resolvents: [{~Cal}]
+
+Clauses: {Amy,~Cal}	{~Amy}
+Resolvents: [{~Cal}]
+
+Clauses: {~Amy}	{~Bob,Amy}
+Resolvents: [{~Bob}]
+
+Clauses: {~Amy}	{Amy,~Cal}
+Resolvents: [{~Cal}]
+
+Clauses: {Bob,~Bob}	{~Cal,~Bob}
+Resolvents: [{~Bob,~Cal}]
+
+Clauses: {Bob,~Bob}	{~Bob,Amy}
+Resolvents: [{~Bob,Amy}]
+
+Clauses: {Bob,~Bob}	{~Bob}
+Resolvents: [{~Bob}]
+
+Clauses: {Bob,~Bob}	{~Bob,Cal}
+Resolvents: [{~Bob,Cal}]
+
+Clauses: {~Cal,~Bob}	{Cal,~Cal}
+Resolvents: [{~Bob,~Cal}]
+
+Clauses: {~Cal,~Bob}	{~Bob,Cal}
+Resolvents: [{~Bob}]
+
+Clauses: {~Bob,Amy}	{~Cal,Bob}
+Resolvents: [{Amy,~Cal}]
+
+Clauses: {~Bob,Amy}	{Bob,~Bob}
+Resolvents: [{Amy,~Bob}]
+
+Clauses: {~Amy,~Cal}	{~Bob,Amy}
+Resolvents: [{~Cal,~Bob}]
+
+Clauses: {~Amy,~Cal}	{Amy,~Cal}
+Resolvents: [{~Cal}]
+
+Clauses: {Cal,~Cal}	{~Cal,~Bob}
+Resolvents: [{~Cal,~Bob}]
+
+Clauses: {Cal,~Cal}	{~Amy,~Cal}
+Resolvents: [{~Cal,~Amy}]
+
+Clauses: {Cal,~Cal}	{~Cal}
+Resolvents: [{~Cal}]
+
+Clauses: {Cal,~Cal}	{~Cal,Bob}
+Resolvents: [{~Cal,Bob}]
+
+Clauses: {Cal,~Cal}	{Amy,~Cal}
+Resolvents: [{~Cal,Amy}]
+
+Clauses: {~Cal}	{Cal,~Cal}
+Resolvents: [{~Cal}]
+
+Clauses: {~Cal}	{~Bob,Cal}
+Resolvents: [{~Bob}]
+
+Clauses: {~Bob}	{~Cal,Bob}
+Resolvents: [{~Cal}]
+
+Clauses: {~Bob}	{Bob,~Bob}
+Resolvents: [{~Bob}]
+
+Clauses: {~Bob,Cal}	{~Cal,Bob}
+Resolvents: [{Cal,~Cal}]
+
+Clauses: {~Bob,Cal}	{Bob,~Bob}
+Resolvents: [{Cal,~Bob}]
+
+Clauses: {~Cal,Bob}	{Cal,~Cal}
+Resolvents: [{Bob,~Cal}]
+
+Clauses: {~Cal,Bob}	{~Bob,Cal}
+Resolvents: [{Bob,~Bob}]
+
+Clauses: {Amy,~Cal}	{~Amy,~Cal}
+Resolvents: [{~Cal}]
+
+Clauses: {Amy,~Cal}	{~Amy}
+Resolvents: [{~Cal}]
+
+Clauses: {~Amy}	{~Bob,Amy}
+Resolvents: [{~Bob}]
+
+Clauses: {~Amy}	{Amy,~Cal}
+Resolvents: [{~Cal}]
+
+Clauses: {Bob,~Bob}	{~Cal,~Bob}
+Resolvents: [{~Bob,~Cal}]
+
+Clauses: {Bob,~Bob}	{~Bob,Amy}
+Resolvents: [{~Bob,Amy}]
+
+Clauses: {Bob,~Bob}	{~Bob}
+Resolvents: [{~Bob}]
+
+Clauses: {Bob,~Bob}	{~Bob,Cal}
+Resolvents: [{~Bob,Cal}]
+
+Clauses: {~Bob,Amy}	{~Cal,Bob}
+Resolvents: [{Amy,~Cal}]
+
+Clauses: {~Amy,~Cal}	{~Bob,Amy}
+Resolvents: [{~Cal,~Bob}]
+
+Clauses: {~Bob}	{~Cal,Bob}
+Resolvents: [{~Cal}]
+
+Clauses: {~Bob,Cal}	{~Cal,Bob}
+Resolvents: [{Cal,~Cal}]
+
+Clauses: {~Cal,Bob}	{~Bob,Cal}
+Resolvents: [{Bob,~Bob}]
+
+Clauses: {~Amy}	{~Bob,Amy}
+Resolvents: [{~Bob}]
+
+Clauses: {~Cal,~Bob}	{Cal,~Cal}
+Resolvents: [{~Bob,~Cal}]
+
+Clauses: {~Cal,~Bob}	{~Bob,Cal}
+Resolvents: [{~Bob}]
+
+Clauses: {~Bob,Amy}	{~Cal,Bob}
+Resolvents: [{Amy,~Cal}]
+
+Clauses: {~Bob,Amy}	{Bob,~Bob}
+Resolvents: [{Amy,~Bob}]
+
+Clauses: {~Amy,~Cal}	{~Bob,Amy}
+Resolvents: [{~Cal,~Bob}]
+
+Clauses: {~Amy,~Cal}	{Amy,~Cal}
+Resolvents: [{~Cal}]
+
+Clauses: {Cal,~Cal}	{~Cal,~Bob}
+Resolvents: [{~Cal,~Bob}]
+
+Clauses: {Cal,~Cal}	{~Amy,~Cal}
+Resolvents: [{~Cal,~Amy}]
+
+Clauses: {Cal,~Cal}	{~Cal}
+Resolvents: [{~Cal}]
+
+Clauses: {Cal,~Cal}	{~Cal,Bob}
+Resolvents: [{~Cal,Bob}]
+
+Clauses: {Cal,~Cal}	{Amy,~Cal}
+Resolvents: [{~Cal,Amy}]
+
+Clauses: {~Cal}	{Cal,~Cal}
+Resolvents: [{~Cal}]
+
+Clauses: {~Cal}	{~Bob,Cal}
+Resolvents: [{~Bob}]
+
+Clauses: {~Bob}	{~Cal,Bob}
+Resolvents: [{~Cal}]
+
+Clauses: {~Bob}	{Bob,~Bob}
+Resolvents: [{~Bob}]
+
+Clauses: {~Bob,Cal}	{~Cal,Bob}
+Resolvents: [{Cal,~Cal}]
+
+Clauses: {~Bob,Cal}	{Bob,~Bob}
+Resolvents: [{Cal,~Bob}]
+
+Clauses: {~Cal,Bob}	{Cal,~Cal}
+Resolvents: [{Bob,~Cal}]
+
+Clauses: {~Cal,Bob}	{~Bob,Cal}
+Resolvents: [{Bob,~Bob}]
+
+Clauses: {Amy,~Cal}	{~Amy,~Cal}
+Resolvents: [{~Cal}]
+
+Clauses: {Amy,~Cal}	{~Amy}
+Resolvents: [{~Cal}]
+
+Clauses: {~Amy}	{~Bob,Amy}
+Resolvents: [{~Bob}]
+
+Clauses: {~Amy}	{Amy,~Cal}
+Resolvents: [{~Cal}]
+
+Clauses: {Bob,~Bob}	{~Cal,~Bob}
+Resolvents: [{~Bob,~Cal}]
+
+Clauses: {Bob,~Bob}	{~Bob,Amy}
+Resolvents: [{~Bob,Amy}]
+
+Clauses: {Bob,~Bob}	{~Bob}
+Resolvents: [{~Bob}]
+
+Clauses: {Bob,~Bob}	{~Bob,Cal}
+Resolvents: [{~Bob,Cal}]
+
+Clauses: {~Bob,Amy}	{~Cal,Bob}
+Resolvents: [{Amy,~Cal}]
+
+Clauses: {~Amy,~Cal}	{~Bob,Amy}
+Resolvents: [{~Cal,~Bob}]
+
+Clauses: {~Cal}	{~Bob,Cal}
+Resolvents: [{~Bob}]
+
+Clauses: {~Bob}	{~Cal,Bob}
+Resolvents: [{~Cal}]
+
+Clauses: {~Bob,Cal}	{~Cal,Bob}
+Resolvents: [{Cal,~Cal}]
+
+Clauses: {~Cal,Bob}	{~Bob,Cal}
+Resolvents: [{Bob,~Bob}]
+
+Clauses: {~Amy}	{~Bob,Amy}
+Resolvents: [{~Bob}]
+
+Clauses: {~Cal,~Bob}	{Cal,~Cal}
+Resolvents: [{~Bob,~Cal}]
+
+Clauses: {~Cal,~Bob}	{~Bob,Cal}
+Resolvents: [{~Bob}]
+
+Clauses: {~Bob,Amy}	{~Cal,Bob}
+Resolvents: [{Amy,~Cal}]
+
+Clauses: {~Bob,Amy}	{Bob,~Bob}
+Resolvents: [{Amy,~Bob}]
+
+Clauses: {~Amy,~Cal}	{~Bob,Amy}
+Resolvents: [{~Cal,~Bob}]
+
+Clauses: {~Amy,~Cal}	{Amy,~Cal}
+Resolvents: [{~Cal}]
+
+Clauses: {Cal,~Cal}	{~Cal,~Bob}
+Resolvents: [{~Cal,~Bob}]
+
+Clauses: {Cal,~Cal}	{~Amy,~Cal}
+Resolvents: [{~Cal,~Amy}]
+
+Clauses: {Cal,~Cal}	{~Cal}
+Resolvents: [{~Cal}]
+
+Clauses: {Cal,~Cal}	{~Cal,Bob}
+Resolvents: [{~Cal,Bob}]
+
+Clauses: {Cal,~Cal}	{Amy,~Cal}
+Resolvents: [{~Cal,Amy}]
+
+Clauses: {~Cal}	{Cal,~Cal}
+Resolvents: [{~Cal}]
+
+Clauses: {~Cal}	{~Bob,Cal}
+Resolvents: [{~Bob}]
+
+Clauses: {~Bob}	{~Cal,Bob}
+Resolvents: [{~Cal}]
+
+Clauses: {~Bob}	{Bob,~Bob}
+Resolvents: [{~Bob}]
+
+Clauses: {~Bob,Cal}	{~Cal,Bob}
+Resolvents: [{Cal,~Cal}]
+
+Clauses: {~Bob,Cal}	{Bob,~Bob}
+Resolvents: [{Cal,~Bob}]
+
+Clauses: {~Cal,Bob}	{Cal,~Cal}
+Resolvents: [{Bob,~Cal}]
+
+Clauses: {~Cal,Bob}	{~Bob,Cal}
+Resolvents: [{Bob,~Bob}]
+
+Clauses: {Amy,~Cal}	{~Amy,~Cal}
+Resolvents: [{~Cal}]
+
+Clauses: {Amy,~Cal}	{~Amy}
+Resolvents: [{~Cal}]
+
+Clauses: {~Amy}	{~Bob,Amy}
+Resolvents: [{~Bob}]
+
+Clauses: {~Amy}	{Amy,~Cal}
+Resolvents: [{~Cal}]
+
+Clauses: {Bob,~Bob}	{~Cal,~Bob}
+Resolvents: [{~Bob,~Cal}]
+
+Clauses: {Bob,~Bob}	{~Bob,Amy}
+Resolvents: [{~Bob,Amy}]
+
+Clauses: {Bob,~Bob}	{~Bob}
+Resolvents: [{~Bob}]
+
+Clauses: {Bob,~Bob}	{~Bob,Cal}
+Resolvents: [{~Bob,Cal}]
+
+**********
