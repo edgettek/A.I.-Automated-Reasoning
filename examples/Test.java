@@ -41,7 +41,7 @@ public class Test {
 		}
 
 
-		List<ExampleProblem> exampleProblems = new ArrayList<>();
+		ArrayList<ExampleProblem> exampleProblems = new ArrayList<ExampleProblem>();
 		FileWriter fw = new FileWriter(file.getAbsoluteFile());
 		bw = new BufferedWriter(fw);
 
@@ -60,7 +60,7 @@ public class Test {
 		for( ExampleProblem e : exampleProblems ) {
 			e.solveByModelChecking();
 		}
-		
+
 		exampleProblems.remove(mltt);
 
 		// Resolution

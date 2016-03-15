@@ -40,7 +40,7 @@ public class MoreLiarsAndTruthTellers extends KB implements ExampleProblem {
 
   public void solveByModelChecking() {
 
-    System.out.println("Solving LiarsAndTruthTellers Part (a) (Model Checking)");
+    System.out.println("Solving MoreLiarsAndTruthTellers (Model Checking)");
 
     Sentence s = new Symbol("Amy");
     System.out.print("Amy is telling the truth: ");
