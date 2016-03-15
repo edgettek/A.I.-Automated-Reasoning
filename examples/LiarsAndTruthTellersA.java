@@ -42,7 +42,7 @@ public class LiarsAndTruthTellersA extends KB implements ExampleProblem {
 
   public void solveByResolution() throws IOException {
 
-    System.out.println("Solving LiarsAndTruthTellers Part (a) (Model Checking)");
+    System.out.println("Solving LiarsAndTruthTellers Part (a) (Resolution)");
 
     Sentence s = new Symbol("Amy");
     System.out.print("\nAmy is telling the truth: ");

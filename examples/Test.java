@@ -50,6 +50,7 @@ public class Test {
 		exampleProblems.add(new HornClauses());
 		exampleProblems.add(new LiarsAndTruthTellersA());
 		exampleProblems.add(new LiarsAndTruthTellersB());
+		exampleProblems.add(new MoreLiarsAndTruthTellers());
 
 
 		// Model Checking
