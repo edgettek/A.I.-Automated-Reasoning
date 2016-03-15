@@ -60,9 +60,9 @@ public class Test {
 
 		// Resolution
 		for( ExampleProblem e : exampleProblems ) {
-			bw.write("Solving" + e.getName() + " (Resolution)");
+			bw.write("Solving " + e.getName() + " (Resolution)\n");
 			e.solveByResolution();
-			bw.write("\n**********\n");
+			bw.write("\n**********\n\n");
 		}
 
 		bw.close();
