@@ -85,11 +85,11 @@ public class Clause extends ArraySet<Literal> {
      */
 	public boolean isSatisfiedBy(Model model) {
 		for (Literal literal : this) {
-			if (!literal.isSatisfiedBy(model)) {
-				return false;
+			if (literal.isSatisfiedBy(model)) {
+				return true;
 			}
 		}
-		return true;
+		return false;
 	}
 
 	public Clause copyClause() {
