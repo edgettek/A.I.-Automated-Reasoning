@@ -4,9 +4,12 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.HashSet;
+import java.util.List;
 
 import propositionalLogic.*;
 import cnf.*;
+import examples.*;
+// import examples.*;
 
 
 
@@ -15,52 +18,86 @@ public class Test {
 
 	public static void main(String[] args) {
 
+		List<ExampleProblem> exampleProblems = new ArrayList<>();
 
-		System.out.println("Solving Modus Ponens (Model Checking)");
+		exampleProblems.add(new ModusPonens());
+		exampleProblems.add(new WumpusWorld());
+		exampleProblems.add(new HornClauses());
+		exampleProblems.add(new LiarsAndTruthTellersA());
+		exampleProblems.add(new LiarsAndTruthTellersB());
 
-		ModusPonens mp = new ModusPonens();
 
-		System.out.println(mp.solveModusPonensTT());
+		// Model Checking
+		for( ExampleProblem e : exampleProblems ) {
+			e.solveByModelChecking();
+		}
 
-		System.out.println("\n**********\n");
+		// Resolution
+		for( ExampleProblem e : exampleProblems ) {
+			e.solveByResolution();
+		}
 
-		System.out.println("Solving Wumpus World (Model Checking)");
-
-		WumpusWorld ww = new WumpusWorld();
-
-		System.out.println(ww.solveWumpusWorldTT());
-
-		System.out.println("\n**********\n");
-
-		System.out.println("Solving Horn Clauses (Model Checking)");
-
-		HornClauses hc = new HornClauses();
-
-		hc.solveHornClauses();
-
-		System.out.println("\n**********\n");
-
-		System.out.println("Solving Modus Ponens (Resolution)");
-
-		 mp = new ModusPonens();
-
-		System.out.println(mp.solveModusPonensResolution());
-
-		System.out.println("\n**********\n");
-
-		System.out.println("Solving Wumpus World (Resolution)");
-
-		 ww = new WumpusWorld();
-
-		System.out.println(ww.solveWumpusWorldResolution());
-
-		System.out.println("\n**********\n");
-
-		System.out.println("Solving Horn Clauses (Resolution)");
-
-		 hc = new HornClauses();
-
-		hc.solveHornClausesResolution();
+		// System.out.println("Solving Modus Ponens (Model Checking)");
+		//
+		// ModusPonens mp = new ModusPonens();
+		//
+		// System.out.println(mp.solveModusPonensTT());
+		//
+		// System.out.println("\n**********\n");
+		//
+		// System.out.println("Solving Wumpus World (Model Checking)");
+		//
+		// WumpusWorld ww = new WumpusWorld();
+		//
+		// System.out.println(ww.solveWumpusWorldTT());
+		//
+		// System.out.println("\n**********\n");
+		//
+		// System.out.println("Solving Horn Clauses (Model Checking)");
+		//
+		// HornClauses hc = new HornClauses();
+		//
+		// hc.solveHornClauses();
+		//
+		// System.out.println("\n**********\n");
+		//
+		// System.out.println("Solving Liars and Truth Tellers (Model Checking)");
+		//
+		// LiarsAndTruthTellersA ltt = new LiarsAndTruthTellersA();
+		//
+		// ltt.solveLiarsAndTruthTellers();
+		//
+		// System.out.println("\n**********\n");
+		//
+		// System.out.println("Solving Modus Ponens (Resolution)");
+		//
+		//  mp = new ModusPonens();
+		//
+		// System.out.println(mp.solveModusPonensResolution());
+		//
+		// System.out.println("\n**********\n");
+		//
+		// System.out.println("Solving Wumpus World (Resolution)");
+		//
+		//  ww = new WumpusWorld();
+		//
+		// System.out.println(ww.solveWumpusWorldResolution());
+		//
+		// System.out.println("\n**********\n");
+		//
+		// System.out.println("Solving Horn Clauses (Resolution)");
+		//
+		//  hc = new HornClauses();
+		//
+		// hc.solveHornClausesResolution();
+		//
+		// System.out.println("\n**********\n");
+		//
+		// System.out.println("Solving Liars and Truth Tellers (Resolution)");
+		//
+    // ltt = new LiarsAndTruthTellersA();
+		//
+		// ltt.solveLiarsAndTruthTellersResolution();
 
 	}
 

@@ -1,0 +1,62 @@
+
+
+import propositionalLogic.*;
+
+public class LiarsAndTruthTellersA extends KB implements ExampleProblem {
+
+
+  public LiarsAndTruthTellersA() {
+
+    super();
+
+    Symbol amy = intern("Amy");
+    Symbol bob = intern("Bob");
+    Symbol cal = intern("Cal");
+
+    add(new Implication(amy, new Conjunction(amy, cal)));
+    add(new Implication(bob, new Negation(cal)));
+    add(new Implication(cal, new Disjunction(bob, new Negation(amy) )));
+
+  }
+
+  public void solveByModelChecking() {
+
+    System.out.println("Solving LiarsAndTruthTellers Part (a) (Model Checking)");
+
+    Sentence s = new Symbol("Amy");
+    System.out.print("Amy is telling the truth: ");
+    System.out.println(Test.TTEntails(this, s));
+
+    System.out.print("Bob is telling the truth: ");
+    s = new Symbol("Bob");
+    System.out.println(Test.TTEntails(this, s));
+
+    System.out.print("Cal is telling the truth: ");
+    s = new Symbol("Cal");
+    System.out.println(Test.TTEntails(this, s));
+
+    System.out.println("\n**********\n");
+
+  }
+
+  public void solveByResolution() {
+
+    System.out.println("Solving LiarsAndTruthTellers Part (a) (Model Checking)");
+
+    Sentence s = new Symbol("Amy");
+    System.out.print("\nAmy is telling the truth: ");
+    System.out.println(Test.PLResolution(this, s));
+
+    System.out.print("Bob is telling the truth: ");
+    s = new Symbol("Bob");
+    System.out.println(Test.PLResolution(this, s));
+
+    System.out.print("Cal is telling the truth: ");
+    s = new Symbol("Cal");
+    System.out.println(Test.PLResolution(this, s));
+
+    System.out.println("\n**********\n");
+
+  }
+
+}

@@ -1,7 +1,8 @@
+
 import propositionalLogic.*;
 
 
-public class HornClauses extends KB{
+public class HornClauses extends KB implements ExampleProblem{
 
 	public HornClauses() {
 
@@ -21,53 +22,45 @@ public class HornClauses extends KB{
 
 		add(new Implication(horned, magical));
 
-
-
 	}
 
-	public void solveHornClauses() {
+	public void solveByModelChecking() {
+
+		System.out.println("Solving Horn Clauses (Model Checking)");
 
 		Sentence s = new Symbol("mythical");
-
 		System.out.println("Can we prove that the unicorn is mythical?");
-
 		System.out.println(Test.TTEntails(this, s));
 
 		System.out.println("Can we prove that the unicorn is magical?");
-
 		s = new Symbol("magical");
-
 		System.out.println(Test.TTEntails(this, s));
 
 		System.out.println("Can we prove that the unicorn is horned?");
-
 		s = new Symbol("horned");
-
 		System.out.println(Test.TTEntails(this, s));
 
-
+		System.out.println("\n**********\n");
 
 	}
 
-	public void solveHornClausesResolution() {
+	public void solveByResolution() {
+
+				System.out.println("Solving Horn Clauses (Resolution)");
 
 				Sentence s = new Symbol("mythical");
-
 				System.out.println("Can we prove that the unicorn is mythical?");
-
 				System.out.println(Test.PLResolution(this, s));
 
 				System.out.println("Can we prove that the unicorn is magical?");
-
 				s = new Symbol("magical");
-
 				System.out.println(Test.PLResolution(this, s));
 
 				System.out.println("Can we prove that the unicorn is horned?");
-
 				s = new Symbol("horned");
-
 				System.out.println(Test.PLResolution(this, s));
+
+				System.out.println("\n**********\n");
 		}
 
 }
