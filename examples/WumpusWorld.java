@@ -85,7 +85,7 @@ public class WumpusWorld extends KB implements ExampleProblem{
 	}
 
 
-			public String getName() {
-				return "Wumpus World";
-			}
+	public String getName() {
+		return "Wumpus World";
+	}
 }

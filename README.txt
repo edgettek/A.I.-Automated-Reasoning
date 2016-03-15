@@ -45,15 +45,13 @@ How to Compile and Run:
 
 2. Using the following commands to compile the necessary files.
 	
-		$ javac cnf/*.java
-		$ javac superTTT/*.java
-		$ javac gameplay/*.java
-
-	NOTE: To play a basic version of Tic-Tac-Toe use the command: $ java gameplay.Test basic
+		KEdgette1$ javac cnf/*.java
+		KEdgette1$ javac propositionalLogic/*.java
+		KEdgette1$ javac examples/*.java
 	
 3. Run the program using the command:
 
-		$ java gameplay.Test super
+		KEdgette1$ java examples.Test
 		
 
 		
