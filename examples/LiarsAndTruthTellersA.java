@@ -24,9 +24,9 @@ public class LiarsAndTruthTellersA extends KB implements ExampleProblem {
     Symbol bob = intern("Bob");
     Symbol cal = intern("Cal");
 
-    add(new Implication(amy, new Conjunction(amy, cal)));
-    add(new Implication(bob, new Negation(cal)));
-    add(new Implication(cal, new Disjunction(bob, new Negation(amy) )));
+    add(new Biconditional(amy, new Conjunction(amy, cal)));
+    add(new Biconditional(bob, new Negation(cal)));
+    add(new Biconditional(cal, new Disjunction(bob, new Negation(amy) )));
 
   }
 

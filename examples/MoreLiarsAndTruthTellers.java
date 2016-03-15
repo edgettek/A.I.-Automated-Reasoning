@@ -23,18 +23,18 @@ public class MoreLiarsAndTruthTellers extends KB implements ExampleProblem {
     Symbol kay = intern("Kay");
     Symbol lee = intern("Lee");
 
-    add(new Implication(amy, new Conjunction(hal, ida)));
-    add(new Implication(bob, new Conjunction(amy, lee)));
-    add(new Implication(cal, new Conjunction(bob, gil)));
-    add(new Implication(dee, new Conjunction(eli, lee)));
-    add(new Implication(eli, new Conjunction(cal, hal)));
-    add(new Implication(fay, new Conjunction(dee, ida)));
-    add(new Implication(gil, new Conjunction(new Negation(eli), new Negation(jay))));
-    add(new Implication(hal, new Conjunction(new Negation(fay), new Negation(kay))));
-    add(new Implication(ida, new Conjunction(new Negation(gil), new Negation(kay))));
-    add(new Implication(jay, new Conjunction(new Negation(amy), new Negation(cal))));
-    add(new Implication(kay, new Conjunction(new Negation(dee), new Negation(fay))));
-    add(new Implication(lee, new Conjunction(new Negation(bob), new Negation(jay))));
+    add(new Biconditional(amy, new Conjunction(hal, ida)));
+    add(new Biconditional(bob, new Conjunction(amy, lee)));
+    add(new Biconditional(cal, new Conjunction(bob, gil)));
+    add(new Biconditional(dee, new Conjunction(eli, lee)));
+    add(new Biconditional(eli, new Conjunction(cal, hal)));
+    add(new Biconditional(fay, new Conjunction(dee, ida)));
+    add(new Biconditional(gil, new Conjunction(new Negation(eli), new Negation(jay))));
+    add(new Biconditional(hal, new Conjunction(new Negation(fay), new Negation(kay))));
+    add(new Biconditional(ida, new Conjunction(new Negation(gil), new Negation(kay))));
+    add(new Biconditional(jay, new Conjunction(new Negation(amy), new Negation(cal))));
+    add(new Biconditional(kay, new Conjunction(new Negation(dee), new Negation(fay))));
+    add(new Biconditional(lee, new Conjunction(new Negation(bob), new Negation(jay))));
 
   }
 
