@@ -54,6 +54,14 @@ public class Test {
 
 		System.out.println(ww.solveWumpusWorldResolution());
 
+		System.out.println("\n**********\n");
+
+		System.out.println("Solving Horn Clauses (Resolution)");
+
+		 hc = new HornClauses();
+
+		hc.solveHornClausesResolution();
+
 	}
 
 	public static boolean PLResolution(KB kb, Sentence alpha) {
