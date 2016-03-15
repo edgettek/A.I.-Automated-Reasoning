@@ -1,3 +1,13 @@
+/**
+ * 
+ * Author: Kyle Edgette
+ * 
+ * Purpose: Model class implements ModelInterface. Model is a HashMap of Propositional Logic Symbols to truth values
+ * 
+ * Assignment: CSC 242 Project 02
+ * 
+ */
+
 package propositionalLogic;
 
 import java.util.HashMap;

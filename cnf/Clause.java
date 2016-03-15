@@ -1,8 +1,13 @@
-/*
- * File: Clause.java
- * Creator: George Ferguson
- * Created: Tue Mar 15 15:58:15 2011
- * Time-stamp: <Fri Mar 23 14:50:20 EDT 2012 ferguson>
+/**
+ * 
+ *  Author: George Ferguson
+ * 
+ *  Modified By: Nina Bose
+ * 
+ * 	Modification: Added copyClause()
+ * 
+ * Assignment: CSC 242 Project 02
+ * 
  */
 
 package cnf;
@@ -22,8 +27,6 @@ import propositionalLogic.*;
  * to be the sum of the hash codes of the elements in the set.</q>
  */
 public class Clause extends ArraySet<Literal> {
-
-	private String sentence;
 
 	/**
 	 * Return a new Clause constructed from the given Sentence, which

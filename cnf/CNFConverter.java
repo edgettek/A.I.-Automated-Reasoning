@@ -1,8 +1,11 @@
-/*
- * File: CNFConverter.java
- * Creator: George Ferguson
- * Created: Mon Mar 14 22:50:05 2011
- * Time-stamp: <Fri Mar 16 13:29:51 EDT 2012 ferguson>
+/**
+ * 
+ * Author: George Ferguson
+ * 
+ * Purpose: Class used to convert a single propositional sentence or a knowledge base to conjunctive normal form
+ * 
+ * Assignment: CSC 242 Project 02
+ * 
  */
 
 package cnf;

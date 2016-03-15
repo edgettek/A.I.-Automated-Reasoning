@@ -1,8 +1,25 @@
+/**
+ * 
+ *  Author: Kyle Edgette and Nina Bose
+ * 
+ * 	Purpose: Create knowledge base for Horn Clause Problem, helper methods to sovle by model checking and resolution
+ * 
+ * Assignment: CSC 242 Project 02
+ * 
+ */
+
+
+import java.io.IOException;
+
 import propositionalLogic.*;
 
 
 public class HornClauses extends KB{
 
+	/**
+	 * Constructor sets up Knowledge Base for Horn Clause Problem
+	 * 
+	 */
 	public HornClauses() {
 
 		super();
@@ -24,20 +41,30 @@ public class HornClauses extends KB{
 
 
 	}
-
-	public void solveHornClauses() {
+	
+	/**
+	 * Solves Horn Clause Problem using Model Checking
+	 * 
+	 */
+	public void solveHornClausesTT() {
 
 		Sentence s = new Symbol("mythical");
+		
+		System.out.println();
 
 		System.out.println("Can we prove that the unicorn is mythical?");
 
 		System.out.println(Test.TTEntails(this, s));
+		
+		System.out.println();
 
 		System.out.println("Can we prove that the unicorn is magical?");
 
 		s = new Symbol("magical");
 
 		System.out.println(Test.TTEntails(this, s));
+		
+		System.out.println();
 
 		System.out.println("Can we prove that the unicorn is horned?");
 
@@ -49,19 +76,29 @@ public class HornClauses extends KB{
 
 	}
 
-	public void solveHornClausesResolution() {
+	
+	/**
+	 * Solves Horn Clause Problem using Resolution
+	 * @throws IOException 
+	 * 
+	 */
+	public void solveHornClausesResolution() throws IOException {
 
 				Sentence s = new Symbol("mythical");
 
 				System.out.println("Can we prove that the unicorn is mythical?");
 
 				System.out.println(Test.PLResolution(this, s));
+				
+				System.out.println();
 
 				System.out.println("Can we prove that the unicorn is magical?");
 
 				s = new Symbol("magical");
 
 				System.out.println(Test.PLResolution(this, s));
+				
+				System.out.println();
 
 				System.out.println("Can we prove that the unicorn is horned?");
 
