@@ -1,4 +1,4 @@
-
+package examples;
 
 import propositionalLogic.Implication;
 import propositionalLogic.KB;

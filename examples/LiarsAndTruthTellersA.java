@@ -1,4 +1,4 @@
-
+package examples;
 
 import propositionalLogic.*;
 import java.io.IOException;
