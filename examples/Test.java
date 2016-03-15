@@ -50,13 +50,18 @@ public class Test {
 		exampleProblems.add(new HornClauses());
 		exampleProblems.add(new LiarsAndTruthTellersA());
 		exampleProblems.add(new LiarsAndTruthTellersB());
-		exampleProblems.add(new MoreLiarsAndTruthTellers());
+		
+		MoreLiarsAndTruthTellers mltt = new MoreLiarsAndTruthTellers();
+		
+		exampleProblems.add(mltt);
 
 
 		// Model Checking
 		for( ExampleProblem e : exampleProblems ) {
 			e.solveByModelChecking();
 		}
+		
+		exampleProblems.remove(mltt);
 
 		// Resolution
 		for( ExampleProblem e : exampleProblems ) {
