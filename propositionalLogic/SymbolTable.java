@@ -1,10 +1,10 @@
 /**
- * 
+ *
  * Author: George Ferguson
- * 
- * 
+ *
+ *
  * Assignment: CSC 242 Project 02
- * 
+ *
  */
 
 package propositionalLogic;
@@ -16,9 +16,17 @@ import java.util.Map;
  * A SymbolTable maps names (Strings) to Symbols.
  */
 public class SymbolTable {
-	
+
 	protected Map<String,Symbol> symbols = new HashMap<>();
-	
+
+	public SymbolTable() {
+		
+	}
+
+	private SymbolTable(Map<String, Symbol> symbols) {
+		this.symbols = symbols;
+	}
+
 	/**
 	 * Returns the PropositionSymbol with the given NAME, creating one
 	 * and adding it to this SymbolTable if necessary.
@@ -31,7 +39,7 @@ public class SymbolTable {
 		}
 		return sym;
 	}
-	
+
 	/**
 	 * Return the number of Symbols stored in this SymbolTable.
 	 */
@@ -46,7 +54,10 @@ public class SymbolTable {
 	public Collection<Symbol> symbols() {
 		return symbols.values();
 	}
-	
+
+
+	public SymbolTable copySymbolTable() {
+		return new SymbolTable(new HashMap<String, Symbol>(symbols));
+	}
+
 }
-
-

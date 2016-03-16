@@ -1,13 +1,13 @@
 /**
- * 
+ *
  * Author: George Ferguson
- * 
+ *
  * Modified by: Kyle Edgette
- * 
+ *
  * Modification: Implemented the isSatisfiedBy(Model model), therefore the class is no longer abstract
- * 
+ *
  * Assignment: CSC 242 Project 02
- * 
+ *
  */
 
 package propositionalLogic;
@@ -40,9 +40,9 @@ public class BinaryCompoundSentence extends CompoundSentence {
 	}
 
 	public String toString() {
-		return "(" + connective.toString() + " " + lhs.toString() + " " + rhs.toString() + ")"; 
+		return "(" + connective.toString() + " " + lhs.toString() + " " + rhs.toString() + ")";
 	}
-	
+
 	/**
 	 * If the given connective, lhs, and rhs are equal to the
 	 * corresponding components of this BinaryCompoundSentence, then
@@ -72,10 +72,10 @@ public class BinaryCompoundSentence extends CompoundSentence {
 			}
 		}
 	}
-	
+
 	@Override
 	public boolean isSatisfiedBy(ModelInterface model) {
-		
+
 		switch (getConnective()) {
 		case AND:
 			return getLhs().isSatisfiedBy(model) && getRhs().isSatisfiedBy(model);
@@ -98,19 +98,23 @@ public class BinaryCompoundSentence extends CompoundSentence {
 		default:
 			throw new IllegalArgumentException();
 		}
-		
-		
+
+
 	}
 
 	@Override
 	public ArrayList<Symbol> getSymbols() {
 		ArrayList<Symbol> list = getLhs().getSymbols();
-		
+
 		ArrayList<Symbol> list2 = getRhs().getSymbols();
-		
+
 		list.addAll(list2);
-		
+
 		return list;
+	}
+
+	public Sentence copySentence() {
+		return new BinaryCompoundSentence(connective, lhs.copySentence(), rhs.copySentence());
 	}
 
 

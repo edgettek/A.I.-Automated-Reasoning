@@ -1,9 +1,9 @@
 /**
- * 
+ *
  * Author: George Ferguson
- * 
+ *
  * Assignment: CSC 242 Project 02
- * 
+ *
  */
 
 package propositionalLogic;
@@ -16,10 +16,10 @@ import java.util.List;
  * holding the PropositionalSymbols used in those sentences.
  */
 public class KB {
-	
+
 	protected List<Sentence>sentences;
 	protected SymbolTable symtab;
-	
+
 	public KB(List<Sentence> sentences, SymbolTable symtab) {
 		this.sentences = sentences;
 		this.symtab = symtab;
@@ -28,7 +28,7 @@ public class KB {
 	public KB() {
 		this(new LinkedList<Sentence>(), new SymbolTable());
 	}
-	
+
 	/**
 	 * Return the Symbols interned in this KB's SymbolTable
 	 * as a Collection.
@@ -38,12 +38,12 @@ public class KB {
 	}
 
 	/**
-	 * Return this KB's Sentences as a Collection. 
+	 * Return this KB's Sentences as a Collection.
 	 */
 	public Collection<Sentence> sentences() {
 		return sentences;
 	}
-	
+
 	/**
 	 * Intern the given name in this KB's SymbolTable and return
 	 * the corresponding Symbol.
@@ -51,14 +51,14 @@ public class KB {
 	public Symbol intern(String name) {
 		return symtab.intern(name);
 	}
-	
+
 	/**
 	 * Add the given Sentence to this KB.
 	 */
 	public void add(Sentence s) {
 		sentences.add(s);
 	}
-	
+
 	/**
 	 * Print the contents of this KB to System.out.
 	 */
@@ -66,6 +66,17 @@ public class KB {
 		for (Sentence s : sentences()) {
 			System.out.println(s);
 		}
+	}
+
+	public KB copyKB() {
+		KB kb_copy = new KB();
+		for(Sentence s : sentences){
+			kb_copy.sentences.add(s.copySentence());
+		}
+
+		kb_copy.symtab.copySymbolTable();
+
+		return kb_copy;
 	}
 
 }

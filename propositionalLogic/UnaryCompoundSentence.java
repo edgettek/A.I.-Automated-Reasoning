@@ -1,13 +1,13 @@
 /**
- * 
+ *
  * Author: George Ferguson
- * 
+ *
  * Modified by: Kyle Edgette
- * 
+ *
  * Modification: Implemented the isSatisfiedBy(Model model), therefore the class is no longer abstract
- * 
+ *
  * Assignment: CSC 242 Project 02
- * 
+ *
  */
 
 package propositionalLogic;
@@ -15,7 +15,7 @@ package propositionalLogic;
 import java.util.ArrayList;
 
 public class UnaryCompoundSentence extends CompoundSentence {
-	
+
 	protected UnaryConnective connective;
 	protected Sentence argument;
 
@@ -24,13 +24,13 @@ public class UnaryCompoundSentence extends CompoundSentence {
 		this.connective = connective;
 		this.argument = argument;
 	}
-	
+
 	public UnaryConnective getConnective() {
 		return connective;
 	}
-	
-	
-	
+
+
+
 	@Override
 	public boolean isSatisfiedBy(ModelInterface model) {
 		switch (getConnective()) {
@@ -44,11 +44,11 @@ public class UnaryCompoundSentence extends CompoundSentence {
 	public Sentence getArgument() {
 		return argument;
 	}
-	
+
 	public String toString() {
-		return "(" + connective.toString() + " " + argument.toString() + ")"; 
+		return "(" + connective.toString() + " " + argument.toString() + ")";
 	}
-	
+
 	/**
 	 * If the given connective and argument are equal to the
 	 * corresponding components of this UnaryCompoundSentence, then
@@ -75,5 +75,9 @@ public class UnaryCompoundSentence extends CompoundSentence {
 	@Override
 	public ArrayList<Symbol> getSymbols() {
 		return getArgument().getSymbols();
+	}
+
+	public Sentence copySentence() {
+		return new UnaryCompoundSentence(connective, argument);
 	}
 }

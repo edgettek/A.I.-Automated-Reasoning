@@ -50,9 +50,9 @@ public class Test {
 		exampleProblems.add(new HornClauses());
 		exampleProblems.add(new LiarsAndTruthTellersA());
 		exampleProblems.add(new LiarsAndTruthTellersB());
-		
+
 		MoreLiarsAndTruthTellers mltt = new MoreLiarsAndTruthTellers();
-		
+
 		exampleProblems.add(mltt);
 
 
@@ -85,8 +85,10 @@ public class Test {
 	 */
 	public static boolean PLResolution(KB kb, Sentence alpha) throws IOException {
 
-		kb.add(new Negation(alpha)); // Add negation of alpha to Knowledge Base (Proof by Contradition)
-		Set<Clause> clauses = CNFConverter.convert(kb); // Convert all clauses to CNF
+		KB kb_copy = kb.copyKB();
+
+		kb_copy.add(new Negation(alpha)); // Add negation of alpha to Knowledge Base (Proof by Contradition)
+		Set<Clause> clauses = CNFConverter.convert(kb_copy); // Convert all clauses to CNF
 		Set<Clause> newSet = new HashSet<>();
 
 		// Used to iterate through clauses

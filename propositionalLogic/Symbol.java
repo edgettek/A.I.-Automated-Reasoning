@@ -1,9 +1,9 @@
 /**
- * 
- *  Author: George Ferguson  
- * 
+ *
+ *  Author: George Ferguson
+ *
  * Assignment: CSC 242 Project 02
- * 
+ *
  */
 
 
@@ -79,6 +79,10 @@ public class Symbol implements Sentence {
 		list.add(this);
 
 		return list;
+	}
+
+	public Sentence copySentence() {
+		return copySymbol();
 	}
 
 	public Symbol copySymbol() {
